@@ -11,6 +11,7 @@ using stockadmin.Internal;
 using stockadmin.ViewModels.AdminLogin;
 using System.Collections.Generic;
 using X.PagedList;
+using X.PagedList.Extensions;
 
 #nullable enable
 namespace stockadmin.Controllers

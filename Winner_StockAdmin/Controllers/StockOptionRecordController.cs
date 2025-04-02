@@ -10,6 +10,7 @@ using stockadmin.Filter;
 using stockadmin.Internal;
 using stockadmin.ViewModels.StockOptionRecord;
 using X.PagedList;
+using X.PagedList.Extensions;
 
 #nullable enable
 namespace stockadmin.Controllers

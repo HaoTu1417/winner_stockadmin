@@ -39,7 +39,9 @@ namespace stockadmin.Controllers
     public IActionResult SignIn(LoginVm model)
     {
       string ip = PublicTool.Text((object) ((ControllerBase) this).HttpContext.Connection.RemoteIpAddress);
-      string platForm = this.GetPlatForm(StringValues.op_Implicit(((ControllerBase) this).Request.Headers["User-Agent"]));
+      // string platForm = this.GetPlatForm(StringValues.op_Implicit(((ControllerBase) this).Request.Headers["User-Agent"]));
+      //
+      string platForm = this.GetPlatForm(((ControllerBase) this).Request.Headers["User-Agent"].ToString());
       try
       {
         LoginBiz.CheckWhiteList(ip, model.LoginProvider);

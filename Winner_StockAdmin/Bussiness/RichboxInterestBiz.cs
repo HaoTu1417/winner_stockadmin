@@ -18,7 +18,9 @@ namespace stockadmin.Business
     {
       begin_report_date = TimeTool.ConvertLocalToUtc(begin_report_date);
       end_begin_date = TimeTool.ConvertLocalToUtc(end_begin_date);
-      return RichboxInterestService.GetWithdrawnAmount(begin_report_date, end_begin_date).Sum<(DateTime?, Decimal)>((Func<(DateTime?, Decimal), Decimal>) (item => item.amount));
+      // return RichboxInterestService.GetWithdrawnAmount(begin_report_date, end_begin_date).Sum<(DateTime?, Decimal)>((Func<(DateTime?, Decimal), Decimal>) (item => item.amount));
+      //
+      return RichboxInterestService.GetWithdrawnAmount(begin_report_date, end_begin_date).Sum<(DateTime?, Decimal)>((Func<(DateTime?, Decimal), Decimal>) (item => item.Item2));
     }
 
     public static Decimal GetTotalRecordedAmount()

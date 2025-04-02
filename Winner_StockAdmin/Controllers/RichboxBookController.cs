@@ -18,6 +18,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using tradeapi.Models.RichBox;
 using X.PagedList;
+using X.PagedList.Extensions;
 
 #nullable enable
 namespace stockadmin.Controllers

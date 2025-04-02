@@ -73,7 +73,8 @@ namespace stockadmin.Business
       for (; columnIndex > 0; columnIndex = (columnIndex - 1) / 26)
       {
         char ch = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[(columnIndex - 1) % 26];
-        excelColumnName = new ReadOnlySpan<char>(ref ch).ToString() + string.op_Implicit(excelColumnName);
+        //excelColumnName = new ReadOnlySpan<char>(ref ch).ToString() + string.op_Implicit(excelColumnName);
+        excelColumnName = ch.ToString() + excelColumnName;
       }
       return excelColumnName;
     }

@@ -11,6 +11,7 @@ using stockadmin.Internal;
 using stockadmin.ViewModels.RewardDetail;
 using System.Collections.Generic;
 using X.PagedList;
+using X.PagedList.Extensions;
 
 #nullable enable
 namespace stockadmin.Controllers

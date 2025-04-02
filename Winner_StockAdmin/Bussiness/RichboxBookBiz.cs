@@ -6,7 +6,7 @@
 
 using DB.Services;
 using Models.Dto;
-using NuGet.Packaging;
+// using NuGet.Packaging;
 using stockadmin.Models.Dto;
 using stockadmin.Tool;
 using stockadmin.ViewModels.Member;
@@ -91,8 +91,27 @@ namespace stockadmin.Business
       List<RichBoxInterestDto> richBox_interest_list)
     {
       Dictionary<DateTime, Decimal> dictionary = new Dictionary<DateTime, Decimal>();
-      dictionary.AddRange<KeyValuePair<DateTime, Decimal>>((IEnumerable<KeyValuePair<DateTime, Decimal>>) richBox_principal_list.FindAll((Predicate<RichBoxPrincipalDto>) (x => x.member_fk == member_fk)).ToDictionary<RichBoxPrincipalDto, DateTime, Decimal>((Func<RichBoxPrincipalDto, DateTime>) (x => x.date), (Func<RichBoxPrincipalDto, Decimal>) (x => x.amount)));
-      dictionary.AddRange<KeyValuePair<DateTime, Decimal>>((IEnumerable<KeyValuePair<DateTime, Decimal>>) richBox_interest_list.FindAll((Predicate<RichBoxInterestDto>) (x => x.member_fk == member_fk)).ToDictionary<RichBoxInterestDto, DateTime, Decimal>((Func<RichBoxInterestDto, DateTime>) (x => x.date), (Func<RichBoxInterestDto, Decimal>) (x => x.amount)));
+      // dictionary.AddRange<KeyValuePair<DateTime, Decimal>>((IEnumerable<KeyValuePair<DateTime, Decimal>>) richBox_principal_list.FindAll((Predicate<RichBoxPrincipalDto>) (x => x.member_fk == member_fk)).ToDictionary<RichBoxPrincipalDto, DateTime, Decimal>((Func<RichBoxPrincipalDto, DateTime>) (x => x.date), (Func<RichBoxPrincipalDto, Decimal>) (x => x.amount)));
+      //
+      dictionary = richBox_principal_list
+        .FindAll(x => x.member_fk == member_fk)
+        .ToDictionary(x => x.date, x => x.amount);
+
+      foreach (var item in richBox_interest_list.FindAll(x => x.member_fk == member_fk))
+      {
+        dictionary[item.date] = item.amount;
+      }
+      
+      
+      // dictionary.AddRange<KeyValuePair<DateTime, Decimal>>((IEnumerable<KeyValuePair<DateTime, Decimal>>) richBox_interest_list.FindAll((Predicate<RichBoxInterestDto>) (x => x.member_fk == member_fk)).ToDictionary<RichBoxInterestDto, DateTime, Decimal>((Func<RichBoxInterestDto, DateTime>) (x => x.date), (Func<RichBoxInterestDto, Decimal>) (x => x.amount)));
+      //
+      foreach (var item in richBox_interest_list.FindAll(x => x.member_fk == member_fk))
+      {
+        dictionary[item.date] = item.amount;
+      }
+
+      dictionary = dictionary.OrderBy(x => x.Key).ToDictionary(x => x.Key, x => x.Value);
+      
       dictionary.OrderBy<KeyValuePair<DateTime, Decimal>, DateTime>((Func<KeyValuePair<DateTime, Decimal>, DateTime>) (x => x.Key));
       Decimal num1 = 0M;
       Decimal num2 = 0M;

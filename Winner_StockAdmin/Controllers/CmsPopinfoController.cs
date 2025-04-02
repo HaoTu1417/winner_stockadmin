@@ -23,6 +23,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using X.PagedList;
+using X.PagedList.Extensions;
 
 #nullable enable
 namespace stockadmin.Controllers

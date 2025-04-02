@@ -12,6 +12,7 @@ using stockadmin.Internal;
 using stockadmin.Tool;
 using stockadmin.ViewModels.WalletPayment;
 using X.PagedList;
+using X.PagedList.Extensions;
 
 #nullable enable
 namespace stockadmin.Controllers

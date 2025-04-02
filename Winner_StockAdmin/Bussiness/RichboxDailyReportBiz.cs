@@ -48,6 +48,7 @@ namespace stockadmin.Business
         {
           DateTime? datetime1 = item.datetime;
           DateTime dateTime1 = date.Item2;
+          
           if ((datetime1.HasValue ? (datetime1.GetValueOrDefault() >= dateTime1 ? 1 : 0) : 0) == 0)
             return false;
           DateTime? datetime2 = item.datetime;

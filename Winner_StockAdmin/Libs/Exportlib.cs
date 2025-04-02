@@ -18,7 +18,8 @@ namespace stockadmin.Libs
   {
     public static byte[]? ExportExcel<T>(IEnumerable<T> list)
     {
-      ExcelPackage.LicenseContext = new LicenseContext?(LicenseContext.NonCommercial);
+      // ExcelPackage.LicenseContext = new LicenseContext?(LicenseContext.NonCommercial);
+      ExcelPackage.LicenseContext = new OfficeOpenXml.LicenseContext?(OfficeOpenXml.LicenseContext.NonCommercial);
       using (ExcelPackage excelPackage = new ExcelPackage())
       {
         ExcelWorksheet excelWorksheet = excelPackage.Workbook.Worksheets.Add("Sheet1");

@@ -13,6 +13,7 @@ using stockadmin.Tool;
 using stockadmin.ViewModels.StockUs;
 using System.Collections.Generic;
 using X.PagedList;
+using X.PagedList.Extensions;
 
 #nullable enable
 namespace stockadmin.Controllers
