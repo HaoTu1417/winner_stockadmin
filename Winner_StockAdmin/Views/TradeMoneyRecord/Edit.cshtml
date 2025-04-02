@@ -1,0 +1,1207 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_TradeMoneyRecord_Edit
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using Models.Dto;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef3", "/Views/TradeMoneyRecord/Edit.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/TradeMoneyRecord/Edit.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_TradeMoneyRecord_Edit : RazorPage<TradeMoneyRecordDto>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("id", (object) new HtmlString("subAccountInput"), (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit1 = this;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__0.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__0, ((RazorPageBase) tradeMoneyRecordEdit1).ViewBag);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n<h4>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target1 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__2.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p2 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__2;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit2 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__1.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__1, lang, "public:title_edit");
+      target1((CallSite) p2, tradeMoneyRecordEdit2, obj1);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</h4>\n<hr />\n<div class=\"row\">\n    <div class=\"col-md-4\">\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__4 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target2 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__4.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p4 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__4;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit3 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__3.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__3, lang, "create_datetime");
+      target2((CallSite) p4, tradeMoneyRecordEdit3, obj2);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef36102", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, DateTime>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, DateTime>>) (__model => __model.create_datetime));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef37988", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, DateTime>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, DateTime>>) (__model => __model.create_datetime));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__6 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target3 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__6.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p6 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__6;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit4 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__5 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj3 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__5.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__5, lang, "sub_account");
+      target3((CallSite) p6, tradeMoneyRecordEdit4, obj3);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef39985", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_2);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.sub_account));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef312261", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.sub_account));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__8 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target4 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__8.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p8 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__8;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit5 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__7 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj4 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__7.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__7, lang, "pk");
+      target4((CallSite) p8, tradeMoneyRecordEdit5, obj4);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef314246", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, int>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, int>>) (__model => __model.pk));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef316120", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, int>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, int>>) (__model => __model.pk));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__10 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target5 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__10.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p10 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__10;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit6 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__9 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj5 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__9.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__9, lang, "sn");
+      target5((CallSite) p10, tradeMoneyRecordEdit6, obj5);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef318096", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.sn));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef319970", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.sn));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__12 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target6 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__12.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p12 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__12;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit7 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__11 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj6 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__11.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__11, lang, "temp_id");
+      target6((CallSite) p12, tradeMoneyRecordEdit7, obj6);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef321951", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, int>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, int>>) (__model => __model.temp_id));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef323830", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, int>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, int>>) (__model => __model.temp_id));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target7 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p14 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__14;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit8 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__13.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__13, lang, "info");
+      target7((CallSite) p14, tradeMoneyRecordEdit8, obj7);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef325813", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.info));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef327689", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.info));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target8 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p16 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__16;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit9 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__15.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__15, lang, "op");
+      target8((CallSite) p16, tradeMoneyRecordEdit9, obj8);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef329667", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, int>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, int>>) (__model => __model.op));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef331541", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, int>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, int>>) (__model => __model.op));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target9 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__18.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p18 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__18;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit10 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__17.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__17, lang, "currency");
+      target9((CallSite) p18, tradeMoneyRecordEdit10, obj9);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef333523", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.currency));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef335403", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.currency));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target10 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__20.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p20 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__20;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit11 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj10 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__19.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__19, lang, "affect");
+      target10((CallSite) p20, tradeMoneyRecordEdit11, obj10);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef337389", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, Decimal>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, Decimal>>) (__model => __model.affect));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef339267", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, Decimal>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, Decimal>>) (__model => __model.affect));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__22 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target11 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__22.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p22 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__22;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit12 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__21 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj11 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__21.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__21, lang, "exchange");
+      target11((CallSite) p22, tradeMoneyRecordEdit12, obj11);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef341253", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, Decimal>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, Decimal>>) (__model => __model.exchange));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef343133", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, Decimal>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, Decimal>>) (__model => __model.exchange));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__24 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target12 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__24.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p24 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__24;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit13 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__23 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj12 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__23.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__23, lang, "wallet_amount");
+      target12((CallSite) p24, tradeMoneyRecordEdit13, obj12);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef345126", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, Decimal>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, Decimal>>) (__model => __model.wallet_amount));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef347011", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, Decimal>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, Decimal>>) (__model => __model.wallet_amount));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__26 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target13 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__26.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p26 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__26;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit14 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__25 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj13 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__25.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__25, lang, "reviewer");
+      target13((CallSite) p26, tradeMoneyRecordEdit14, obj13);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef349004", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.reviewer));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef350884", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.reviewer));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__28 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__28 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target14 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__28.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p28 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__28;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit15 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__27 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj14 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__27.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__27, lang, "balance");
+      target14((CallSite) p28, tradeMoneyRecordEdit15, obj14);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef352871", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, Decimal>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, Decimal>>) (__model => __model.balance));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef354750", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, Decimal>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, Decimal>>) (__model => __model.balance));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__30 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__30 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target15 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__30.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p30 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__30;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit16 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__29 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj15 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__29.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__29, lang, "market");
+      target15((CallSite) p30, tradeMoneyRecordEdit16, obj15);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef356735", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.market));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef358613", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.market));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__32 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__32 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target16 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__32.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p32 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__32;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit17 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__31 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__31 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj16 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__31.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__31, lang, "trade_deal_fk");
+      target16((CallSite) p32, tradeMoneyRecordEdit17, obj16);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef360604", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, int?>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, int?>>) (__model => __model.trade_deal_fk));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef362489", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, int?>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, int?>>) (__model => __model.trade_deal_fk));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__34 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__34 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target17 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__34.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p34 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__34;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit18 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__33 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__33 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj17 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__33.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__33, lang, "order_type");
+      target17((CallSite) p34, tradeMoneyRecordEdit18, obj17);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef364484", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, int?>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, int?>>) (__model => __model.order_type));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef366366", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, int?>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, int?>>) (__model => __model.order_type));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__36 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__36 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target18 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__36.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p36 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__36;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit19 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__35 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__35 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj18 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__35.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__35, lang, "stock_code");
+      target18((CallSite) p36, tradeMoneyRecordEdit19, obj18);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef368358", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.stock_code));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef370240", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.stock_code));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__38 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__38 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyRecord_Edit, object> target19 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__38.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p38 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__38;
+      Views_TradeMoneyRecord_Edit tradeMoneyRecordEdit20 = tradeMoneyRecordEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__37 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__37 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj19 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__37.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__37, lang, "stock_name");
+      target19((CallSite) p38, tradeMoneyRecordEdit20, obj19);
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</label>\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef372232", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<InputTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) tradeMoneyRecordEdit1.Html.Raw(tradeMoneyRecordEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.stock_name));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n            ");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef374114", (Func<Task>) (async () => { }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = tradeMoneyRecordEdit1.ModelExpressionProvider.CreateModelExpression<TradeMoneyRecordDto, string>(tradeMoneyRecordEdit1.ViewData, (Expression<Func<TradeMoneyRecordDto, string>>) (__model => __model.stock_name));
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyRecord_Edit.__tagHelperAttribute_1);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n        </div>\n    </div>\n</div>\n\n<div>\n");
+      string str = (bool) ((ViewDataDictionary) tradeMoneyRecordEdit1.ViewData)["fromCN"] ? "IndexCN" : "Index";
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\t\t");
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.Begin("a", (TagMode) 0, "2d38523cce4c027a50a02917626ec68dd9a265c87aa933b8a9dd459ee2c7aef376047", (Func<Task>) (async () =>
+      {
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__40 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__40 = CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_TradeMoneyRecord_Edit, object> target20 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__40.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_TradeMoneyRecord_Edit, object>> p40 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__40;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__39 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__39 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyRecord_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj20 = Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__39.Target((CallSite) Views_TradeMoneyRecord_Edit.\u003C\u003Eo__12.\u003C\u003Ep__39, lang, "public:back_list");
+        target20((CallSite) p40, this, obj20);
+      }));
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = ((RazorPageBase) tradeMoneyRecordEdit1).CreateTagHelper<AnchorTagHelper>();
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral(str);
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = tradeMoneyRecordEdit1.__tagHelperStringValueBuffer;
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-action", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action, (HtmlAttributeValueStyle) 0);
+      if (tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues == null)
+        throw new InvalidOperationException(((RazorPageBase) tradeMoneyRecordEdit1).InvalidTagHelperIndexerAssignment("asp-route-subAccount", "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper", "RouteValues"));
+      ((RazorPageBase) tradeMoneyRecordEdit1).BeginWriteTagHelperAttribute();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral(((ViewDataDictionary) tradeMoneyRecordEdit1.ViewData)["subAccount"]);
+      tradeMoneyRecordEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeMoneyRecordEdit1).EndWriteTagHelperAttribute();
+      tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["subAccount"] = tradeMoneyRecordEdit1.__tagHelperStringValueBuffer;
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-route-subAccount", (object) tradeMoneyRecordEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.RouteValues["subAccount"], (HtmlAttributeValueStyle) 0);
+      await tradeMoneyRecordEdit1.__tagHelperRunner.RunAsync(tradeMoneyRecordEdit1.__tagHelperExecutionContext);
+      if (!tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyRecordEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyRecordEdit1).Write((object) tradeMoneyRecordEdit1.__tagHelperExecutionContext.Output);
+      tradeMoneyRecordEdit1.__tagHelperExecutionContext = tradeMoneyRecordEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("\n");
+      ((RazorPageBase) tradeMoneyRecordEdit1).WriteLiteral("</div>\n\n");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<TradeMoneyRecordDto> Html { get; private set; }
+  }
+}

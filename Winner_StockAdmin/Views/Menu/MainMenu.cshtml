@@ -1,0 +1,115 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_Menu_MainMenu
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using stockadmin.ViewModels.Menu;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "3b56d220abc2ef0c0755072daa40c4433ed11f12f9e7af38499ab70aea4f340c", "/Views/Menu/MainMenu.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/Menu/MainMenu.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_Menu_MainMenu : RazorPage<object>
+  {
+    public virtual async 
+    #nullable disable
+    Task ExecuteAsync()
+    {
+      Views_Menu_MainMenu viewsMenuMainMenu = this;
+      List<MainMenuVm> mainMenuVmList = ((ViewDataDictionary) viewsMenuMainMenu.ViewData)["Menu"] as List<MainMenuVm>;
+      ((RazorPageBase) viewsMenuMainMenu).WriteLiteral("\n<li class='sidebar-title'>Pages</li>\n\n");
+      if (mainMenuVmList == null)
+        return;
+      foreach (MainMenuVm mainMenuVm1 in mainMenuVmList)
+      {
+        if (mainMenuVm1.Child == null)
+        {
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral("                <li");
+          ((RazorPageBase) viewsMenuMainMenu).BeginWriteAttribute("class", " class=\"", 283, "\"", 316, 2);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue("", 291, (object) "sidebar-item", 291, 12, true);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue(" ", 303, (object) mainMenuVm1.Active, 304, 12, false);
+          ((RazorPageBase) viewsMenuMainMenu).EndWriteAttribute();
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral(">\n\n                    <a");
+          ((RazorPageBase) viewsMenuMainMenu).BeginWriteAttribute("href", " href=\"", 342, "\"", 358, 1);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue("", 349, (object) mainMenuVm1.Url, 349, 9, false);
+          ((RazorPageBase) viewsMenuMainMenu).EndWriteAttribute();
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral(" class='sidebar-link'>\n                        <i");
+          ((RazorPageBase) viewsMenuMainMenu).BeginWriteAttribute("class", " class=\"", 408, "\"", 434, 2);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue("", 416, (object) "fa", 416, 2, true);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue(" ", 418, (object) mainMenuVm1.IconClass, 419, 15, false);
+          ((RazorPageBase) viewsMenuMainMenu).EndWriteAttribute();
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral("></i>\n                        <span>");
+          ((RazorPageBase) viewsMenuMainMenu).Write(mainMenuVm1.Title);
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral("</span>\n                    </a>\n                </li>\n");
+        }
+        else
+        {
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral("                <li");
+          ((RazorPageBase) viewsMenuMainMenu).BeginWriteAttribute("class", " class=\"", 601, "\"", 642, 3);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue("", 609, (object) "sidebar-item", 609, 12, true);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue(" ", 621, (object) mainMenuVm1.Active, 622, 12, false);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue(" ", 634, (object) "has-sub", 635, 8, true);
+          ((RazorPageBase) viewsMenuMainMenu).EndWriteAttribute();
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral(">\n\n                    <a");
+          ((RazorPageBase) viewsMenuMainMenu).BeginWriteAttribute("href", " href=\"", 668, "\"", 684, 1);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue("", 675, (object) mainMenuVm1.Url, 675, 9, false);
+          ((RazorPageBase) viewsMenuMainMenu).EndWriteAttribute();
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral(" class='sidebar-link'>\n                        <i");
+          ((RazorPageBase) viewsMenuMainMenu).BeginWriteAttribute("class", " class=\"", 734, "\"", 760, 2);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue("", 742, (object) "fa", 742, 2, true);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue(" ", 744, (object) mainMenuVm1.IconClass, 745, 15, false);
+          ((RazorPageBase) viewsMenuMainMenu).EndWriteAttribute();
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral("></i>\n                        <span>");
+          ((RazorPageBase) viewsMenuMainMenu).Write(mainMenuVm1.Title);
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral("</span>\n                    </a>\n\n                    <ul");
+          ((RazorPageBase) viewsMenuMainMenu).BeginWriteAttribute("class", " class=\"", 865, "\"", 893, 2);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue("", 873, (object) "submenu", 873, 7, true);
+          ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue(" ", 880, (object) mainMenuVm1.Active, 881, 12, false);
+          ((RazorPageBase) viewsMenuMainMenu).EndWriteAttribute();
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral(">\n");
+          foreach (MainMenuVm mainMenuVm2 in mainMenuVm1.Child)
+          {
+            ((RazorPageBase) viewsMenuMainMenu).WriteLiteral("                            <li>\n                                <a");
+            ((RazorPageBase) viewsMenuMainMenu).BeginWriteAttribute("href", " href=\"", 1052, "\"", 1073, 1);
+            ((RazorPageBase) viewsMenuMainMenu).WriteAttributeValue("", 1059, (object) mainMenuVm2.Url, 1059, 14, false);
+            ((RazorPageBase) viewsMenuMainMenu).EndWriteAttribute();
+            ((RazorPageBase) viewsMenuMainMenu).WriteLiteral(">");
+            ((RazorPageBase) viewsMenuMainMenu).Write(mainMenuVm2.Title);
+            ((RazorPageBase) viewsMenuMainMenu).WriteLiteral("</a>\n                            </li>\n");
+          }
+          ((RazorPageBase) viewsMenuMainMenu).WriteLiteral("                    </ul>\n                </li>\n");
+        }
+      }
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<object> Html { get; private set; }
+  }
+}

@@ -1,0 +1,1016 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_BorrowFee_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.Tool;
+using stockadmin.ViewModels.BorrowFee;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Web.Common;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "6929965b8d3641f29e0a8b90f75830c85bee3b4ed4b7885a52a7ab029514f8b1", "/Views/BorrowFee/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/BorrowFee/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_BorrowFee_Index : RazorPage<BorrowFeeVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("id", (object) new HtmlString("begin_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("id", (object) new HtmlString("end_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("type", (object) "checkbox", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("class", (object) new HtmlString("form-check-input"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("id", (object) new HtmlString("searchForm"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("id", (object) new HtmlString("pageSize"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("class", (object) new HtmlString("form-select pull-right"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("onchange", (object) new HtmlString("redirect(this.value)"), (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_BorrowFee_Index viewsBorrowFeeIndex1 = this;
+      BorrowFeeFilter Filter = viewsBorrowFeeIndex1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__0.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__0, ((RazorPageBase) viewsBorrowFeeIndex1).ViewBag);
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "total", typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object total = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__1.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__1, ((RazorPageBase) viewsBorrowFeeIndex1).ViewBag);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("\n\n<div class=\"card\">\n    <div class=\"card-header\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__3 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target1 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__3.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p3 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__3;
+      Views_BorrowFee_Index viewsBorrowFeeIndex2 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__2.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__2, lang, "summary");
+      target1((CallSite) p3, viewsBorrowFeeIndex2, obj1);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</div>\n    <div class=\"card-body\">\n        <div class=\"row\">\n            <div class=\"form-group col-md-4\">\n                <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__5 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__5 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target2 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__5.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p5 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__5;
+      Views_BorrowFee_Index viewsBorrowFeeIndex3 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__4 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__4 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__4.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__4, lang, "total");
+      target2((CallSite) p5, viewsBorrowFeeIndex3, obj2);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</label>\n                ");
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext = viewsBorrowFeeIndex1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "6929965b8d3641f29e0a8b90f75830c85bee3b4ed4b7885a52a7ab029514f8b19109", (Func<Task>) (async () => { }));
+      viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) viewsBorrowFeeIndex1).CreateTagHelper<InputTagHelper>();
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.Add((ITagHelper) viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = viewsBorrowFeeIndex1.ModelExpressionProvider.CreateModelExpression<BorrowFeeVm, object>(viewsBorrowFeeIndex1.ViewData, (Expression<Func<BorrowFeeVm, object>>) (__model => total));
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_0);
+      ((RazorPageBase) viewsBorrowFeeIndex1).BeginWriteTagHelperAttribute();
+      viewsBorrowFeeIndex1.__tagHelperStringValueBuffer = ((RazorPageBase) viewsBorrowFeeIndex1).EndWriteTagHelperAttribute();
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) viewsBorrowFeeIndex1.Html.Raw(viewsBorrowFeeIndex1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await viewsBorrowFeeIndex1.__tagHelperRunner.RunAsync(viewsBorrowFeeIndex1.__tagHelperExecutionContext);
+      if (!viewsBorrowFeeIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsBorrowFeeIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) viewsBorrowFeeIndex1.__tagHelperExecutionContext.Output);
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext = viewsBorrowFeeIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("\n            </div>\n        </div>\n    </div>\n</div>\n\n<div class=\"card\">\n    ");
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext = viewsBorrowFeeIndex1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "6929965b8d3641f29e0a8b90f75830c85bee3b4ed4b7885a52a7ab029514f8b111043", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__7 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_BorrowFee_Index, object> target3 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__7.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p7 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__7;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__6 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__6.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__6, lang, "begin_time");
+        target3((CallSite) p7, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "6929965b8d3641f29e0a8b90f75830c85bee3b4ed4b7885a52a7ab029514f8b111698", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_1);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<BorrowFeeVm, DateTime?>(this.ViewData, (Expression<Func<BorrowFeeVm, DateTime?>>) (__model => Filter.begin_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                <input type=\"button\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 904, "\"", 940, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__9 = CallSite<Action<CallSite, Views_BorrowFee_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_BorrowFee_Index, string, int, object, int, int, bool> target4 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__9.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_BorrowFee_Index, string, int, object, int, int, bool>> p9 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__9;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__8 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__8.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__8, lang, "public:default_time");
+        target4((CallSite) p9, this, "", 912, obj4, 912, 28, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" onclick=\"ResetTime();\" />\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__11 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_BorrowFee_Index, object> target5 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__11.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p11 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__11;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__10 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__10.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__10, lang, "end_time");
+        target5((CallSite) p11, this, obj5);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "6929965b8d3641f29e0a8b90f75830c85bee3b4ed4b7885a52a7ab029514f8b114257", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_2);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<BorrowFeeVm, DateTime?>(this.ViewData, (Expression<Func<BorrowFeeVm, DateTime?>>) (__model => Filter.end_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__13 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__13 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_BorrowFee_Index, object> target6 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__13.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p13 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__13;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__12 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__12.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__12, lang, "account");
+        target6((CallSite) p13, this, obj6);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "6929965b8d3641f29e0a8b90f75830c85bee3b4ed4b7885a52a7ab029514f8b116308", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<BorrowFeeVm, string>(this.ViewData, (Expression<Func<BorrowFeeVm, string>>) (__model => Filter.account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__15 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__15 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_BorrowFee_Index, object> target7 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__15.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p15 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__15;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__14 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__14 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj7 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__14.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__14, lang, "member_name");
+        target7((CallSite) p15, this, obj7);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "6929965b8d3641f29e0a8b90f75830c85bee3b4ed4b7885a52a7ab029514f8b118275", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<BorrowFeeVm, string>(this.ViewData, (Expression<Func<BorrowFeeVm, string>>) (__model => Filter.real_name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n            <div class=\"col-auto\">\n                <label class=\"form-check-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__17 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__17 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_BorrowFee_Index, object> target8 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__17.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p17 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__17;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__16 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__16 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj8 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__16.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__16, lang, "public:filter_out_test_account");
+        target8((CallSite) p17, this, obj8);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                <div class=\"form-check\">\n                    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "6929965b8d3641f29e0a8b90f75830c85bee3b4ed4b7885a52a7ab029514f8b120336", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string) Views_BorrowFee_Index.__tagHelperAttribute_3.Value;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_BorrowFee_Index.__tagHelperAttribute_3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<BorrowFeeVm, bool>(this.ViewData, (Expression<Func<BorrowFeeVm, bool>>) (__model => Filter.filter_out_test_account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_4);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                </div>\n            </div>\n\n        </div>\n        <div class=\"card-footer\">\n\t        <div class=\"form-group pull-right\">\n\t\t        <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1941, "\"", 1971, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__19 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__19 = CallSite<Action<CallSite, Views_BorrowFee_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_BorrowFee_Index, string, int, object, int, int, bool> target9 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__19.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_BorrowFee_Index, string, int, object, int, int, bool>> p19 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__19;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__18 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__18 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj9 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__18.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__18, lang, "public:search");
+        target9((CallSite) p19, this, "", 1949, obj9, 1949, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n                <button type=\"reset\" onclick=\"Reset();\" class=\"btn btn-light\" />");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__21 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_BorrowFee_Index, object> target10 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__21.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p21 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__21;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__20 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__20 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj10 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__20.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__20, lang, "public:reset");
+        target10((CallSite) p21, this, obj10);
+        ((RazorPageBase) this).WriteLiteral("</button>\n                ");
+        IHtmlHelper<BorrowFeeVm> html = this.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__23 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_BorrowFee_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target11 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__23.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p23 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__23;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__22 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__22 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj11 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__22.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__22, lang, "public:download");
+        string str = target11((CallSite) p23, obj11);
+        BorrowFeeFilter borrowFeeFilter = Filter;
+        var data = new{ @class = "btn btn-secondary" };
+        ((RazorPageBase) this).Write((object) HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html, str, "Download", (object) borrowFeeFilter, (object) data));
+        ((RazorPageBase) this).WriteLiteral("\n\t        </div>\n        </div>\n    ");
+      }));
+      viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) viewsBorrowFeeIndex1).CreateTagHelper<FormTagHelper>();
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.Add((ITagHelper) viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) viewsBorrowFeeIndex1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.Add((ITagHelper) viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_BorrowFee_Index.__tagHelperAttribute_5.Value;
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_BorrowFee_Index.__tagHelperAttribute_5);
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_6);
+      await viewsBorrowFeeIndex1.__tagHelperRunner.RunAsync(viewsBorrowFeeIndex1.__tagHelperExecutionContext);
+      if (!viewsBorrowFeeIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsBorrowFeeIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) viewsBorrowFeeIndex1.__tagHelperExecutionContext.Output);
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext = viewsBorrowFeeIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("\n</div>\n\n<div class=\"table-container\">\n    <table class=\"table\">\n        <thead>\n            <tr>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__25 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__25 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target12 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__25.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p25 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__25;
+      Views_BorrowFee_Index viewsBorrowFeeIndex4 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__24 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__24 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj12 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__24.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__24, lang, "account");
+      target12((CallSite) p25, viewsBorrowFeeIndex4, obj12);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__27 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__27 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target13 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__27.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p27 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__27;
+      Views_BorrowFee_Index viewsBorrowFeeIndex5 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__26 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__26 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj13 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__26.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__26, lang, "member_name");
+      target13((CallSite) p27, viewsBorrowFeeIndex5, obj13);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__29 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__29 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target14 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__29.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p29 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__29;
+      Views_BorrowFee_Index viewsBorrowFeeIndex6 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__28 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__28 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj14 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__28.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__28, lang, "create_time");
+      target14((CallSite) p29, viewsBorrowFeeIndex6, obj14);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__31 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__31 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target15 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__31.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p31 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__31;
+      Views_BorrowFee_Index viewsBorrowFeeIndex7 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__30 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__30 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj15 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__30.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__30, lang, "borrow_fee");
+      target15((CallSite) p31, viewsBorrowFeeIndex7, obj15);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__33 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__33 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target16 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__33.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p33 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__33;
+      Views_BorrowFee_Index viewsBorrowFeeIndex8 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__32 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__32 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj16 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__32.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__32, lang, "sub_account");
+      target16((CallSite) p33, viewsBorrowFeeIndex8, obj16);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__35 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__35 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target17 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__35.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p35 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__35;
+      Views_BorrowFee_Index viewsBorrowFeeIndex9 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__34 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__34 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj17 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__34.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__34, lang, "loan_type");
+      target17((CallSite) p35, viewsBorrowFeeIndex9, obj17);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__37 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__37 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target18 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__37.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p37 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__37;
+      Views_BorrowFee_Index viewsBorrowFeeIndex10 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__36 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__36 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj18 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__36.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__36, lang, "currency");
+      target18((CallSite) p37, viewsBorrowFeeIndex10, obj18);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__39 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__39 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target19 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__39.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p39 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__39;
+      Views_BorrowFee_Index viewsBorrowFeeIndex11 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__38 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__38 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj19 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__38.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__38, lang, "borrow_duration");
+      target19((CallSite) p39, viewsBorrowFeeIndex11, obj19);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</th>\n\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (BorrowFeeList borrowFeeList in (IEnumerable<BorrowFeeList>) viewsBorrowFeeIndex1.Model.list)
+      {
+        BorrowFeeList item = borrowFeeList;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__41 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__41 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string, object> target20 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__41.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string, object>> p41 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__41;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__40 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__40 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj20 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__40.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__40, ((RazorPageBase) viewsBorrowFeeIndex1).ViewBag);
+        string borrowType = item.borrow_type;
+        object obj21 = target20((CallSite) p41, obj20, borrowType);
+        ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("                <tr>\n");
+        if (item.is_test_account)
+        {
+          ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("\t\t\t\t\t<td style=\"color:tomato;\">");
+          ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<BorrowFeeVm, string>(viewsBorrowFeeIndex1.Html, (Expression<Func<BorrowFeeVm, string>>) (modelItem => item.account)));
+          ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</td>\n");
+        }
+        else
+        {
+          ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("\t\t\t\t\t<td>");
+          ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<BorrowFeeVm, string>(viewsBorrowFeeIndex1.Html, (Expression<Func<BorrowFeeVm, string>>) (modelItem => item.account)));
+          ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</td>\n");
+        }
+        ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("\t\t\t\t<td>");
+        ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<BorrowFeeVm, string>(viewsBorrowFeeIndex1.Html, (Expression<Func<BorrowFeeVm, string>>) (modelItem => item.member_name)));
+        ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) viewsBorrowFeeIndex1).Write(item.create_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<BorrowFeeVm, Decimal>(viewsBorrowFeeIndex1.Html, (Expression<Func<BorrowFeeVm, Decimal>>) (modelItem => item.borrow_fee)));
+        ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<BorrowFeeVm, string>(viewsBorrowFeeIndex1.Html, (Expression<Func<BorrowFeeVm, string>>) (modelItem => item.sub_account)));
+        ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__42 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__42 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__42.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__42, viewsBorrowFeeIndex1, obj21);
+        ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<BorrowFeeVm, string>(viewsBorrowFeeIndex1.Html, (Expression<Func<BorrowFeeVm, string>>) (modelItem => item.currency)));
+        ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<BorrowFeeVm, string>(viewsBorrowFeeIndex1.Html, (Expression<Func<BorrowFeeVm, string>>) (modelItem => item.borrow_duration_string)));
+        ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</td>\n\n                </tr>\n");
+      }
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("        </tbody>\n        <tbody>\n            <tr>\n                <td>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__44 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__44 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target21 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__44.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p44 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__44;
+      Views_BorrowFee_Index viewsBorrowFeeIndex12 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__43 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__43 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj22 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__43.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__43, lang, "total");
+      target21((CallSite) p44, viewsBorrowFeeIndex12, obj22);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</td>\n                <td></td>\n                <td></td>\n                <td>");
+      ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) viewsBorrowFeeIndex1.Model.summary.page_total_profit);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("</td>\n                <td></td>\n                <td></td>\n            </tr>\n        </tbody>\n    </table>\n</div>\n\n<!-- 分頁處理 -->\n<div class=\"card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between\">\n\n");
+      if (viewsBorrowFeeIndex1.Model != null)
+      {
+        ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("        <nav aria-label=\"Page navigation\">\n            <ul class=\"pagination mb-0\">\n\n                ");
+        ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) ((IHtmlHelper) viewsBorrowFeeIndex1.Html).PagedListPager((IPagedList) viewsBorrowFeeIndex1.Model.list, (Func<int, string>) (page =>
+        {
+          IUrlHelper url = this.Url;
+          BorrowFeeFilter filter = this.Model.filter;
+          Dictionary<string, object> dictionary1 = new Dictionary<string, object>();
+          dictionary1[nameof (page)] = (object) page;
+          Dictionary<string, object> dictionary2 = dictionary1;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__45 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__45 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "pageSize", typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj23 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__45.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__45, ((RazorPageBase) this).ViewBag);
+          dictionary2["pageSize"] = obj23;
+          Dictionary<string, object> args = dictionary1;
+          RouteValueDictionary routeValueDictionary = PublicTool.ToRouteValueDictionary<BorrowFeeFilter>(filter, args);
+          return UrlHelperExtensions.Action(url, "Index", (object) routeValueDictionary);
+        }), new PagedListRenderOptions()
+        {
+          LiElementClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-item"
+          },
+          PageClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-link"
+          },
+          LinkToFirstPageFormat = "<<",
+          LinkToPreviousPageFormat = "<",
+          LinkToNextPageFormat = ">",
+          LinkToLastPageFormat = ">>",
+          MaximumPageNumbersToDisplay = new int?(8)
+        }));
+        ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("\n            </ul>\n        </nav>\n");
+      }
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("\n    <div class=\"fw-normal small mt-5 mt-lg-0\">\n        ");
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext = viewsBorrowFeeIndex1.__tagHelperScopeManager.Begin("select", (TagMode) 0, "6929965b8d3641f29e0a8b90f75830c85bee3b4ed4b7885a52a7ab029514f8b133067", (Func<Task>) (async () => { }));
+      viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) viewsBorrowFeeIndex1).CreateTagHelper<SelectTagHelper>();
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.Add((ITagHelper) viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      SelectTagHelper helpersSelectTagHelper = viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__47 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__47 = CallSite<Func<CallSite, object, IEnumerable<SelectListItem>>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof (IEnumerable<SelectListItem>), typeof (Views_BorrowFee_Index)));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, IEnumerable<SelectListItem>> target22 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__47.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, IEnumerable<SelectListItem>>> p47 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__47;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__46 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__46 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "pageSizeOption", typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj24 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__46.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__46, ((RazorPageBase) viewsBorrowFeeIndex1).ViewBag);
+      IEnumerable<SelectListItem> selectListItems = target22((CallSite) p47, obj24);
+      helpersSelectTagHelper.Items = selectListItems;
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) viewsBorrowFeeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_7);
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_8);
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_BorrowFee_Index.__tagHelperAttribute_9);
+      await viewsBorrowFeeIndex1.__tagHelperRunner.RunAsync(viewsBorrowFeeIndex1.__tagHelperExecutionContext);
+      if (!viewsBorrowFeeIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsBorrowFeeIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) viewsBorrowFeeIndex1.__tagHelperExecutionContext.Output);
+      viewsBorrowFeeIndex1.__tagHelperExecutionContext = viewsBorrowFeeIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("\n        <div class=\"row\">\n            <div class=\"col\">\n                <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__49 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__49 = CallSite<Action<CallSite, Views_BorrowFee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_BorrowFee_Index, object> target23 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__49.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_BorrowFee_Index, object>> p49 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__49;
+      Views_BorrowFee_Index viewsBorrowFeeIndex13 = viewsBorrowFeeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__48 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__48 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_BorrowFee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj25 = Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__48.Target((CallSite) Views_BorrowFee_Index.\u003C\u003Eo__20.\u003C\u003Ep__48, lang, "public:total_count");
+      target23((CallSite) p49, viewsBorrowFeeIndex13, obj25);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral(":</label>\n                ");
+      ((RazorPageBase) viewsBorrowFeeIndex1).Write((object) viewsBorrowFeeIndex1.Model.list.TotalItemCount);
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("\n            </div>\n        </div>\n    </div>\n</div>\n\n<script type=\"text/javascript\">\n    function ResetTime() {\n        let today = new Date().toISOString().split('T')[0];\n        $(\"#begin_time\").val(`${today}T00:00`);\n        $(\"#end_time\").val(`${today}T23:59`);\n    }\n    function redirect(page) {\n        var url = '");
+      ((RazorPageBase) viewsBorrowFeeIndex1).Write(UrlHelperExtensions.Action(viewsBorrowFeeIndex1.Url, "Index", (object) PublicTool.ToRouteValueDictionary<BorrowFeeFilter>(viewsBorrowFeeIndex1.Model.filter, new Dictionary<string, object>()
+      {
+        ["page"] = (object) 1,
+        ["pageSize"] = (object) -1
+      })));
+      ((RazorPageBase) viewsBorrowFeeIndex1).WriteLiteral("';\n        url = url.replace('-1', page).replaceAll('amp;', '');\n        window.location.href = url;\n    }\n</script>\n\n<script>$(document).ready(function () {\n        // Attach a submit event handler to the form\n        $('#searchForm').submit(function (event) {\n            var selectedPageSize = $('#pageSize').val();\n            var actionUrl = $(this).attr('action');\n\n            // Update the form action URL with the selected page size as a query parameter\n            $(this).attr('action', actionUrl + '?pageSize=' + selectedPageSize);\n\n            // Continue with the form submission\n            return true;\n        });\n    });\n        function Reset() {\n            window.location.href = \"/BorrowFee/Index\";\n        }\n    </script>");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<BorrowFeeVm> Html { get; private set; }
+  }
+}

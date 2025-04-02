@@ -1,0 +1,647 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_Login_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.ViewModels;
+using stockadmin.ViewModels.Login;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a302", "/Views/Login/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/Login/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_Login_Index : RazorPage<LoginVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("rel", (object) new HtmlString("stylesheet"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("href", (object) new HtmlString("~/css/bootstrap.css"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("href", (object) new HtmlString("~/css/app.css"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("type", (object) "text", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("type", (object) "password", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("asp-action", (object) "SignIn", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("id", (object) new HtmlString("form1"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("src", (object) new HtmlString("~/lib/jquery/jquery.js"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("src", (object) new HtmlString("~/js/feather-icons/feather.min.js"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_10 = new TagHelperAttribute("src", (object) new HtmlString("~/js/app.js"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_11 = new TagHelperAttribute("src", (object) new HtmlString("~/js/main.js"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_12 = new TagHelperAttribute("src", (object) new HtmlString("~/js/crypto.js"), (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private HeadTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper;
+    private UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+    private BodyTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_Login_Index viewsLoginIndex = this;
+      ((RazorPageBase) viewsLoginIndex).WriteLiteral("\n");
+      ((RazorPageBase) viewsLoginIndex).Layout = (string) null;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, ErrorVm>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (ErrorVm), typeof (Views_Login_Index)));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, ErrorVm> target1 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__1.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, ErrorVm>> p1 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "ShowAlter", typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__0.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__0, ((RazorPageBase) viewsLoginIndex).ViewBag);
+      ErrorVm InfoBox = target1((CallSite) p1, obj1);
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "operator_name", typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object operator_name = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__2.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__2, ((RazorPageBase) viewsLoginIndex).ViewBag);
+      ((RazorPageBase) viewsLoginIndex).WriteLiteral("\n<!DOCTYPE html>\n\n<html>\n");
+      viewsLoginIndex.__tagHelperExecutionContext = viewsLoginIndex.__tagHelperScopeManager.Begin("head", (TagMode) 0, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a3029331", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__5 = CallSite<Action<CallSite, Views_Login_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Login_Index, object> target2 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__5.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Login_Index, object>> p5 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__5;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__4 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string, object> target3 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__4.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string, object>> p4 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__4;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__3.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__3, ((RazorPageBase) this).ViewBag);
+        object obj3 = target3((CallSite) p4, obj2, "public:system_title");
+        target2((CallSite) p5, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</title>\n    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("link", (TagMode) 2, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a30210005", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = ((RazorPageBase) this).CreateTagHelper<UrlResolutionTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n    <link rel=\"shortcut icon\"");
+        ((RazorPageBase) this).BeginWriteAttribute("href", " href=\"", 439, "\"", 469, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__7 = CallSite<Action<CallSite, Views_Login_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Login_Index, string, int, object, int, int, bool> target4 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__7.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Login_Index, string, int, object, int, int, bool>> p7 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__7;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__6 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "login_logo_url", typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__6.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__6, ((RazorPageBase) this).ViewBag);
+        target4((CallSite) p7, this, "", 446, obj4, 446, 23, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" type=\"image/x-icon\">\n    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("link", (TagMode) 2, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a30211663", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = ((RazorPageBase) this).CreateTagHelper<UrlResolutionTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n");
+      }));
+      viewsLoginIndex.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper = ((RazorPageBase) viewsLoginIndex).CreateTagHelper<HeadTagHelper>();
+      viewsLoginIndex.__tagHelperExecutionContext.Add((ITagHelper) viewsLoginIndex.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper);
+      await viewsLoginIndex.__tagHelperRunner.RunAsync(viewsLoginIndex.__tagHelperExecutionContext);
+      if (!viewsLoginIndex.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsLoginIndex.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsLoginIndex).Write((object) viewsLoginIndex.__tagHelperExecutionContext.Output);
+      viewsLoginIndex.__tagHelperExecutionContext = viewsLoginIndex.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsLoginIndex).WriteLiteral("\n");
+      viewsLoginIndex.__tagHelperExecutionContext = viewsLoginIndex.__tagHelperScopeManager.Begin("body", (TagMode) 0, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a30213567", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n    <div id=\"auth\">\n\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-md-5 col-sm-12 mx-auto\">\n                    <div class=\"card pt-4\">\n                        <div class=\"card-header\">\n");
+        if (InfoBox != null && InfoBox.Show)
+        {
+          ((RazorPageBase) this).WriteLiteral("                                    <div");
+          ((RazorPageBase) this).BeginWriteAttribute("class", " class=\"", 973, "\"", 1017, 3);
+          ((RazorPageBase) this).WriteAttributeValue("", 981, (object) "alert", 981, 5, true);
+          ((RazorPageBase) this).WriteAttributeValue(" ", 986, (object) InfoBox.Css, 987, 12, false);
+          ((RazorPageBase) this).WriteAttributeValue(" ", 999, (object) "alert-dismissible", 1000, 18, true);
+          ((RazorPageBase) this).EndWriteAttribute();
+          ((RazorPageBase) this).WriteLiteral(" role=\"alert\">\n                                        ");
+          ((RazorPageBase) this).Write(InfoBox.Message);
+          ((RazorPageBase) this).WriteLiteral("\n                                        <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>\n                                    </div>\n");
+        }
+        ((RazorPageBase) this).WriteLiteral("                        </div>\n                        <div class=\"card-body\">\n                            <div class=\"text-center mb-5\">\n                                <img");
+        ((RazorPageBase) this).BeginWriteAttribute("src", " src=\"", 1504, "\"", 1533, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__9 = CallSite<Action<CallSite, Views_Login_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Login_Index, string, int, object, int, int, bool> target11 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__9.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Login_Index, string, int, object, int, int, bool>> p9 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__9;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__8 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "login_logo_url", typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj11 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__8.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__8, ((RazorPageBase) this).ViewBag);
+        target11((CallSite) p9, this, "", 1510, obj11, 1510, 23, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" height=\"128\" class='mb-4'>\n                                <h3>");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_Login_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__10.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__10, this, operator_name);
+        ((RazorPageBase) this).WriteLiteral(" ");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__13 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__13 = CallSite<Action<CallSite, Views_Login_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Login_Index, object> target12 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__13.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Login_Index, object>> p13 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__13;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__12 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string, object> target13 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string, object>> p12 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__12;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj12 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__11.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__11, ((RazorPageBase) this).ViewBag);
+        object obj13 = target13((CallSite) p12, obj12, "public:system_name");
+        target12((CallSite) p13, this, obj13);
+        ((RazorPageBase) this).WriteLiteral("</h3>\n                            </div>\n\n                            ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("form", (TagMode) 0, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a30216930", (Func<Task>) (async () =>
+        {
+          ((RazorPageBase) this).WriteLiteral("\n\n                                <div class=\"form-group position-relative has-icon-left\">\n                                    <label for=\"username\">");
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__16 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_Login_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, Views_Login_Index, object> target14 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__16.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, Views_Login_Index, object>> p16 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__16;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__15 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Func<CallSite, object, string, object> target15 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__15.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Func<CallSite, object, string, object>> p15 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__15;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__14 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__14 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj14 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__14.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__14, ((RazorPageBase) this).ViewBag);
+          object obj15 = target15((CallSite) p15, obj14, "public:username");
+          target14((CallSite) p16, this, obj15);
+          ((RazorPageBase) this).WriteLiteral("</label>\n                                    <div class=\"position-relative\">\n");
+          ((RazorPageBase) this).WriteLiteral("                                        ");
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a30217800", (Func<Task>) (async () => { }));
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+          this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string) Views_Login_Index.__tagHelperAttribute_3.Value;
+          this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Login_Index.__tagHelperAttribute_3);
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<LoginVm, string>(this.ViewData, (Expression<Func<LoginVm, string>>) (__model => __model.LoginProvider));
+          this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+          this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_4);
+          await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+          if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+            await this.__tagHelperExecutionContext.SetOutputContentAsync();
+          ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+          ((RazorPageBase) this).WriteLiteral("\n\n                                        <div class=\"form-control-icon\">\n                                            <i data-feather=\"user\"></i>\n                                        </div>\n                                    </div>\n                                </div>\n\n                                <div class=\"form-group position-relative has-icon-left\">\n                                    <div class=\"clearfix\">\n                                        <label for=\"ProviderKey\">");
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__19 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__19 = CallSite<Action<CallSite, Views_Login_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, Views_Login_Index, object> target16 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__19.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, Views_Login_Index, object>> p19 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__19;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__18 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__18 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Func<CallSite, object, string, object> target17 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__18.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Func<CallSite, object, string, object>> p18 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__18;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__17 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj16 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__17.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__17, ((RazorPageBase) this).ViewBag);
+          object obj17 = target17((CallSite) p18, obj16, "public:password");
+          target16((CallSite) p19, this, obj17);
+          ((RazorPageBase) this).WriteLiteral("</label>\n                                    </div>\n                                    <div class=\"position-relative\">\n                                        ");
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a30220642", (Func<Task>) (async () => { }));
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+          this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+          ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+          this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+          this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<LoginVm, string>(this.ViewData, (Expression<Func<LoginVm, string>>) (__model => __model.ProviderKey));
+          this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+          this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_4);
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string) Views_Login_Index.__tagHelperAttribute_5.Value;
+          this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Login_Index.__tagHelperAttribute_5);
+          await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+          if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+            await this.__tagHelperExecutionContext.SetOutputContentAsync();
+          ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+          ((RazorPageBase) this).WriteLiteral("\n");
+          ((RazorPageBase) this).WriteLiteral("                                        <div class=\"form-control-icon\">\n                                            <i data-feather=\"lock\"></i>\n                                        </div>\n                                    </div>\n                                </div>\n\n                                <div class=\"clearfix\">\n                                    <button class=\"btn btn-primary float-end\">");
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__22 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_Login_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, Views_Login_Index, object> target18 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__22.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, Views_Login_Index, object>> p22 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__22;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__21 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Func<CallSite, object, string, object> target19 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__21.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Func<CallSite, object, string, object>> p21 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__21;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__20 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__20 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj18 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__20.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__20, ((RazorPageBase) this).ViewBag);
+          object obj19 = target19((CallSite) p21, obj18, "public:login");
+          target18((CallSite) p22, this, obj19);
+          ((RazorPageBase) this).WriteLiteral("</button>\n                                </div>\n\n                            ");
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) this).CreateTagHelper<FormTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) this).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_Login_Index.__tagHelperAttribute_6.Value;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Login_Index.__tagHelperAttribute_6);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_7);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n    </div>\n\n    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("script", (TagMode) 0, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a30225150", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = ((RazorPageBase) this).CreateTagHelper<UrlResolutionTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_8);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js\"></script>\n    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("script", (TagMode) 0, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a30226373", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = ((RazorPageBase) this).CreateTagHelper<UrlResolutionTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_9);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("script", (TagMode) 0, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a30227495", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = ((RazorPageBase) this).CreateTagHelper<UrlResolutionTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_10);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("script", (TagMode) 0, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a30228618", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = ((RazorPageBase) this).CreateTagHelper<UrlResolutionTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_11);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("script", (TagMode) 0, "97f1deff6525734ec8908bf9d7d0fe05a09f9422020540627372c251a886a30229741", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = ((RazorPageBase) this).CreateTagHelper<UrlResolutionTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Login_Index.__tagHelperAttribute_12);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\n    <script>\n        // 密钥和初始化向量\n        const key = CryptoJS.enc.Utf8.parse(");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__24 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_Login_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Login_Index, object> target20 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__24.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Login_Index, object>> p24 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__24;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__23 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "AseKey", typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj20 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__23.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__23, ((RazorPageBase) this).ViewBag);
+        target20((CallSite) p24, this, obj20);
+        ((RazorPageBase) this).WriteLiteral("); // 16, 24, or 32 bytes for AES-128, AES-192, or AES-256\n        const iv = CryptoJS.enc.Utf8.parse(");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__26 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_Login_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Login_Index, object> target21 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__26.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Login_Index, object>> p26 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__26;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__25 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "AseIV", typeof (Views_Login_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj21 = Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__25.Target((CallSite) Views_Login_Index.\u003C\u003Eo__25.\u003C\u003Ep__25, ((RazorPageBase) this).ViewBag);
+        target21((CallSite) p26, this, obj21);
+        ((RazorPageBase) this).WriteLiteral("); // 16 bytes\n\n        function ChangePwd(){\n            var input = $(\"#inputPwd\").val();\n            const encryptedText = encryptAES(input, key, iv);\n            console.log(encryptedText);\n            $('#ProviderKey').val(encryptedText);\n        }\n    </script>\n");
+      }));
+      viewsLoginIndex.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper = ((RazorPageBase) viewsLoginIndex).CreateTagHelper<BodyTagHelper>();
+      viewsLoginIndex.__tagHelperExecutionContext.Add((ITagHelper) viewsLoginIndex.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper);
+      await viewsLoginIndex.__tagHelperRunner.RunAsync(viewsLoginIndex.__tagHelperExecutionContext);
+      if (!viewsLoginIndex.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsLoginIndex.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsLoginIndex).Write((object) viewsLoginIndex.__tagHelperExecutionContext.Output);
+      viewsLoginIndex.__tagHelperExecutionContext = viewsLoginIndex.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsLoginIndex).WriteLiteral("\n</html>\n");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<LoginVm> Html { get; private set; }
+  }
+}

@@ -1,0 +1,1629 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_HisWalletRecharge_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.Tool;
+using stockadmin.ViewModels.HisWalletRecharge;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Web.Common;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b0545", "/Views/HisWalletRecharge/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/HisWalletRecharge/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_HisWalletRecharge_Index : RazorPage<HisWalletRechargeVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("value", (object) "", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-select"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("id", (object) new HtmlString("begin_verify_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("id", (object) new HtmlString("end_verify_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("id", (object) new HtmlString("begin_create_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("id", (object) new HtmlString("end_create_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("type", (object) "checkbox", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("class", (object) new HtmlString("form-check-input"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_10 = new TagHelperAttribute("id", (object) new HtmlString("searchForm"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_11 = new TagHelperAttribute("id", (object) new HtmlString("pageSize"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_12 = new TagHelperAttribute("class", (object) new HtmlString("form-select pull-right"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_13 = new TagHelperAttribute("onchange", (object) new HtmlString("redirect(this.value)"), (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_HisWalletRecharge_Index walletRechargeIndex1 = this;
+      HisWalletRechargeFilter Filter = walletRechargeIndex1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__0.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__0, ((RazorPageBase) walletRechargeIndex1).ViewBag);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("\n<div class=\"card\">\n    ");
+      walletRechargeIndex1.__tagHelperExecutionContext = walletRechargeIndex1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054510003", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n\t\t\t<div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__2 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target1 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__2.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p2 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__2;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__1 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj1 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__1.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__1, lang, "status");
+        target1((CallSite) p2, this, obj1);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("select", (TagMode) 0, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054510678", (Func<Task>) (async () =>
+        {
+          ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t\t");
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("option", (TagMode) 0, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054510979", (Func<Task>) (async () =>
+          {
+            // ISSUE: reference to a compiler-generated field
+            if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__4 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            Action<CallSite, Views_HisWalletRecharge_Index, object> target = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__4.Target;
+            // ISSUE: reference to a compiler-generated field
+            CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p4 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__4;
+            // ISSUE: reference to a compiler-generated field
+            if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__3 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            // ISSUE: reference to a compiler-generated field
+            object obj = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__3.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__3, lang, "status");
+            target((CallSite) p4, this, obj);
+          }));
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = ((RazorPageBase) this).CreateTagHelper<OptionTagHelper>();
+          this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string) Views_HisWalletRecharge_Index.__tagHelperAttribute_0.Value;
+          this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_0);
+          await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+          if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+            await this.__tagHelperExecutionContext.SetOutputContentAsync();
+          ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+          ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) this).CreateTagHelper<SelectTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, int?>(this.ViewData, (Expression<Func<HisWalletRechargeVm, int?>>) (__model => Filter.status));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, (HtmlAttributeValueStyle) 0);
+        SelectTagHelper helpersSelectTagHelper1 = this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__6 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, Type, object, string, string, SelectList> target2 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, Type, object, string, string, SelectList>> p6 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__6;
+        Type type1 = typeof (SelectList);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "status_list", typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__5.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__5, ((RazorPageBase) this).ViewBag);
+        SelectList selectList1 = target2((CallSite) p6, type1, obj2, "Value", "Text");
+        helpersSelectTagHelper1.Items = (IEnumerable<SelectListItem>) selectList1;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target3 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p8 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__8;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__7.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__7, lang, "verify_admin_pk");
+        target3((CallSite) p8, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054515128", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, int?>(this.ViewData, (Expression<Func<HisWalletRechargeVm, int?>>) (__model => Filter.verify_admin_pk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t        <div class=\"col-auto\">\n\t\t        <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target4 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p10 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__9.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__9, lang, "begin_verify_time");
+        target4((CallSite) p10, this, obj4);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t        ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054517137", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, DateTime?>(this.ViewData, (Expression<Func<HisWalletRechargeVm, DateTime?>>) (__model => Filter.begin_verify_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                <input type=\"button\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1099, "\"", 1135, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, string, int, object, int, int, bool> target5 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, string, int, object, int, int, bool>> p12 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__12;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__11.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__11, lang, "public:default_time");
+        target5((CallSite) p12, this, "", 1107, obj5, 1107, 28, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" onclick=\"ResetVerifyTime();\" />\n\t        </div>\n\t        <div class=\"col-auto\">\n\t\t        <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__14 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target6 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__14.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p14 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__14;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__13 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__13.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__13, lang, "end_verify_time");
+        target6((CallSite) p14, this, obj6);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t        ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054519760", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_4);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, DateTime?>(this.ViewData, (Expression<Func<HisWalletRechargeVm, DateTime?>>) (__model => Filter.end_verify_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t        </div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__16 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target7 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__16.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p16 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__16;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__15 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj7 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__15.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__15, lang, "order_no");
+        target7((CallSite) p16, this, obj7);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054521839", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, string>(this.ViewData, (Expression<Func<HisWalletRechargeVm, string>>) (__model => Filter.order_no));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t        <div class=\"col-auto\">\n\t\t        <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__18 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target8 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__18.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p18 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__18;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__17 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj8 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__17.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__17, lang, "begin_create_time");
+        target8((CallSite) p18, this, obj8);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t        ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054523841", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_5);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, DateTime?>(this.ViewData, (Expression<Func<HisWalletRechargeVm, DateTime?>>) (__model => Filter.begin_create_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                <input type=\"button\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1824, "\"", 1860, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__20 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, string, int, object, int, int, bool> target9 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__20.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, string, int, object, int, int, bool>> p20 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__20;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__19 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj9 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__19.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__19, lang, "public:default_time");
+        target9((CallSite) p20, this, "", 1832, obj9, 1832, 28, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" onclick=\"ResetCreateTime();\" />\n\t        </div>\n\t        <div class=\"col-auto\">\n\t\t        <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__22 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target10 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__22.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p22 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__22;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj10 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__21.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__21, lang, "end_create_time");
+        target10((CallSite) p22, this, obj10);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t        ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054526464", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_6);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, DateTime?>(this.ViewData, (Expression<Func<HisWalletRechargeVm, DateTime?>>) (__model => Filter.end_create_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t        </div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__24 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target11 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__24.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p24 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__24;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__23 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj11 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__23.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__23, lang, "card");
+        target11((CallSite) p24, this, obj11);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054528539", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, string>(this.ViewData, (Expression<Func<HisWalletRechargeVm, string>>) (__model => Filter.card));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__26 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target12 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__26.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p26 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__26;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__25 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj12 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__25.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__25, lang, "type");
+        target12((CallSite) p26, this, obj12);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("select", (TagMode) 0, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054530528", (Func<Task>) (async () =>
+        {
+          ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t\t");
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("option", (TagMode) 0, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054530829", (Func<Task>) (async () =>
+          {
+            // ISSUE: reference to a compiler-generated field
+            if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__28 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__28 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            Action<CallSite, Views_HisWalletRecharge_Index, object> target = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__28.Target;
+            // ISSUE: reference to a compiler-generated field
+            CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p28 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__28;
+            // ISSUE: reference to a compiler-generated field
+            if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__27 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            // ISSUE: reference to a compiler-generated field
+            object obj = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__27.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__27, lang, "type");
+            target((CallSite) p28, this, obj);
+          }));
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = ((RazorPageBase) this).CreateTagHelper<OptionTagHelper>();
+          this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string) Views_HisWalletRecharge_Index.__tagHelperAttribute_0.Value;
+          this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_0);
+          await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+          if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+            await this.__tagHelperExecutionContext.SetOutputContentAsync();
+          ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+          ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) this).CreateTagHelper<SelectTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, string>(this.ViewData, (Expression<Func<HisWalletRechargeVm, string>>) (__model => Filter.type));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, (HtmlAttributeValueStyle) 0);
+        SelectTagHelper helpersSelectTagHelper2 = this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__30 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__30 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, Type, object, string, string, SelectList> target13 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__30.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, Type, object, string, string, SelectList>> p30 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__30;
+        Type type2 = typeof (SelectList);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__29 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "recharge_types", typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj13 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__29.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__29, ((RazorPageBase) this).ViewBag);
+        SelectList selectList2 = target13((CallSite) p30, type2, obj13, "Value", "Text");
+        helpersSelectTagHelper2.Items = (IEnumerable<SelectListItem>) selectList2;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__32 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__32 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target14 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__32.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p32 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__32;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__31 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__31 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj14 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__31.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__31, lang, "account");
+        target14((CallSite) p32, this, obj14);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054534969", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, string>(this.ViewData, (Expression<Func<HisWalletRechargeVm, string>>) (__model => Filter.account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__34 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__34 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target15 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__34.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p34 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__34;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__33 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__33 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj15 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__33.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__33, lang, "nickname");
+        target15((CallSite) p34, this, obj15);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054536949", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, string>(this.ViewData, (Expression<Func<HisWalletRechargeVm, string>>) (__model => Filter.nickname));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n            <div class=\"col-auto\">\n                <label class=\"form-check-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__36 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__36 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target16 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__36.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p36 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__36;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__35 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__35 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj16 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__35.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__35, lang, "public:filter_out_test_account");
+        target16((CallSite) p36, this, obj16);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                <div class=\"form-check\">\n                    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054539025", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string) Views_HisWalletRecharge_Index.__tagHelperAttribute_7.Value;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_7);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<HisWalletRechargeVm, bool>(this.ViewData, (Expression<Func<HisWalletRechargeVm, bool>>) (__model => Filter.filter_out_test_account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_8);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                </div>\n            </div>\n\n        </div>\n        <div class=\"card-footer\">\n\t        <div class=\"form-group pull-right\">\n\t\t        <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 3415, "\"", 3445, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__38 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__38 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, string, int, object, int, int, bool> target17 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__38.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, string, int, object, int, int, bool>> p38 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__38;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__37 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__37 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj17 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__37.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__37, lang, "public:search");
+        target17((CallSite) p38, this, "", 3423, obj17, 3423, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n                <button type=\"reset\" onclick=\"Reset();\" class=\"btn btn-light\" />");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__40 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__40 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_HisWalletRecharge_Index, object> target18 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__40.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p40 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__40;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__39 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__39 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj18 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__39.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__39, lang, "public:reset");
+        target18((CallSite) p40, this, obj18);
+        ((RazorPageBase) this).WriteLiteral("</button>\n                ");
+        IHtmlHelper<HisWalletRechargeVm> html = this.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__42 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__42 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_HisWalletRecharge_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target19 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__42.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p42 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__42;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__41 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__41 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj19 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__41.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__41, lang, "public:download");
+        string str = target19((CallSite) p42, obj19);
+        HisWalletRechargeFilter walletRechargeFilter = Filter;
+        var data = new{ @class = "btn btn-secondary" };
+        ((RazorPageBase) this).Write((object) HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html, str, "Download", (object) walletRechargeFilter, (object) data));
+        ((RazorPageBase) this).WriteLiteral("\n\t        </div>\n        </div>\n    ");
+      }));
+      walletRechargeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) walletRechargeIndex1).CreateTagHelper<FormTagHelper>();
+      walletRechargeIndex1.__tagHelperExecutionContext.Add((ITagHelper) walletRechargeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      walletRechargeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) walletRechargeIndex1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      walletRechargeIndex1.__tagHelperExecutionContext.Add((ITagHelper) walletRechargeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      walletRechargeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_HisWalletRecharge_Index.__tagHelperAttribute_9.Value;
+      walletRechargeIndex1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_9);
+      walletRechargeIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_10);
+      await walletRechargeIndex1.__tagHelperRunner.RunAsync(walletRechargeIndex1.__tagHelperExecutionContext);
+      if (!walletRechargeIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await walletRechargeIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) walletRechargeIndex1).Write((object) walletRechargeIndex1.__tagHelperExecutionContext.Output);
+      walletRechargeIndex1.__tagHelperExecutionContext = walletRechargeIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("\n</div>\n\n<div class=\"table-container\">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__44 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__44 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target20 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__44.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p44 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__44;
+      Views_HisWalletRecharge_Index walletRechargeIndex2 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__43 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__43 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj20 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__43.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__43, lang, "status");
+      target20((CallSite) p44, walletRechargeIndex2, obj20);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__46 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__46 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target21 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__46.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p46 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__46;
+      Views_HisWalletRecharge_Index walletRechargeIndex3 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__45 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__45 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj21 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__45.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__45, lang, "order_no");
+      target21((CallSite) p46, walletRechargeIndex3, obj21);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__48 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__48 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target22 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__48.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p48 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__48;
+      Views_HisWalletRecharge_Index walletRechargeIndex4 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__47 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__47 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj22 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__47.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__47, lang, "account");
+      target22((CallSite) p48, walletRechargeIndex4, obj22);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__50 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__50 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target23 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__50.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p50 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__50;
+      Views_HisWalletRecharge_Index walletRechargeIndex5 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__49 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__49 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj23 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__49.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__49, lang, "nickname");
+      target23((CallSite) p50, walletRechargeIndex5, obj23);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__52 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__52 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target24 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__52.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p52 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__52;
+      Views_HisWalletRecharge_Index walletRechargeIndex6 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__51 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__51 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj24 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__51.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__51, lang, "type");
+      target24((CallSite) p52, walletRechargeIndex6, obj24);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__54 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__54 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target25 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__54.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p54 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__54;
+      Views_HisWalletRecharge_Index walletRechargeIndex7 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__53 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__53 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj25 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__53.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__53, lang, "currency");
+      target25((CallSite) p54, walletRechargeIndex7, obj25);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__56 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__56 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target26 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__56.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p56 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__56;
+      Views_HisWalletRecharge_Index walletRechargeIndex8 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__55 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__55 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj26 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__55.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__55, lang, "money");
+      target26((CallSite) p56, walletRechargeIndex8, obj26);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__58 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__58 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target27 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__58.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p58 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__58;
+      Views_HisWalletRecharge_Index walletRechargeIndex9 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__57 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__57 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj27 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__57.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__57, lang, "exchange");
+      target27((CallSite) p58, walletRechargeIndex9, obj27);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__60 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__60 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target28 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__60.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p60 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__60;
+      Views_HisWalletRecharge_Index walletRechargeIndex10 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__59 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__59 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj28 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__59.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__59, lang, "wallet_amount");
+      target28((CallSite) p60, walletRechargeIndex10, obj28);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__62 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__62 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target29 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__62.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p62 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__62;
+      Views_HisWalletRecharge_Index walletRechargeIndex11 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__61 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__61 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj29 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__61.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__61, lang, "card");
+      target29((CallSite) p62, walletRechargeIndex11, obj29);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__64 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__64 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target30 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__64.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p64 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__64;
+      Views_HisWalletRecharge_Index walletRechargeIndex12 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__63 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__63 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj30 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__63.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__63, lang, "bank_name");
+      target30((CallSite) p64, walletRechargeIndex12, obj30);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__66 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__66 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target31 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__66.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p66 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__66;
+      Views_HisWalletRecharge_Index walletRechargeIndex13 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__65 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__65 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj31 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__65.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__65, lang, "payee");
+      target31((CallSite) p66, walletRechargeIndex13, obj31);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__68 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__68 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target32 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__68.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p68 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__68;
+      Views_HisWalletRecharge_Index walletRechargeIndex14 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__67 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__67 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj32 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__67.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__67, lang, "create_time");
+      target32((CallSite) p68, walletRechargeIndex14, obj32);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__70 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__70 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target33 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__70.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p70 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__70;
+      Views_HisWalletRecharge_Index walletRechargeIndex15 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__69 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__69 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj33 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__69.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__69, lang, "verify_time");
+      target33((CallSite) p70, walletRechargeIndex15, obj33);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__72 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__72 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target34 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__72.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p72 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__72;
+      Views_HisWalletRecharge_Index walletRechargeIndex16 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__71 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__71 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj34 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__71.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__71, lang, "verify_admin_pk");
+      target34((CallSite) p72, walletRechargeIndex16, obj34);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__74 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__74 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target35 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__74.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p74 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__74;
+      Views_HisWalletRecharge_Index walletRechargeIndex17 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__73 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__73 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj35 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__73.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__73, lang, "reject_result");
+      target35((CallSite) p74, walletRechargeIndex17, obj35);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</th>\n\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (HisWalletRechargeList walletRechargeList in (IEnumerable<HisWalletRechargeList>) walletRechargeIndex1.Model.list)
+      {
+        HisWalletRechargeList item = walletRechargeList;
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("                <tr>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.statusTxt)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.order_no)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n");
+        if (item.is_test_account)
+        {
+          ((RazorPageBase) walletRechargeIndex1).WriteLiteral("                        <td style=\"color:tomato;\">");
+          ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.account)));
+          ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n");
+        }
+        else
+        {
+          ((RazorPageBase) walletRechargeIndex1).WriteLiteral("                        <td>");
+          ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.account)));
+          ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n");
+        }
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.nickname)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.type)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.currency)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, Decimal>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, Decimal>>) (modelItem => item.money)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, Decimal>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, Decimal>>) (modelItem => item.exchange)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.balance_str)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.card)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.bank_name)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.payee)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write(item.create_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write(item.verify_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.admin_name)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<HisWalletRechargeVm, string>(walletRechargeIndex1.Html, (Expression<Func<HisWalletRechargeVm, string>>) (modelItem => item.reject_result)));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n\n                </tr>\n");
+      }
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("        </tbody>\n        <tbody>\n            <tr>\n                <td>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__76 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__76 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target36 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__76.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p76 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__76;
+      Views_HisWalletRecharge_Index walletRechargeIndex18 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__75 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__75 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj36 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__75.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__75, lang, "total");
+      target36((CallSite) p76, walletRechargeIndex18, obj36);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td>");
+      ((RazorPageBase) walletRechargeIndex1).Write((object) walletRechargeIndex1.Model.summary.page_total_profit);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("</td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n            </tr>\n        </tbody>\n    </table>\n</div>\n\n<!-- 分頁處理 -->\n<div class=\"card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between\">\n\n");
+      if (walletRechargeIndex1.Model != null)
+      {
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("        <nav aria-label=\"Page navigation\">\n            <ul class=\"pagination mb-0\">\n\n                ");
+        ((RazorPageBase) walletRechargeIndex1).Write((object) ((IHtmlHelper) walletRechargeIndex1.Html).PagedListPager((IPagedList) walletRechargeIndex1.Model.list, (Func<int, string>) (page =>
+        {
+          IUrlHelper url = this.Url;
+          HisWalletRechargeFilter filter = this.Model.filter;
+          Dictionary<string, object> dictionary1 = new Dictionary<string, object>();
+          dictionary1[nameof (page)] = (object) page;
+          Dictionary<string, object> dictionary2 = dictionary1;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__77 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__77 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "pageSize", typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj37 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__77.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__77, ((RazorPageBase) this).ViewBag);
+          dictionary2["pageSize"] = obj37;
+          Dictionary<string, object> args = dictionary1;
+          RouteValueDictionary routeValueDictionary = PublicTool.ToRouteValueDictionary<HisWalletRechargeFilter>(filter, args);
+          return UrlHelperExtensions.Action(url, "Index", (object) routeValueDictionary);
+        }), new PagedListRenderOptions()
+        {
+          LiElementClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-item"
+          },
+          PageClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-link"
+          },
+          LinkToFirstPageFormat = "<<",
+          LinkToPreviousPageFormat = "<",
+          LinkToNextPageFormat = ">",
+          LinkToLastPageFormat = ">>",
+          MaximumPageNumbersToDisplay = new int?(8)
+        }));
+        ((RazorPageBase) walletRechargeIndex1).WriteLiteral("\n            </ul>\n        </nav>\n");
+      }
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("\n\t<div class=\"fw-normal small mt-5 mt-lg-0\">\n        ");
+      walletRechargeIndex1.__tagHelperExecutionContext = walletRechargeIndex1.__tagHelperScopeManager.Begin("select", (TagMode) 0, "d26a9b4f52a854717285bbee23bedc1fbe935d6bf225ac231fa2f151760b054556899", (Func<Task>) (async () => { }));
+      walletRechargeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) walletRechargeIndex1).CreateTagHelper<SelectTagHelper>();
+      walletRechargeIndex1.__tagHelperExecutionContext.Add((ITagHelper) walletRechargeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      SelectTagHelper helpersSelectTagHelper = walletRechargeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__79 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__79 = CallSite<Func<CallSite, object, IEnumerable<SelectListItem>>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof (IEnumerable<SelectListItem>), typeof (Views_HisWalletRecharge_Index)));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, IEnumerable<SelectListItem>> target37 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__79.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, IEnumerable<SelectListItem>>> p79 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__79;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__78 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__78 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "pageSizeOption", typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj38 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__78.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__78, ((RazorPageBase) walletRechargeIndex1).ViewBag);
+      IEnumerable<SelectListItem> selectListItems = target37((CallSite) p79, obj38);
+      helpersSelectTagHelper.Items = selectListItems;
+      walletRechargeIndex1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) walletRechargeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+      walletRechargeIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_11);
+      walletRechargeIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_12);
+      walletRechargeIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisWalletRecharge_Index.__tagHelperAttribute_13);
+      await walletRechargeIndex1.__tagHelperRunner.RunAsync(walletRechargeIndex1.__tagHelperExecutionContext);
+      if (!walletRechargeIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await walletRechargeIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) walletRechargeIndex1).Write((object) walletRechargeIndex1.__tagHelperExecutionContext.Output);
+      walletRechargeIndex1.__tagHelperExecutionContext = walletRechargeIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__81 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__81 = CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisWalletRecharge_Index, object> target38 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__81.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisWalletRecharge_Index, object>> p81 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__81;
+      Views_HisWalletRecharge_Index walletRechargeIndex19 = walletRechargeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__80 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__80 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisWalletRecharge_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj39 = Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__80.Target((CallSite) Views_HisWalletRecharge_Index.\u003C\u003Eo__25.\u003C\u003Ep__80, lang, "public:total_count");
+      target38((CallSite) p81, walletRechargeIndex19, obj39);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral(":</label>\n\t\t\t\t");
+      ((RazorPageBase) walletRechargeIndex1).Write((object) walletRechargeIndex1.Model.list.TotalItemCount);
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n\n<script type=\"text/javascript\">\n    function ResetVerifyTime() {\n        let today = new Date().toISOString().split('T')[0];\n        $(\"#begin_verify_time\").val(`${today}T00:00`);\n        $(\"#end_verify_time\").val(`${today}T23:59`);\n    }\n    function ResetCreateTime() {\n        let today = new Date().toISOString().split('T')[0];\n        $(\"#begin_create_time\").val(`${today}T00:00`);\n        $(\"#end_create_time\").val(`${today}T23:59`);\n    }\n    function redirect(page) {\n        var url = '");
+      ((RazorPageBase) walletRechargeIndex1).Write(UrlHelperExtensions.Action(walletRechargeIndex1.Url, "Index", (object) PublicTool.ToRouteValueDictionary<HisWalletRechargeFilter>(walletRechargeIndex1.Model.filter, new Dictionary<string, object>()
+      {
+        ["page"] = (object) 1,
+        ["pageSize"] = (object) -1
+      })));
+      ((RazorPageBase) walletRechargeIndex1).WriteLiteral("';\n        url = url.replace('-1', page).replaceAll('amp;', '');\n        window.location.href = url;\n    }\n</script>\n\n<script>$(document).ready(function () {\n        // Attach a submit event handler to the form\n        $('#searchForm').submit(function (event) {\n            var selectedPageSize = $('#pageSize').val();\n            var actionUrl = $(this).attr('action');\n\n            // Update the form action URL with the selected page size as a query parameter\n            $(this).attr('action', actionUrl + '?pageSize=' + selectedPageSize);\n\n            // Continue with the form submission\n            return true;\n        });\n    });\n        function Reset() {\n            window.location.href = \"/HisWalletRecharge/Index\";\n        }\n    </script>");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<HisWalletRechargeVm> Html { get; private set; }
+  }
+}

@@ -1,0 +1,395 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_AdminRole_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.ViewModels.AdminRole;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "400d04e943d92bc01df4c325b41e644aa5f03cb9986590ac47838cd044c534b8", "/Views/AdminRole/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/AdminRole/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_AdminRole_Index : RazorPage<IEnumerable<AdminRoleList>>
+  {
+    public virtual async 
+    #nullable disable
+    Task ExecuteAsync()
+    {
+      Views_AdminRole_Index viewsAdminRoleIndex1 = this;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__0.Target((CallSite) Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__0, ((RazorPageBase) viewsAdminRoleIndex1).ViewBag);
+      ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("\n<p>\n    ");
+      Views_AdminRole_Index viewsAdminRoleIndex2 = viewsAdminRoleIndex1;
+      IHtmlHelper<IEnumerable<AdminRoleList>> html1 = viewsAdminRoleIndex1.Html;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_AdminRole_Index)));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, string> target1 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__2.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, string>> p2 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__2;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__1.Target((CallSite) Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__1, obj1, "public:title_create");
+      string str1 = target1((CallSite) p2, obj2);
+      var data1 = new{  };
+      var data2 = new{ @class = "btn btn-primary" };
+      IHtmlContent ihtmlContent1 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html1, str1, "Create", (object) data1, (object) data2);
+      ((RazorPageBase) viewsAdminRoleIndex2).Write((object) ihtmlContent1);
+      ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("\n</p>\n<table class=\"table\">\n    <thead>\n        <tr>\n            <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__5 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__5 = CallSite<Action<CallSite, Views_AdminRole_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_AdminRole_Index, object> target2 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__5.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_AdminRole_Index, object>> p5 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__5;
+      Views_AdminRole_Index viewsAdminRoleIndex3 = viewsAdminRoleIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__4 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__4 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, string, object> target3 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__4.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, string, object>> p4 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__4;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj3 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__3.Target((CallSite) Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__3, ((RazorPageBase) viewsAdminRoleIndex1).ViewBag);
+      object obj4 = target3((CallSite) p4, obj3, "public:option");
+      target2((CallSite) p5, viewsAdminRoleIndex3, obj4);
+      ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("</th>\n            <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__8 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_AdminRole_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_AdminRole_Index, object> target4 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__8.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_AdminRole_Index, object>> p8 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__8;
+      Views_AdminRole_Index viewsAdminRoleIndex4 = viewsAdminRoleIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__7 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, string, object> target5 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__7.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, string, object>> p7 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__7;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__6 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__6 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj5 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__6.Target((CallSite) Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__6, ((RazorPageBase) viewsAdminRoleIndex1).ViewBag);
+      object obj6 = target5((CallSite) p7, obj5, "pk");
+      target4((CallSite) p8, viewsAdminRoleIndex4, obj6);
+      ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("</th>\n            <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__11 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__11 = CallSite<Action<CallSite, Views_AdminRole_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_AdminRole_Index, object> target6 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__11.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_AdminRole_Index, object>> p11 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__11;
+      Views_AdminRole_Index viewsAdminRoleIndex5 = viewsAdminRoleIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__10 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__10 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, string, object> target7 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__10.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, string, object>> p10 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__10;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__9 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__9.Target((CallSite) Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__9, ((RazorPageBase) viewsAdminRoleIndex1).ViewBag);
+      object obj8 = target7((CallSite) p10, obj7, "name");
+      target6((CallSite) p11, viewsAdminRoleIndex5, obj8);
+      ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("</th>\n            <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_AdminRole_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_AdminRole_Index, object> target8 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_AdminRole_Index, object>> p14 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__14;
+      Views_AdminRole_Index viewsAdminRoleIndex6 = viewsAdminRoleIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, string, object> target9 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__13.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, string, object>> p13 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__13;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__12 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__12 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__12.Target((CallSite) Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__12, ((RazorPageBase) viewsAdminRoleIndex1).ViewBag);
+      object obj10 = target9((CallSite) p13, obj9, "description");
+      target8((CallSite) p14, viewsAdminRoleIndex6, obj10);
+      ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("</th>\n            <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__17 = CallSite<Action<CallSite, Views_AdminRole_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_AdminRole_Index, object> target10 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__17.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_AdminRole_Index, object>> p17 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__17;
+      Views_AdminRole_Index viewsAdminRoleIndex7 = viewsAdminRoleIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__16 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, string, object> target11 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, string, object>> p16 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__16;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj11 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__15.Target((CallSite) Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__15, ((RazorPageBase) viewsAdminRoleIndex1).ViewBag);
+      object obj12 = target11((CallSite) p16, obj11, "status");
+      target10((CallSite) p17, viewsAdminRoleIndex7, obj12);
+      ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("</th>\n        </tr>\n    </thead>\n    <tbody>\n");
+      foreach (AdminRoleList adminRoleList in viewsAdminRoleIndex1.Model)
+      {
+        AdminRoleList item = adminRoleList;
+        ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("        <tr>\n            <td>\n                    ");
+        Views_AdminRole_Index viewsAdminRoleIndex8 = viewsAdminRoleIndex1;
+        IHtmlHelper<IEnumerable<AdminRoleList>> html2 = viewsAdminRoleIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__19 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_AdminRole_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target12 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__19.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p19 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__19;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__18 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__18 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj13 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__18.Target((CallSite) Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__18, obj1, "public:edit");
+        string str2 = target12((CallSite) p19, obj13);
+        var data3 = new{ id = item.pk };
+        var data4 = new{ @class = "btn btn-primary" };
+        IHtmlContent ihtmlContent2 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html2, str2, "Edit", (object) data3, (object) data4);
+        ((RazorPageBase) viewsAdminRoleIndex8).Write((object) ihtmlContent2);
+        ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("\n                    ");
+        Views_AdminRole_Index viewsAdminRoleIndex9 = viewsAdminRoleIndex1;
+        IHtmlHelper<IEnumerable<AdminRoleList>> html3 = viewsAdminRoleIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_AdminRole_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target13 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__21.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p21 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__21;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__20 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__20 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj14 = Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__20.Target((CallSite) Views_AdminRole_Index.\u003C\u003Eo__0.\u003C\u003Ep__20, obj1, "public:delete");
+        string str3 = target13((CallSite) p21, obj14);
+        var data5 = new{ id = item.pk };
+        var data6 = new{ @class = "btn btn-secondary" };
+        IHtmlContent ihtmlContent3 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html3, str3, "Delete", (object) data5, (object) data6);
+        ((RazorPageBase) viewsAdminRoleIndex9).Write((object) ihtmlContent3);
+        ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("\n            </td>\n            <td>\n                ");
+        ((RazorPageBase) viewsAdminRoleIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<IEnumerable<AdminRoleList>, int>(viewsAdminRoleIndex1.Html, (Expression<Func<IEnumerable<AdminRoleList>, int>>) (modelItem => item.pk)));
+        ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("\n            </td>\n            <td>\n                ");
+        ((RazorPageBase) viewsAdminRoleIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<IEnumerable<AdminRoleList>, string>(viewsAdminRoleIndex1.Html, (Expression<Func<IEnumerable<AdminRoleList>, string>>) (modelItem => item.name)));
+        ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("\n            </td>\n            <td>\n                ");
+        ((RazorPageBase) viewsAdminRoleIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<IEnumerable<AdminRoleList>, string>(viewsAdminRoleIndex1.Html, (Expression<Func<IEnumerable<AdminRoleList>, string>>) (modelItem => item.description)));
+        ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("\n            </td>\n            <td>\n                ");
+        ((RazorPageBase) viewsAdminRoleIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<IEnumerable<AdminRoleList>, int>(viewsAdminRoleIndex1.Html, (Expression<Func<IEnumerable<AdminRoleList>, int>>) (modelItem => item.status)));
+        ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("\n            </td>\n        </tr>\n");
+      }
+      ((RazorPageBase) viewsAdminRoleIndex1).WriteLiteral("    </tbody>\n</table>\n");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IEnumerable<AdminRoleList>> Html { get; private set; }
+  }
+}

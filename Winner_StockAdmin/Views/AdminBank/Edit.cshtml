@@ -1,0 +1,1043 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_AdminBank_Edit
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using Models.Dto;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb5", "/Views/AdminBank/Edit.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/AdminBank/Edit.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_AdminBank_Edit : RazorPage<AdminBankDto>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("type", (object) "checkbox", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("form-check-input"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("type", (object) "file", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("id", (object) new HtmlString(" ImgUpload"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("onchange", (object) new HtmlString("ImgPre(this)"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("asp-action", (object) "PostEdit", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("id", (object) new HtmlString("form1"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("enctype", (object) new HtmlString("multipart/form-data"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_10 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_AdminBank_Edit viewsAdminBankEdit1 = this;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__0.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__0, ((RazorPageBase) viewsAdminBankEdit1).ViewBag);
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "filesite", typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object filesite = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__1.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__1, ((RazorPageBase) viewsAdminBankEdit1).ViewBag);
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, List<SelectListItem>>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof (List<SelectListItem>), typeof (Views_AdminBank_Edit)));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, List<SelectListItem>> target1 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__3.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, List<SelectListItem>>> p3 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__3;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "card_type", typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__2.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__2, ((RazorPageBase) viewsAdminBankEdit1).ViewBag);
+      List<SelectListItem> card_type = target1((CallSite) p3, obj1);
+      ((RazorPageBase) viewsAdminBankEdit1).Write((object) HtmlHelperInputExtensions.HiddenFor<AdminBankDto, string>(viewsAdminBankEdit1.Html, (Expression<Func<AdminBankDto, string>>) (x => x.image)));
+      ((RazorPageBase) viewsAdminBankEdit1).WriteLiteral("\n<h4>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__5 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__5 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_AdminBank_Edit, object> target2 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__5.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p5 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__5;
+      Views_AdminBank_Edit viewsAdminBankEdit2 = viewsAdminBankEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__4 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__4 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__4.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__4, lang, "public:title_edit");
+      target2((CallSite) p5, viewsAdminBankEdit2, obj2);
+      ((RazorPageBase) viewsAdminBankEdit1).WriteLiteral("</h4>\n<hr />\n<div class=\"row\">\n    <div class=\"col-md-4\">\n\t\t");
+      viewsAdminBankEdit1.__tagHelperExecutionContext = viewsAdminBankEdit1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb58882", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t<div class=\"form-group\">\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb59204", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, int>(this.ViewData, (Expression<Func<AdminBankDto, int>>) (__model => __model.pk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("hidden", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb511467", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, int>(this.ViewData, (Expression<Func<AdminBankDto, int>>) (__model => __model.pk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__7 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target3 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__7.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p7 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__7;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__6 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__6.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__6, lang, "type");
+        target3((CallSite) p7, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        ((RazorPageBase) this).Write((object) HtmlHelperSelectExtensions.DropDownListFor<AdminBankDto, int>(this.Html, (Expression<Func<AdminBankDto, int>>) (m => m.type), (IEnumerable<SelectListItem>) card_type, (object) new
+        {
+          CLASS = "form-select"
+        }));
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb513816", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, int>(this.ViewData, (Expression<Func<AdminBankDto, int>>) (__model => __model.type));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__9 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target4 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__9.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p9 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__9;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__8 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__8.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__8, lang, "country");
+        target4((CallSite) p9, this, obj4);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb515853", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.country));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb517801", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.country));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__11 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target5 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__11.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p11 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__11;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__10 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__10.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__10, lang, "currency");
+        target5((CallSite) p11, this, obj5);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb519842", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.currency));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb521791", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.currency));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__13 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__13 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target6 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__13.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p13 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__13;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__12 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__12.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__12, lang, "card");
+        target6((CallSite) p13, this, obj6);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb523829", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.card));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb525774", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.card));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__15 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__15 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target7 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__15.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p15 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__15;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__14 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__14 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj7 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__14.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__14, lang, "SWIFT");
+        target7((CallSite) p15, this, obj7);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb527809", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.SWIFT));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb529432", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.SWIFT));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__17 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__17 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target8 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__17.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p17 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__17;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__16 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__16 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj8 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__16.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__16, lang, "bank_name");
+        target8((CallSite) p17, this, obj8);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb531472", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.bank_name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb533099", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.bank_name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__19 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__19 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target9 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__19.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p19 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__19;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__18 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__18 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj9 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__18.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__18, lang, "open_bank");
+        target9((CallSite) p19, this, obj9);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb535143", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.open_bank));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb536770", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.open_bank));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__21 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target10 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__21.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p21 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__21;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__20 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__20 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj10 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__20.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__20, lang, "payee");
+        target10((CallSite) p21, this, obj10);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb538810", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.payee));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb540433", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.payee));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__23 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__23 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target11 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__23.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p23 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__23;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__22 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__22 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj11 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__22.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__22, lang, "min_recharge");
+        target11((CallSite) p23, this, obj11);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb542476", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, Decimal>(this.ViewData, (Expression<Func<AdminBankDto, Decimal>>) (__model => __model.min_recharge));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb544106", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, Decimal>(this.ViewData, (Expression<Func<AdminBankDto, Decimal>>) (__model => __model.min_recharge));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__25 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__25 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target12 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__25.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p25 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__25;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__24 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__24 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj12 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__24.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__24, lang, "fastbtn");
+        target12((CallSite) p25, this, obj12);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb546151", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.fastbtn));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb547776", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.fastbtn));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__27 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__27 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target13 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__27.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p27 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__27;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__26 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__26 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj13 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__26.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__26, lang, "notes");
+        target13((CallSite) p27, this, obj13);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb549814", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.notes));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb551437", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.notes));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n            <div class=\"form-group\">\n                <label class=\"form-check-label\">\n\t\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb553244", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string) Views_AdminBank_Edit.__tagHelperAttribute_2.Value;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_AdminBank_Edit.__tagHelperAttribute_2);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, bool>(this.ViewData, (Expression<Func<AdminBankDto, bool>>) (__model => __model.status));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral(" ");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__29 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__29 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target14 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__29.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p29 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__29;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__28 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__28 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj14 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__28.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__28, lang, "status");
+        target14((CallSite) p29, this, obj14);
+        ((RazorPageBase) this).WriteLiteral("\n                </label>\n            </div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__31 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__31 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target15 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__31.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p31 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__31;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__30 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__30 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj15 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__30.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__30, lang, "image");
+        target15((CallSite) p31, this, obj15);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb555735", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string) Views_AdminBank_Edit.__tagHelperAttribute_4.Value;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_AdminBank_Edit.__tagHelperAttribute_4);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, IFormFile>(this.ViewData, (Expression<Func<AdminBankDto, IFormFile>>) (__model => __model.image_file));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_5);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_6);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb557755", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, IFormFile>(this.ViewData, (Expression<Func<AdminBankDto, IFormFile>>) (__model => __model.image_file));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<img id=\"ImgPreview\" />\n\t\t\t\t\t</p>\n\t\t\t\t</div>\t\t\t\t\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<input hidden type=\"checkbox\" name=\"viplist\"");
+        ((RazorPageBase) this).BeginWriteAttribute("checked", " checked=\"", 3608, "\"", 3648, 1);
+        ((RazorPageBase) this).WriteAttributeValue("", 3618, (object) this.Model.viplists?.Contains("1"), 3618, 30, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"form-check-input\" value=\"1\" />\n\t\t\t\t<input hidden type=\"checkbox\" name=\"viplist\"");
+        ((RazorPageBase) this).BeginWriteAttribute("checked", " checked=\"", 3736, "\"", 3776, 1);
+        ((RazorPageBase) this).WriteAttributeValue("", 3746, (object) this.Model.viplists?.Contains("2"), 3746, 30, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"form-check-input\" value=\"2\" />\n\t\t\t\t<input hidden type=\"checkbox\" name=\"viplist\"");
+        ((RazorPageBase) this).BeginWriteAttribute("checked", " checked=\"", 3864, "\"", 3904, 1);
+        ((RazorPageBase) this).WriteAttributeValue("", 3874, (object) this.Model.viplists?.Contains("3"), 3874, 30, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"form-check-input\" value=\"3\" />\n\t\t\t\t<input hidden type=\"checkbox\" name=\"viplist\"");
+        ((RazorPageBase) this).BeginWriteAttribute("checked", " checked=\"", 3992, "\"", 4032, 1);
+        ((RazorPageBase) this).WriteAttributeValue("", 4002, (object) this.Model.viplists?.Contains("4"), 4002, 30, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"form-check-input\" value=\"4\" />\n\t\t\t\t<input hidden type=\"checkbox\" name=\"viplist\"");
+        ((RazorPageBase) this).BeginWriteAttribute("checked", " checked=\"", 4120, "\"", 4160, 1);
+        ((RazorPageBase) this).WriteAttributeValue("", 4130, (object) this.Model.viplists?.Contains("5"), 4130, 30, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"form-check-input\" value=\"5\" />\n\t\t\t\t<input hidden type=\"checkbox\" name=\"viplist\"");
+        ((RazorPageBase) this).BeginWriteAttribute("checked", " checked=\"", 4248, "\"", 4288, 1);
+        ((RazorPageBase) this).WriteAttributeValue("", 4258, (object) this.Model.viplists?.Contains("6"), 4258, 30, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"form-check-input\" value=\"6\" />\n\t\t\t\t<input hidden type=\"checkbox\" name=\"viplist\"");
+        ((RazorPageBase) this).BeginWriteAttribute("checked", " checked=\"", 4376, "\"", 4416, 1);
+        ((RazorPageBase) this).WriteAttributeValue("", 4386, (object) this.Model.viplists?.Contains("7"), 4386, 30, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"form-check-input\" value=\"7\" />\n\t\t\t\t<input hidden type=\"checkbox\" name=\"viplist\"");
+        ((RazorPageBase) this).BeginWriteAttribute("checked", " checked=\"", 4504, "\"", 4544, 1);
+        ((RazorPageBase) this).WriteAttributeValue("", 4514, (object) this.Model.viplists?.Contains("8"), 4514, 30, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"form-check-input\" value=\"8\" />\n\t\t\t\t<input hidden type=\"checkbox\" name=\"viplist\"");
+        ((RazorPageBase) this).BeginWriteAttribute("checked", " checked=\"", 4632, "\"", 4672, 1);
+        ((RazorPageBase) this).WriteAttributeValue("", 4642, (object) this.Model.viplists?.Contains("9"), 4642, 30, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"form-check-input\" value=\"9\" />\n\t\t\t\t<input id=\"viplists\" name=\"viplists\" hidden />\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb564341", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminBankDto, string>(this.ViewData, (Expression<Func<AdminBankDto, string>>) (__model => __model.viplists));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n            <div class=\"form-group\">\n\t\t\t\t<input type=\"button\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 4902, "\"", 4930, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__33 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__33 = CallSite<Action<CallSite, Views_AdminBank_Edit, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, string, int, object, int, int, bool> target16 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__33.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, string, int, object, int, int, bool>> p33 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__33;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__32 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__32 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj16 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__32.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__32, lang, "public:save");
+        target16((CallSite) p33, this, "", 4910, obj16, 4910, 20, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" onclick=\"edit();\" />\n            </div>\n        ");
+      }));
+      viewsAdminBankEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) viewsAdminBankEdit1).CreateTagHelper<FormTagHelper>();
+      viewsAdminBankEdit1.__tagHelperExecutionContext.Add((ITagHelper) viewsAdminBankEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      viewsAdminBankEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) viewsAdminBankEdit1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      viewsAdminBankEdit1.__tagHelperExecutionContext.Add((ITagHelper) viewsAdminBankEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      viewsAdminBankEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_AdminBank_Edit.__tagHelperAttribute_7.Value;
+      viewsAdminBankEdit1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_AdminBank_Edit.__tagHelperAttribute_7);
+      viewsAdminBankEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_8);
+      viewsAdminBankEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminBank_Edit.__tagHelperAttribute_9);
+      await viewsAdminBankEdit1.__tagHelperRunner.RunAsync(viewsAdminBankEdit1.__tagHelperExecutionContext);
+      if (!viewsAdminBankEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsAdminBankEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsAdminBankEdit1).Write((object) viewsAdminBankEdit1.__tagHelperExecutionContext.Output);
+      viewsAdminBankEdit1.__tagHelperExecutionContext = viewsAdminBankEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsAdminBankEdit1).WriteLiteral("\n    </div>\n</div>\n\n<div>\n    ");
+      viewsAdminBankEdit1.__tagHelperExecutionContext = viewsAdminBankEdit1.__tagHelperScopeManager.Begin("a", (TagMode) 0, "e988d38257db28c60222e9f016a40a3669404fc8d07c24ec588a0a48fc847eb567976", (Func<Task>) (async () =>
+      {
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__35 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__35 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminBank_Edit, object> target17 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__35.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminBank_Edit, object>> p35 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__35;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__34 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__34 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj17 = Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__34.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__34, lang, "public:back_list");
+        target17((CallSite) p35, this, obj17);
+      }));
+      viewsAdminBankEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = ((RazorPageBase) viewsAdminBankEdit1).CreateTagHelper<AnchorTagHelper>();
+      viewsAdminBankEdit1.__tagHelperExecutionContext.Add((ITagHelper) viewsAdminBankEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      viewsAdminBankEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) Views_AdminBank_Edit.__tagHelperAttribute_10.Value;
+      viewsAdminBankEdit1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_AdminBank_Edit.__tagHelperAttribute_10);
+      await viewsAdminBankEdit1.__tagHelperRunner.RunAsync(viewsAdminBankEdit1.__tagHelperExecutionContext);
+      if (!viewsAdminBankEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsAdminBankEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsAdminBankEdit1).Write((object) viewsAdminBankEdit1.__tagHelperExecutionContext.Output);
+      viewsAdminBankEdit1.__tagHelperExecutionContext = viewsAdminBankEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsAdminBankEdit1).WriteLiteral("\n</div>\n\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n\n<script>\n\tfunction edit() {\n\t\tvar viplist = [];\n\t\t$(\"input:checkbox[name=viplist]:checked\").each(function () {\n\t\t\tviplist.push($(this).val());\n\t\t});\n\t\t$(\"#viplists\").val(viplist.join('|'));\n\t\t$(\"#form1\").submit();\n\t}\n\tfunction ImgPre(input) {\n\t\tif (input.files[0]) {\n\t\t\tvar uploadimg = new FileReader();\n\t\t\tuploadimg.onload = function(displayimg) {\n\t\t\t\t$(\"#ImgPreview\").attr('src', displayimg.target.result);\n\t\t\t}\n\t\t\tuploadimg.readAsDataURL(input.files[0]);\n\t\t}\n\t}\n\t$(function() {\n\t\tif ($(\"#image\").val() != \"\") {\n\t\t\t$(\"#ImgPreview\").attr('src', \"");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__36 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__36 = CallSite<Action<CallSite, Views_AdminBank_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminBank_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__36.Target((CallSite) Views_AdminBank_Edit.\u003C\u003Eo__22.\u003C\u003Ep__36, viewsAdminBankEdit1, filesite);
+      ((RazorPageBase) viewsAdminBankEdit1).WriteLiteral("\" + \"/\" + $(\"#image\").val());\n\t\t}\n\t});\n</script>");
+      filesite = (object) null;
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<AdminBankDto> Html { get; private set; }
+  }
+}

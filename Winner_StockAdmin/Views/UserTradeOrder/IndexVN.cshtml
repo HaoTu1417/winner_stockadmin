@@ -1,0 +1,752 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_UserTradeOrder_IndexVN
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.ViewModels.UserTradeOrder;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "164af56783d43b4da0ee0836868b4da769b7ed576a7d9ddc9d9dafacf730737a", "/Views/UserTradeOrder/IndexVN.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/UserTradeOrder/IndexVN.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_UserTradeOrder_IndexVN : RazorPage<UserTradeOrderVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control resettable"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "IndexVN", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("href", (object) new HtmlString("~/TradingAccount/IndexVN"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("class", (object) new HtmlString("btn btn-primary"), (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn1 = this;
+      UserTradeOrderFilter Filter = tradeOrderIndexVn1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__0.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__0, ((RazorPageBase) tradeOrderIndexVn1).ViewBag);
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "account", typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object subaccount = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__1.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__1, ((RazorPageBase) tradeOrderIndexVn1).ViewBag);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("\n<div class=\"card\">\n    ");
+      tradeOrderIndexVn1.__tagHelperExecutionContext = tradeOrderIndexVn1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "164af56783d43b4da0ee0836868b4da769b7ed576a7d9ddc9d9dafacf730737a6553", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__3 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_UserTradeOrder_IndexVN, object> target1 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__3.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p3 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__3;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__2 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj1 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__2.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__2, lang, "sn");
+        target1((CallSite) p3, this, obj1);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "164af56783d43b4da0ee0836868b4da769b7ed576a7d9ddc9d9dafacf730737a7228", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<UserTradeOrderVm, string>(this.ViewData, (Expression<Func<UserTradeOrderVm, string>>) (__model => Filter.sn));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_UserTradeOrder_IndexVN.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__5 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_UserTradeOrder_IndexVN, object> target2 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__5.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p5 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__5;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__4 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__4.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__4, lang, "stock_code");
+        target2((CallSite) p5, this, obj2);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "164af56783d43b4da0ee0836868b4da769b7ed576a7d9ddc9d9dafacf730737a9230", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<UserTradeOrderVm, string>(this.ViewData, (Expression<Func<UserTradeOrderVm, string>>) (__model => Filter.stock_code));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_UserTradeOrder_IndexVN.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__7 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_UserTradeOrder_IndexVN, object> target3 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__7.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p7 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__7;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__6 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__6.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__6, lang, "stock_name");
+        target3((CallSite) p7, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "164af56783d43b4da0ee0836868b4da769b7ed576a7d9ddc9d9dafacf730737a11240", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<UserTradeOrderVm, string>(this.ViewData, (Expression<Func<UserTradeOrderVm, string>>) (__model => Filter.stock_name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_UserTradeOrder_IndexVN.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "164af56783d43b4da0ee0836868b4da769b7ed576a7d9ddc9d9dafacf730737a12941", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("hidden", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<UserTradeOrderVm, string>(this.ViewData, (Expression<Func<UserTradeOrderVm, string>>) (__model => Filter.sub_account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteLiteral", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__8.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__8, this, subaccount);
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.Value = this.__tagHelperStringValueBuffer;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("value", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.Value, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_UserTradeOrder_IndexVN.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n\n        </div>\n        <div class=\"card-footer\">\n            <div class=\"form-group pull-right\">\n                <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1201, "\"", 1231, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_UserTradeOrder_IndexVN, string, int, object, int, int, bool> target4 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, string, int, object, int, int, bool>> p10 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__9.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__9, lang, "public:search");
+        target4((CallSite) p10, this, "", 1209, obj4, 1209, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n                <input type=\"button\" name=\"reset\" class=\"btn btn-light\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1331, "\"", 1360, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_UserTradeOrder_IndexVN, string, int, object, int, int, bool> target5 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, string, int, object, int, int, bool>> p12 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__12;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__11.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__11, lang, "public:reset");
+        target5((CallSite) p12, this, "", 1339, obj5, 1339, 21, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" id=\"resetButton\" />\n            </div>\n        </div>\n    ");
+      }));
+      tradeOrderIndexVn1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) tradeOrderIndexVn1).CreateTagHelper<FormTagHelper>();
+      tradeOrderIndexVn1.__tagHelperExecutionContext.Add((ITagHelper) tradeOrderIndexVn1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      tradeOrderIndexVn1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) tradeOrderIndexVn1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      tradeOrderIndexVn1.__tagHelperExecutionContext.Add((ITagHelper) tradeOrderIndexVn1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      tradeOrderIndexVn1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_UserTradeOrder_IndexVN.__tagHelperAttribute_2.Value;
+      tradeOrderIndexVn1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_UserTradeOrder_IndexVN.__tagHelperAttribute_2);
+      await tradeOrderIndexVn1.__tagHelperRunner.RunAsync(tradeOrderIndexVn1.__tagHelperExecutionContext);
+      if (!tradeOrderIndexVn1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeOrderIndexVn1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeOrderIndexVn1).Write((object) tradeOrderIndexVn1.__tagHelperExecutionContext.Output);
+      tradeOrderIndexVn1.__tagHelperExecutionContext = tradeOrderIndexVn1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("\n</div>\n\n");
+      tradeOrderIndexVn1.__tagHelperExecutionContext = tradeOrderIndexVn1.__tagHelperScopeManager.Begin("a", (TagMode) 0, "164af56783d43b4da0ee0836868b4da769b7ed576a7d9ddc9d9dafacf730737a17912", (Func<Task>) (async () =>
+      {
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__14 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_UserTradeOrder_IndexVN, object> target = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__14.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p14 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__14;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__13 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__13.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__13, lang, "public:back_list");
+        target((CallSite) p14, this, obj);
+      }));
+      tradeOrderIndexVn1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = ((RazorPageBase) tradeOrderIndexVn1).CreateTagHelper<UrlResolutionTagHelper>();
+      tradeOrderIndexVn1.__tagHelperExecutionContext.Add((ITagHelper) tradeOrderIndexVn1.__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
+      tradeOrderIndexVn1.__tagHelperExecutionContext.AddHtmlAttribute(Views_UserTradeOrder_IndexVN.__tagHelperAttribute_3);
+      tradeOrderIndexVn1.__tagHelperExecutionContext.AddHtmlAttribute(Views_UserTradeOrder_IndexVN.__tagHelperAttribute_4);
+      await tradeOrderIndexVn1.__tagHelperRunner.RunAsync(tradeOrderIndexVn1.__tagHelperExecutionContext);
+      if (!tradeOrderIndexVn1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeOrderIndexVn1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeOrderIndexVn1).Write((object) tradeOrderIndexVn1.__tagHelperExecutionContext.Output);
+      tradeOrderIndexVn1.__tagHelperExecutionContext = tradeOrderIndexVn1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("\n<div class=\"table-container\">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_UserTradeOrder_IndexVN, object> target6 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p16 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__16;
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn2 = tradeOrderIndexVn1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj6 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__15.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__15, lang, "sub_account");
+      target6((CallSite) p16, tradeOrderIndexVn2, obj6);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_UserTradeOrder_IndexVN, object> target7 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__18.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p18 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__18;
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn3 = tradeOrderIndexVn1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__17.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__17, lang, "order_time");
+      target7((CallSite) p18, tradeOrderIndexVn3, obj7);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_UserTradeOrder_IndexVN, object> target8 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__20.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p20 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__20;
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn4 = tradeOrderIndexVn1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__19.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__19, lang, "sn");
+      target8((CallSite) p20, tradeOrderIndexVn4, obj8);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__22 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_UserTradeOrder_IndexVN, object> target9 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__22.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p22 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__22;
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn5 = tradeOrderIndexVn1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__21 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__21.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__21, lang, "stock_code");
+      target9((CallSite) p22, tradeOrderIndexVn5, obj9);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__24 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_UserTradeOrder_IndexVN, object> target10 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__24.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p24 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__24;
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn6 = tradeOrderIndexVn1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__23 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj10 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__23.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__23, lang, "stock_name");
+      target10((CallSite) p24, tradeOrderIndexVn6, obj10);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__26 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_UserTradeOrder_IndexVN, object> target11 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__26.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p26 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__26;
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn7 = tradeOrderIndexVn1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__25 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj11 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__25.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__25, lang, "market");
+      target11((CallSite) p26, tradeOrderIndexVn7, obj11);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__28 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__28 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_UserTradeOrder_IndexVN, object> target12 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__28.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p28 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__28;
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn8 = tradeOrderIndexVn1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__27 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj12 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__27.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__27, lang, "price");
+      target12((CallSite) p28, tradeOrderIndexVn8, obj12);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__30 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__30 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_UserTradeOrder_IndexVN, object> target13 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__30.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p30 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__30;
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn9 = tradeOrderIndexVn1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__29 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj13 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__29.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__29, lang, "volume");
+      target13((CallSite) p30, tradeOrderIndexVn9, obj13);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__32 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__32 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_UserTradeOrder_IndexVN, object> target14 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__32.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p32 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__32;
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn10 = tradeOrderIndexVn1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__31 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__31 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj14 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__31.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__31, lang, "free_volume");
+      target14((CallSite) p32, tradeOrderIndexVn10, obj14);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__34 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__34 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_UserTradeOrder_IndexVN, object> target15 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__34.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p34 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__34;
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn11 = tradeOrderIndexVn1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__33 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__33 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj15 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__33.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__33, lang, "succeed_volume");
+      target15((CallSite) p34, tradeOrderIndexVn11, obj15);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__36 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__36 = CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_UserTradeOrder_IndexVN, object> target16 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__36.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_UserTradeOrder_IndexVN, object>> p36 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__36;
+      Views_UserTradeOrder_IndexVN tradeOrderIndexVn12 = tradeOrderIndexVn1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__35 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__35 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_UserTradeOrder_IndexVN), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj16 = Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__35.Target((CallSite) Views_UserTradeOrder_IndexVN.\u003C\u003Eo__15.\u003C\u003Ep__35, lang, "cancel_volume");
+      target16((CallSite) p36, tradeOrderIndexVn12, obj16);
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</th>\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (UserTradeOrderList userTradeOrderList in tradeOrderIndexVn1.Model.list)
+      {
+        UserTradeOrderList item = userTradeOrderList;
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("                <tr>\n                    <td>");
+        ((RazorPageBase) tradeOrderIndexVn1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<UserTradeOrderVm, string>(tradeOrderIndexVn1.Html, (Expression<Func<UserTradeOrderVm, string>>) (modelItem => item.sub_account)));
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeOrderIndexVn1).Write(item.order_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeOrderIndexVn1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<UserTradeOrderVm, string>(tradeOrderIndexVn1.Html, (Expression<Func<UserTradeOrderVm, string>>) (modelItem => item.sn)));
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeOrderIndexVn1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<UserTradeOrderVm, string>(tradeOrderIndexVn1.Html, (Expression<Func<UserTradeOrderVm, string>>) (modelItem => item.stock_code)));
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeOrderIndexVn1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<UserTradeOrderVm, string>(tradeOrderIndexVn1.Html, (Expression<Func<UserTradeOrderVm, string>>) (modelItem => item.stock_name)));
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeOrderIndexVn1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<UserTradeOrderVm, string>(tradeOrderIndexVn1.Html, (Expression<Func<UserTradeOrderVm, string>>) (modelItem => item.market)));
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeOrderIndexVn1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<UserTradeOrderVm, Decimal>(tradeOrderIndexVn1.Html, (Expression<Func<UserTradeOrderVm, Decimal>>) (modelItem => item.price)));
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeOrderIndexVn1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<UserTradeOrderVm, int>(tradeOrderIndexVn1.Html, (Expression<Func<UserTradeOrderVm, int>>) (modelItem => item.volume)));
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeOrderIndexVn1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<UserTradeOrderVm, int>(tradeOrderIndexVn1.Html, (Expression<Func<UserTradeOrderVm, int>>) (modelItem => item.free_volume)));
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeOrderIndexVn1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<UserTradeOrderVm, int>(tradeOrderIndexVn1.Html, (Expression<Func<UserTradeOrderVm, int>>) (modelItem => item.succeed_volume)));
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeOrderIndexVn1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<UserTradeOrderVm, int>(tradeOrderIndexVn1.Html, (Expression<Func<UserTradeOrderVm, int>>) (modelItem => item.cancel_volume)));
+        ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("</td>\n\n                    <td>\n                    </td>\n                </tr>\n");
+      }
+      ((RazorPageBase) tradeOrderIndexVn1).WriteLiteral("        </tbody>\n    </table>\n</div>\n\n<script>document.getElementById(\"resetButton\").addEventListener(\"click\", function () {\n        // Select all elements with the \"resettable\" class\n        var resettableElements = document.querySelectorAll(\".resettable\");\n\n        // Loop through and clear the values of resettable input fields\n        resettableElements.forEach(function (element) {\n            element.value = \"\";\n        });\n    });</script>\n");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<UserTradeOrderVm> Html { get; private set; }
+  }
+}

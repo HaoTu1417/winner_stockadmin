@@ -1,0 +1,661 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_RecommendRegister_Detail
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.ViewModels.RecommendRegister;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a34", "/Views/RecommendRegister/Detail.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/RecommendRegister/Detail.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_RecommendRegister_Detail : RazorPage<RecommendRegisterList>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_RecommendRegister_Detail recommendRegisterDetail1 = this;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__0.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__0, ((RazorPageBase) recommendRegisterDetail1).ViewBag);
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n<h4>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendRegister_Detail, object> target1 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__2.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>> p2 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__2;
+      Views_RecommendRegister_Detail recommendRegisterDetail2 = recommendRegisterDetail1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__1.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__1, lang, "public:title_edit");
+      target1((CallSite) p2, recommendRegisterDetail2, obj1);
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("</h4>\n<hr />\n");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("a", (TagMode) 0, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a345708", (Func<Task>) (async () =>
+      {
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RecommendRegister_Detail, object> target2 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__4.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>> p4 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__4;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__3.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__3, lang, "public:back_list");
+        target2((CallSite) p4, this, obj2);
+      }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<AnchorTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) Views_RecommendRegister_Detail.__tagHelperAttribute_0.Value;
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_0);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n<div class=\"row\">\n    <div class=\"col-md-4\">\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__6 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendRegister_Detail, object> target3 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__6.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>> p6 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__6;
+      Views_RecommendRegister_Detail recommendRegisterDetail3 = recommendRegisterDetail1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__5 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj3 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__5.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__5, lang, "Inviteaccount");
+      target3((CallSite) p6, recommendRegisterDetail3, obj3);
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("</label>\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a347466", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<InputTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) recommendRegisterDetail1).BeginWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperStringValueBuffer = ((RazorPageBase) recommendRegisterDetail1).EndWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) recommendRegisterDetail1.Html.Raw(recommendRegisterDetail1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, string>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, string>>) (__model => __model.inviter_account));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_1);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a349355", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<ValidationMessageTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, string>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, string>>) (__model => __model.inviter_account));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_2);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__8 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendRegister_Detail, object> target4 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__8.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>> p8 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__8;
+      Views_RecommendRegister_Detail recommendRegisterDetail4 = recommendRegisterDetail1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__7 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj4 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__7.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__7, lang, "account");
+      target4((CallSite) p8, recommendRegisterDetail4, obj4);
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("</label>\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3411354", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<InputTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) recommendRegisterDetail1).BeginWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperStringValueBuffer = ((RazorPageBase) recommendRegisterDetail1).EndWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) recommendRegisterDetail1.Html.Raw(recommendRegisterDetail1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, string>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, string>>) (__model => __model.invitee_account));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_1);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3413244", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<ValidationMessageTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, string>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, string>>) (__model => __model.invitee_account));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_2);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__10 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendRegister_Detail, object> target5 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__10.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>> p10 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__10;
+      Views_RecommendRegister_Detail recommendRegisterDetail5 = recommendRegisterDetail1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__9 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj5 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__9.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__9, lang, "real_name");
+      target5((CallSite) p10, recommendRegisterDetail5, obj5);
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("</label>\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3415246", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<InputTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) recommendRegisterDetail1).BeginWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperStringValueBuffer = ((RazorPageBase) recommendRegisterDetail1).EndWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) recommendRegisterDetail1.Html.Raw(recommendRegisterDetail1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, string>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, string>>) (__model => __model.invitee_realname));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_1);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3417137", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<ValidationMessageTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, string>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, string>>) (__model => __model.invitee_realname));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_2);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__12 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendRegister_Detail, object> target6 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__12.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>> p12 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__12;
+      Views_RecommendRegister_Detail recommendRegisterDetail6 = recommendRegisterDetail1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__11 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj6 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__11.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__11, lang, "total_recharge");
+      target6((CallSite) p12, recommendRegisterDetail6, obj6);
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("</label>\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3419145", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<InputTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) recommendRegisterDetail1).BeginWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperStringValueBuffer = ((RazorPageBase) recommendRegisterDetail1).EndWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) recommendRegisterDetail1.Html.Raw(recommendRegisterDetail1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, Decimal>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, Decimal>>) (__model => __model.total_recharge));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_1);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3421034", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<ValidationMessageTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, Decimal>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, Decimal>>) (__model => __model.total_recharge));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_2);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendRegister_Detail, object> target7 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>> p14 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__14;
+      Views_RecommendRegister_Detail recommendRegisterDetail7 = recommendRegisterDetail1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__13.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__13, lang, "total_withdraw");
+      target7((CallSite) p14, recommendRegisterDetail7, obj7);
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("</label>\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3423040", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<InputTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) recommendRegisterDetail1).BeginWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperStringValueBuffer = ((RazorPageBase) recommendRegisterDetail1).EndWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) recommendRegisterDetail1.Html.Raw(recommendRegisterDetail1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, Decimal>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, Decimal>>) (__model => __model.total_withdraw));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_1);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3424929", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<ValidationMessageTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, Decimal>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, Decimal>>) (__model => __model.total_withdraw));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_2);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendRegister_Detail, object> target8 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>> p16 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__16;
+      Views_RecommendRegister_Detail recommendRegisterDetail8 = recommendRegisterDetail1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__15.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__15, lang, "total_management_fee");
+      target8((CallSite) p16, recommendRegisterDetail8, obj8);
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("</label>\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3426941", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<InputTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) recommendRegisterDetail1).BeginWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperStringValueBuffer = ((RazorPageBase) recommendRegisterDetail1).EndWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) recommendRegisterDetail1.Html.Raw(recommendRegisterDetail1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, Decimal>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, Decimal>>) (__model => __model.total_management_fee));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_1);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3428836", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<ValidationMessageTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, Decimal>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, Decimal>>) (__model => __model.total_management_fee));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_2);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendRegister_Detail, object> target9 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__18.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>> p18 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__18;
+      Views_RecommendRegister_Detail recommendRegisterDetail9 = recommendRegisterDetail1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__17.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__17, lang, "first_borrow_date");
+      target9((CallSite) p18, recommendRegisterDetail9, obj9);
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("</label>\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3430851", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<InputTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) recommendRegisterDetail1).BeginWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperStringValueBuffer = ((RazorPageBase) recommendRegisterDetail1).EndWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) recommendRegisterDetail1.Html.Raw(recommendRegisterDetail1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, DateTime?>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, DateTime?>>) (__model => __model.first_borrow_date));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_1);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3432743", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<ValidationMessageTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, DateTime?>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, DateTime?>>) (__model => __model.first_borrow_date));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_2);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n        </div>\n        <div class=\"form-group\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendRegister_Detail, object> target10 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__20.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>> p20 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__20;
+      Views_RecommendRegister_Detail recommendRegisterDetail10 = recommendRegisterDetail1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj10 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__19.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__19, lang, "create_date");
+      target10((CallSite) p20, recommendRegisterDetail10, obj10);
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("</label>\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3434749", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<InputTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) recommendRegisterDetail1).BeginWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperStringValueBuffer = ((RazorPageBase) recommendRegisterDetail1).EndWriteTagHelperAttribute();
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) recommendRegisterDetail1.Html.Raw(recommendRegisterDetail1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, DateTime>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, DateTime>>) (__model => __model.create_date));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_1);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n            ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3436635", (Func<Task>) (async () => { }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<ValidationMessageTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = recommendRegisterDetail1.ModelExpressionProvider.CreateModelExpression<RecommendRegisterList, DateTime>(recommendRegisterDetail1.ViewData, (Expression<Func<RecommendRegisterList, DateTime>>) (__model => __model.create_date));
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_2);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n        </div>\n    </div>\n</div>\n\n<div>\n    ");
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.Begin("a", (TagMode) 0, "fb95550673efba1e6a5bf9c33dea974599671e1bd772dc2a88837d699f115a3438323", (Func<Task>) (async () =>
+      {
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__22 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RecommendRegister_Detail, object> target11 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__22.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RecommendRegister_Detail, object>> p22 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__22;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendRegister_Detail), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj11 = Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__21.Target((CallSite) Views_RecommendRegister_Detail.\u003C\u003Eo__12.\u003C\u003Ep__21, lang, "public:back_list");
+        target11((CallSite) p22, this, obj11);
+      }));
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = ((RazorPageBase) recommendRegisterDetail1).CreateTagHelper<AnchorTagHelper>();
+      recommendRegisterDetail1.__tagHelperExecutionContext.Add((ITagHelper) recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      recommendRegisterDetail1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) Views_RecommendRegister_Detail.__tagHelperAttribute_0.Value;
+      recommendRegisterDetail1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_RecommendRegister_Detail.__tagHelperAttribute_0);
+      await recommendRegisterDetail1.__tagHelperRunner.RunAsync(recommendRegisterDetail1.__tagHelperExecutionContext);
+      if (!recommendRegisterDetail1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRegisterDetail1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRegisterDetail1).Write((object) recommendRegisterDetail1.__tagHelperExecutionContext.Output);
+      recommendRegisterDetail1.__tagHelperExecutionContext = recommendRegisterDetail1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRegisterDetail1).WriteLiteral("\n</div>\n\n");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<RecommendRegisterList> Html { get; private set; }
+  }
+}

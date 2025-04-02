@@ -1,0 +1,530 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_Marquee_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.ViewModels.Marquee;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "24423c041d878d74ab3cfbdf78a7087426e39ad09c9a7d21a7aa6c9e73fcdc77", "/Views/Marquee/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/Marquee/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_Marquee_Index : RazorPage<MarqueeVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("value", (object) "", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-select"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_Marquee_Index viewsMarqueeIndex1 = this;
+      MarqueeFilter Filter = viewsMarqueeIndex1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__0.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__0, ((RazorPageBase) viewsMarqueeIndex1).ViewBag);
+      ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("\n<div class=\"card\">\n    ");
+      viewsMarqueeIndex1.__tagHelperExecutionContext = viewsMarqueeIndex1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "24423c041d878d74ab3cfbdf78a7087426e39ad09c9a7d21a7aa6c9e73fcdc775601", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__2 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_Marquee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Marquee_Index, object> target1 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__2.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Marquee_Index, object>> p2 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__2;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__1 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj1 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__1.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__1, lang, "lang");
+        target1((CallSite) p2, this, obj1);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("select", (TagMode) 0, "24423c041d878d74ab3cfbdf78a7087426e39ad09c9a7d21a7aa6c9e73fcdc776269", (Func<Task>) (async () =>
+        {
+          ((RazorPageBase) this).WriteLiteral("\n                    ");
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("option", (TagMode) 0, "24423c041d878d74ab3cfbdf78a7087426e39ad09c9a7d21a7aa6c9e73fcdc776579", (Func<Task>) (async () =>
+          {
+            // ISSUE: reference to a compiler-generated field
+            if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__4 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_Marquee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            Action<CallSite, Views_Marquee_Index, object> target = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__4.Target;
+            // ISSUE: reference to a compiler-generated field
+            CallSite<Action<CallSite, Views_Marquee_Index, object>> p4 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__4;
+            // ISSUE: reference to a compiler-generated field
+            if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__3 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            // ISSUE: reference to a compiler-generated field
+            object obj = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__3.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__3, lang, "lang");
+            target((CallSite) p4, this, obj);
+          }));
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = ((RazorPageBase) this).CreateTagHelper<OptionTagHelper>();
+          this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string) Views_Marquee_Index.__tagHelperAttribute_0.Value;
+          this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Marquee_Index.__tagHelperAttribute_0);
+          await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+          if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+            await this.__tagHelperExecutionContext.SetOutputContentAsync();
+          ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+          ((RazorPageBase) this).WriteLiteral("\n                ");
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) this).CreateTagHelper<SelectTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<MarqueeVm, string>(this.ViewData, (Expression<Func<MarqueeVm, string>>) (__model => Filter.lang));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, (HtmlAttributeValueStyle) 0);
+        SelectTagHelper helpersSelectTagHelper = this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__6 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, Type, object, string, string, SelectList> target2 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, Type, object, string, string, SelectList>> p6 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__6;
+        Type type = typeof (SelectList);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "langDropdown", typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__5.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__5, ((RazorPageBase) this).ViewBag);
+        SelectList selectList = target2((CallSite) p6, type, obj2, "Value", "Text");
+        helpersSelectTagHelper.Items = (IEnumerable<SelectListItem>) selectList;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Marquee_Index.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n        </div>\n        <div class=\"card-footer\">\n            <div class=\"form-group pull-right\">\n                <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 738, "\"", 768, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_Marquee_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Marquee_Index, string, int, object, int, int, bool> target3 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Marquee_Index, string, int, object, int, int, bool>> p8 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__8;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__7.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__7, lang, "public:search");
+        target3((CallSite) p8, this, "", 746, obj3, 746, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n                <input type=\"reset\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 832, "\"", 861, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_Marquee_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Marquee_Index, string, int, object, int, int, bool> target4 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Marquee_Index, string, int, object, int, int, bool>> p10 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__9.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__9, lang, "public:reset");
+        target4((CallSite) p10, this, "", 840, obj4, 840, 21, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-light\" />\n            </div>\n        </div>\n    ");
+      }));
+      viewsMarqueeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) viewsMarqueeIndex1).CreateTagHelper<FormTagHelper>();
+      viewsMarqueeIndex1.__tagHelperExecutionContext.Add((ITagHelper) viewsMarqueeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      viewsMarqueeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) viewsMarqueeIndex1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      viewsMarqueeIndex1.__tagHelperExecutionContext.Add((ITagHelper) viewsMarqueeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      viewsMarqueeIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_Marquee_Index.__tagHelperAttribute_2.Value;
+      viewsMarqueeIndex1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Marquee_Index.__tagHelperAttribute_2);
+      await viewsMarqueeIndex1.__tagHelperRunner.RunAsync(viewsMarqueeIndex1.__tagHelperExecutionContext);
+      if (!viewsMarqueeIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsMarqueeIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsMarqueeIndex1).Write((object) viewsMarqueeIndex1.__tagHelperExecutionContext.Output);
+      viewsMarqueeIndex1.__tagHelperExecutionContext = viewsMarqueeIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("\n</div>\n");
+      Views_Marquee_Index viewsMarqueeIndex2 = viewsMarqueeIndex1;
+      IHtmlHelper<MarqueeVm> html1 = viewsMarqueeIndex1.Html;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__12 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__12 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_Marquee_Index)));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, string> target5 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__12.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, string>> p12 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__12;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__11 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj5 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__11.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__11, lang, "public:append");
+      string str1 = target5((CallSite) p12, obj5);
+      var data1 = new{  };
+      var data2 = new{ @class = "btn btn-primary" };
+      IHtmlContent ihtmlContent1 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html1, str1, "Create", (object) data1, (object) data2);
+      ((RazorPageBase) viewsMarqueeIndex2).Write((object) ihtmlContent1);
+      ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("\n<div class=\"table-container\">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_Marquee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Marquee_Index, object> target6 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Marquee_Index, object>> p14 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__14;
+      Views_Marquee_Index viewsMarqueeIndex3 = viewsMarqueeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj6 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__13.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__13, lang, "public:option");
+      target6((CallSite) p14, viewsMarqueeIndex3, obj6);
+      ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_Marquee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Marquee_Index, object> target7 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Marquee_Index, object>> p16 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__16;
+      Views_Marquee_Index viewsMarqueeIndex4 = viewsMarqueeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__15.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__15, lang, "lang");
+      target7((CallSite) p16, viewsMarqueeIndex4, obj7);
+      ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_Marquee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Marquee_Index, object> target8 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__18.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Marquee_Index, object>> p18 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__18;
+      Views_Marquee_Index viewsMarqueeIndex5 = viewsMarqueeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__17.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__17, lang, "enable");
+      target8((CallSite) p18, viewsMarqueeIndex5, obj8);
+      ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_Marquee_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Marquee_Index, object> target9 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__20.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Marquee_Index, object>> p20 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__20;
+      Views_Marquee_Index viewsMarqueeIndex6 = viewsMarqueeIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__19.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__19, lang, "msg");
+      target9((CallSite) p20, viewsMarqueeIndex6, obj9);
+      ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("</th>\n\t\t\t\t\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (MarqueeList marqueeList in viewsMarqueeIndex1.Model.list)
+      {
+        MarqueeList item = marqueeList;
+        ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("                <tr>\n                    <td>\n                        <div class=\"dropleft\">\n                        <button type=\"button\" class=\"btn icon btn-primary dropdown-toggle hide-arrow show\" data-bs-toggle=\"dropdown\" aria-expanded=\"true\">\n                            <i class=\"fa fa-bars\"></i>\n                        </button>\n                        <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\">\n\t\t\t\t\t\t\t");
+        Views_Marquee_Index viewsMarqueeIndex7 = viewsMarqueeIndex1;
+        IHtmlHelper<MarqueeVm> html2 = viewsMarqueeIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__22 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__22 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_Marquee_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target10 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__22.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p22 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__22;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj10 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__21.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__21, lang, "public:edit");
+        string str2 = target10((CallSite) p22, obj10);
+        var data3 = new{ pk = item.pk };
+        var data4 = new{ @class = "dropdown-item" };
+        IHtmlContent ihtmlContent2 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html2, str2, "Edit", (object) data3, (object) data4);
+        ((RazorPageBase) viewsMarqueeIndex7).Write((object) ihtmlContent2);
+        ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("\n\t\t\t\t\t\t\t");
+        Views_Marquee_Index viewsMarqueeIndex8 = viewsMarqueeIndex1;
+        IHtmlHelper<MarqueeVm> html3 = viewsMarqueeIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__24 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__24 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_Marquee_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target11 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__24.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p24 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__24;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__23 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Marquee_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj11 = Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__23.Target((CallSite) Views_Marquee_Index.\u003C\u003Eo__13.\u003C\u003Ep__23, lang, "public:delete");
+        string str3 = target11((CallSite) p24, obj11);
+        var data5 = new{ pk = item.pk };
+        var data6 = new
+        {
+          @class = "dropdown-item",
+          onclick = "return confirm('@lang[\"public:confirm_delete\"]');"
+        };
+        IHtmlContent ihtmlContent3 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html3, str3, "Delete", (object) data5, (object) data6);
+        ((RazorPageBase) viewsMarqueeIndex8).Write((object) ihtmlContent3);
+        ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("\n\n                        </div>\n                    </div>\n                    </td>\n\t\t\t\t<td>");
+        ((RazorPageBase) viewsMarqueeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<MarqueeVm, string>(viewsMarqueeIndex1.Html, (Expression<Func<MarqueeVm, string>>) (modelItem => item.lang)));
+        ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) viewsMarqueeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<MarqueeVm, bool>(viewsMarqueeIndex1.Html, (Expression<Func<MarqueeVm, bool>>) (modelItem => item.enable)));
+        ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) viewsMarqueeIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<MarqueeVm, string>(viewsMarqueeIndex1.Html, (Expression<Func<MarqueeVm, string>>) (modelItem => item.msg)));
+        ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("</td>\n\t\t\t\t\t\n                </tr>\n");
+      }
+      ((RazorPageBase) viewsMarqueeIndex1).WriteLiteral("        </tbody>\n    </table>\n</div>\n\n<script>$(document).ready(function () {\n        // Attach a submit event handler to the form\n        $('#searchForm').submit(function (event) {\n            var selectedPageSize = $('#pageSize').val();\n            var actionUrl = $(this).attr('action');\n\n            // Update the form action URL with the selected page size as a query parameter\n            $(this).attr('action', actionUrl + '?pageSize=' + selectedPageSize);\n\n            // Continue with the form submission\n            return true;\n        });\n    });</script>\n\n");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<MarqueeVm> Html { get; private set; }
+  }
+}

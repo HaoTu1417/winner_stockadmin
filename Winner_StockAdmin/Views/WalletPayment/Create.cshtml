@@ -1,0 +1,1112 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_WalletPayment_Create
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using Models.Dto;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d", "/Views/WalletPayment/Create.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/WalletPayment/Create.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_WalletPayment_Create : RazorPage<WalletPaymentDto>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-check-input"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("asp-action", (object) "PostCreate", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_WalletPayment_Create walletPaymentCreate1 = this;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__0.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__0, ((RazorPageBase) walletPaymentCreate1).ViewBag);
+      ((RazorPageBase) walletPaymentCreate1).WriteLiteral("\n<h4>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_WalletPayment_Create, object> target1 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__2.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p2 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__2;
+      Views_WalletPayment_Create walletPaymentCreate2 = walletPaymentCreate1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__1.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__1, lang, "public:title_create");
+      target1((CallSite) p2, walletPaymentCreate2, obj1);
+      ((RazorPageBase) walletPaymentCreate1).WriteLiteral("</h4>\n<hr />\n<div class=\"row\">\n    <div class=\"col-md-4\">\n        ");
+      walletPaymentCreate1.__tagHelperExecutionContext = walletPaymentCreate1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d6646", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target2 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__4.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p4 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__4;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__3.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__3, lang, "pk");
+        target2((CallSite) p4, this, obj2);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d7282", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, int>(this.ViewData, (Expression<Func<WalletPaymentDto, int>>) (__model => __model.pk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"form-check-label\">\n                    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d9107", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_1);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, bool>(this.ViewData, (Expression<Func<WalletPaymentDto, bool>>) (__model => __model.status));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral(" ");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target3 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p6 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__6;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__5.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__5, lang, "status");
+        target3((CallSite) p6, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("\n                </label>\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target4 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p8 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__8;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__7.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__7, lang, "pay_name");
+        target4((CallSite) p8, this, obj4);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d11384", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d13024", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target5 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p10 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__9.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__9, lang, "pay_code");
+        target5((CallSite) p10, this, obj5);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d15106", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_code));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d17069", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_code));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target6 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p12 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__12;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__11.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__11, lang, "pay_type");
+        target6((CallSite) p12, this, obj6);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d19151", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_type));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d21114", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_type));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__14 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target7 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__14.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p14 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__14;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__13 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj7 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__13.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__13, lang, "currency");
+        target7((CallSite) p14, this, obj7);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d23196", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.currency));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d24836", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.currency));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__16 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target8 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__16.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p16 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__16;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__15 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj8 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__15.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__15, lang, "pay_url");
+        target8((CallSite) p16, this, obj8);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d26917", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_url));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d28879", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_url));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__18 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target9 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__18.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p18 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__18;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__17 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj9 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__17.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__17, lang, "pay_account");
+        target9((CallSite) p18, this, obj9);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d30963", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d32929", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__20 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target10 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__20.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p20 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__20;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__19 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj10 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__19.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__19, lang, "min_recharge");
+        target10((CallSite) p20, this, obj10);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d35018", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, int>(this.ViewData, (Expression<Func<WalletPaymentDto, int>>) (__model => __model.min_recharge));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d36985", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, int>(this.ViewData, (Expression<Func<WalletPaymentDto, int>>) (__model => __model.min_recharge));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__22 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target11 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__22.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p22 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__22;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj11 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__21.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__21, lang, "pay_tokenkey");
+        target11((CallSite) p22, this, obj11);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d39075", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_tokenkey));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d40719", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_tokenkey));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__24 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target12 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__24.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p24 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__24;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__23 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj12 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__23.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__23, lang, "pay_Notice_url");
+        target12((CallSite) p24, this, obj12);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d42811", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_Notice_url));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d44457", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_Notice_url));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__26 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target13 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__26.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p26 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__26;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__25 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj13 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__25.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__25, lang, "pay_Return_url");
+        target13((CallSite) p26, this, obj13);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d46551", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_Return_url));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d48197", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.pay_Return_url));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__28 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__28 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target14 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__28.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p28 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__28;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__27 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj14 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__27.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__27, lang, "pay_sort");
+        target14((CallSite) p28, this, obj14);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d50285", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, int>(this.ViewData, (Expression<Func<WalletPaymentDto, int>>) (__model => __model.pay_sort));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d51925", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, int>(this.ViewData, (Expression<Func<WalletPaymentDto, int>>) (__model => __model.pay_sort));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div hidden class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__30 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__30 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target15 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__30.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p30 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__30;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__29 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj15 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__29.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__29, lang, "create_time");
+        target15((CallSite) p30, this, obj15);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d54017", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, DateTime>(this.ViewData, (Expression<Func<WalletPaymentDto, DateTime>>) (__model => __model.create_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d55660", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, DateTime>(this.ViewData, (Expression<Func<WalletPaymentDto, DateTime>>) (__model => __model.create_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__32 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__32 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target16 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__32.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p32 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__32;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__31 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__31 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj16 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__31.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__31, lang, "fastbtn");
+        target16((CallSite) p32, this, obj16);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d57722", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.fastbtn));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d59353", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.fastbtn));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__34 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__34 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target17 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__34.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p34 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__34;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__33 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__33 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj17 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__33.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__33, lang, "notes");
+        target17((CallSite) p34, this, obj17);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d61425", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.notes));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d63062", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.notes));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__36 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__36 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target18 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__36.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p36 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__36;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__35 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__35 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj18 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__35.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__35, lang, "viplists");
+        target18((CallSite) p36, this, obj18);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d65141", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.viplists));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d66781", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<WalletPaymentDto, string>(this.ViewData, (Expression<Func<WalletPaymentDto, string>>) (__model => __model.viplists));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_WalletPayment_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n\n            <div class=\"form-group\">\n                <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 4842, "\"", 4870, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__38 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__38 = CallSite<Action<CallSite, Views_WalletPayment_Create, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, string, int, object, int, int, bool> target19 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__38.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, string, int, object, int, int, bool>> p38 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__38;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__37 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__37 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj19 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__37.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__37, lang, "public:save");
+        target19((CallSite) p38, this, "", 4850, obj19, 4850, 20, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n            </div>\n        ");
+      }));
+      walletPaymentCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) walletPaymentCreate1).CreateTagHelper<FormTagHelper>();
+      walletPaymentCreate1.__tagHelperExecutionContext.Add((ITagHelper) walletPaymentCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      walletPaymentCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) walletPaymentCreate1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      walletPaymentCreate1.__tagHelperExecutionContext.Add((ITagHelper) walletPaymentCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      walletPaymentCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_WalletPayment_Create.__tagHelperAttribute_3.Value;
+      walletPaymentCreate1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_WalletPayment_Create.__tagHelperAttribute_3);
+      await walletPaymentCreate1.__tagHelperRunner.RunAsync(walletPaymentCreate1.__tagHelperExecutionContext);
+      if (!walletPaymentCreate1.__tagHelperExecutionContext.Output.IsContentModified)
+        await walletPaymentCreate1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) walletPaymentCreate1).Write((object) walletPaymentCreate1.__tagHelperExecutionContext.Output);
+      walletPaymentCreate1.__tagHelperExecutionContext = walletPaymentCreate1.__tagHelperScopeManager.End();
+      ((RazorPageBase) walletPaymentCreate1).WriteLiteral("\n    </div>\n</div>\n\n<div>\n    ");
+      walletPaymentCreate1.__tagHelperExecutionContext = walletPaymentCreate1.__tagHelperScopeManager.Begin("a", (TagMode) 0, "240d83e082e96039cf9e210663a64a7fa13dc1ca07e57e0a8ef8cedc5abaf40d70256", (Func<Task>) (async () =>
+      {
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__40 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__40 = CallSite<Action<CallSite, Views_WalletPayment_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_WalletPayment_Create, object> target20 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__40.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_WalletPayment_Create, object>> p40 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__40;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__39 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__39 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_WalletPayment_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj20 = Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__39.Target((CallSite) Views_WalletPayment_Create.\u003C\u003Eo__16.\u003C\u003Ep__39, lang, "public:back_list");
+        target20((CallSite) p40, this, obj20);
+      }));
+      walletPaymentCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = ((RazorPageBase) walletPaymentCreate1).CreateTagHelper<AnchorTagHelper>();
+      walletPaymentCreate1.__tagHelperExecutionContext.Add((ITagHelper) walletPaymentCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      walletPaymentCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) Views_WalletPayment_Create.__tagHelperAttribute_4.Value;
+      walletPaymentCreate1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_WalletPayment_Create.__tagHelperAttribute_4);
+      await walletPaymentCreate1.__tagHelperRunner.RunAsync(walletPaymentCreate1.__tagHelperExecutionContext);
+      if (!walletPaymentCreate1.__tagHelperExecutionContext.Output.IsContentModified)
+        await walletPaymentCreate1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) walletPaymentCreate1).Write((object) walletPaymentCreate1.__tagHelperExecutionContext.Output);
+      walletPaymentCreate1.__tagHelperExecutionContext = walletPaymentCreate1.__tagHelperScopeManager.End();
+      ((RazorPageBase) walletPaymentCreate1).WriteLiteral("\n</div>\n");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<WalletPaymentDto> Html { get; private set; }
+  }
+}

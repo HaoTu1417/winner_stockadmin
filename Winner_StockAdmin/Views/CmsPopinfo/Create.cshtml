@@ -1,0 +1,175 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_CmsPopinfo_Create
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Razor.TagHelpers;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using Models.Dto;
+using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "6cb8e410c36287a3a56369814b1f8c92b764e71d3467027c6f2e4e80177e83f3", "/Views/CmsPopinfo/Create.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/CmsPopinfo/Create.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_CmsPopinfo_Create : RazorPage<CmsPopinfoDto>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-select"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("name", (object) "info", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("id", (object) new HtmlString("info"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("class", (object) new HtmlString("form-check-input"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("asp-action", (object) "PostCreate", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("id", (object) new HtmlString("form1"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("enctype", (object) new HtmlString("multipart/form-data"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_10 = new TagHelperAttribute("src", (object) new HtmlString("~/assets/ckeditor5/ckeditor.js"), (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private TextAreaTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_TextAreaTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+    private UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_CmsPopinfo_Create cmsPopinfoCreate1 = this;
+      // ISSUE: object of a compiler-generated type is created
+      // ISSUE: variable of a compiler-generated type
+      Views_CmsPopinfo_Create.\u003C\u003Ec__DisplayClass25_0 cDisplayClass250 = new Views_CmsPopinfo_Create.\u003C\u003Ec__DisplayClass25_0();
+      // ISSUE: reference to a compiler-generated field
+      cDisplayClass250.\u003C\u003E4__this = this;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_CmsPopinfo_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__0.Target((CallSite) Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__0, ((RazorPageBase) cmsPopinfoCreate1).ViewBag);
+      // ISSUE: reference to a compiler-generated field
+      cDisplayClass250.lang = obj1;
+      ((RazorPageBase) cmsPopinfoCreate1).WriteLiteral("\n<style>\n    .ck-editor {\n        min-width: 1000px;\n    }\n\t.ck-editor__editable {\n        min-height: 300px;\n\t}\n</style>\n\n<h4>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_CmsPopinfo_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_CmsPopinfo_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_CmsPopinfo_Create, object> target = Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__2.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_CmsPopinfo_Create, object>> p2 = Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__2;
+      Views_CmsPopinfo_Create cmsPopinfoCreate2 = cmsPopinfoCreate1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_CmsPopinfo_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__1.Target((CallSite) Views_CmsPopinfo_Create.\u003C\u003Eo__25.\u003C\u003Ep__1, cDisplayClass250.lang, "public:title_create");
+      target((CallSite) p2, cmsPopinfoCreate2, obj2);
+      ((RazorPageBase) cmsPopinfoCreate1).WriteLiteral("</h4>\n<hr />\n<div class=\"row\">\n    <div class=\"col-md-4\">\n        ");
+      // ISSUE: reference to a compiler-generated method
+      cmsPopinfoCreate1.__tagHelperExecutionContext = cmsPopinfoCreate1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "6cb8e410c36287a3a56369814b1f8c92b764e71d3467027c6f2e4e80177e83f39237", new Func<Task>(cDisplayClass250.\u003CExecuteAsync\u003Eb__0));
+      cmsPopinfoCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) cmsPopinfoCreate1).CreateTagHelper<FormTagHelper>();
+      cmsPopinfoCreate1.__tagHelperExecutionContext.Add((ITagHelper) cmsPopinfoCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      cmsPopinfoCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) cmsPopinfoCreate1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      cmsPopinfoCreate1.__tagHelperExecutionContext.Add((ITagHelper) cmsPopinfoCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      cmsPopinfoCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_CmsPopinfo_Create.__tagHelperAttribute_6.Value;
+      cmsPopinfoCreate1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_CmsPopinfo_Create.__tagHelperAttribute_6);
+      cmsPopinfoCreate1.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsPopinfo_Create.__tagHelperAttribute_7);
+      cmsPopinfoCreate1.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsPopinfo_Create.__tagHelperAttribute_8);
+      await cmsPopinfoCreate1.__tagHelperRunner.RunAsync(cmsPopinfoCreate1.__tagHelperExecutionContext);
+      if (!cmsPopinfoCreate1.__tagHelperExecutionContext.Output.IsContentModified)
+        await cmsPopinfoCreate1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) cmsPopinfoCreate1).Write((object) cmsPopinfoCreate1.__tagHelperExecutionContext.Output);
+      cmsPopinfoCreate1.__tagHelperExecutionContext = cmsPopinfoCreate1.__tagHelperScopeManager.End();
+      ((RazorPageBase) cmsPopinfoCreate1).WriteLiteral("\n    </div>\n</div>\n\n<div>\n    ");
+      // ISSUE: reference to a compiler-generated method
+      cmsPopinfoCreate1.__tagHelperExecutionContext = cmsPopinfoCreate1.__tagHelperScopeManager.Begin("a", (TagMode) 0, "6cb8e410c36287a3a56369814b1f8c92b764e71d3467027c6f2e4e80177e83f328660", new Func<Task>(cDisplayClass250.\u003CExecuteAsync\u003Eb__1));
+      cmsPopinfoCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = ((RazorPageBase) cmsPopinfoCreate1).CreateTagHelper<AnchorTagHelper>();
+      cmsPopinfoCreate1.__tagHelperExecutionContext.Add((ITagHelper) cmsPopinfoCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      cmsPopinfoCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) Views_CmsPopinfo_Create.__tagHelperAttribute_9.Value;
+      cmsPopinfoCreate1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_CmsPopinfo_Create.__tagHelperAttribute_9);
+      await cmsPopinfoCreate1.__tagHelperRunner.RunAsync(cmsPopinfoCreate1.__tagHelperExecutionContext);
+      if (!cmsPopinfoCreate1.__tagHelperExecutionContext.Output.IsContentModified)
+        await cmsPopinfoCreate1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) cmsPopinfoCreate1).Write((object) cmsPopinfoCreate1.__tagHelperExecutionContext.Output);
+      cmsPopinfoCreate1.__tagHelperExecutionContext = cmsPopinfoCreate1.__tagHelperScopeManager.End();
+      ((RazorPageBase) cmsPopinfoCreate1).WriteLiteral("\n</div>\n\n");
+      // ISSUE: method pointer
+      ((RazorPageBase) cmsPopinfoCreate1).DefineSection("Scripts", new RenderAsyncDelegate((object) cDisplayClass250, __methodptr(\u003CExecuteAsync\u003Eb__2)));
+      cDisplayClass250 = (Views_CmsPopinfo_Create.\u003C\u003Ec__DisplayClass25_0) null;
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<CmsPopinfoDto> Html { get; private set; }
+  }
+}

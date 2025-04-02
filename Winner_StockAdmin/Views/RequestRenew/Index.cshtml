@@ -1,0 +1,924 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_RequestRenew_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.ViewModels.RequestRenew;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "6ac70d3f069d44db4a2add10f2d943bf08613b3deb88ec225c672e8838f7b90c", "/Views/RequestRenew/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/RequestRenew/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_RequestRenew_Index : RazorPage<RequestRenewVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_RequestRenew_Index requestRenewIndex1 = this;
+      RequestRenewFilter Filter = requestRenewIndex1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__0.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__0, ((RazorPageBase) requestRenewIndex1).ViewBag);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("\n<div class=\"card\">\n    ");
+      requestRenewIndex1.__tagHelperExecutionContext = requestRenewIndex1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "6ac70d3f069d44db4a2add10f2d943bf08613b3deb88ec225c672e8838f7b90c5233", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__2 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RequestRenew_Index, object> target1 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__2.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p2 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__2;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__1 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj1 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__1.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__1, lang, "sub_account");
+        target1((CallSite) p2, this, obj1);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "6ac70d3f069d44db4a2add10f2d943bf08613b3deb88ec225c672e8838f7b90c5891", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<RequestRenewVm, string>(this.ViewData, (Expression<Func<RequestRenewVm, string>>) (__model => Filter.sub_account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_RequestRenew_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RequestRenew_Index, object> target2 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__4.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p4 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__4;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__3.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__3, lang, "member_fk");
+        target2((CallSite) p4, this, obj2);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "6ac70d3f069d44db4a2add10f2d943bf08613b3deb88ec225c672e8838f7b90c7865", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<RequestRenewVm, int?>(this.ViewData, (Expression<Func<RequestRenewVm, int?>>) (__model => Filter.member_fk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_RequestRenew_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RequestRenew_Index, object> target3 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p6 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__6;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__5.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__5, lang, "account");
+        target3((CallSite) p6, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "6ac70d3f069d44db4a2add10f2d943bf08613b3deb88ec225c672e8838f7b90c9835", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<RequestRenewVm, string>(this.ViewData, (Expression<Func<RequestRenewVm, string>>) (__model => Filter.account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_RequestRenew_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RequestRenew_Index, object> target4 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p8 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__8;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__7.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__7, lang, "member_name");
+        target4((CallSite) p8, this, obj4);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "6ac70d3f069d44db4a2add10f2d943bf08613b3deb88ec225c672e8838f7b90c11807", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<RequestRenewVm, string>(this.ViewData, (Expression<Func<RequestRenewVm, string>>) (__model => Filter.member_name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_RequestRenew_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\n        </div>\n        <div class=\"card-footer\">\n\t        <div class=\"form-group pull-right\">\n\t\t        <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 999, "\"", 1029, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_RequestRenew_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RequestRenew_Index, string, int, object, int, int, bool> target5 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RequestRenew_Index, string, int, object, int, int, bool>> p10 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__9.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__9, lang, "public:search");
+        target5((CallSite) p10, this, "", 1007, obj5, 1007, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n\t\t        <input type=\"reset\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1087, "\"", 1116, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_RequestRenew_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RequestRenew_Index, string, int, object, int, int, bool> target6 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RequestRenew_Index, string, int, object, int, int, bool>> p12 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__12;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__11.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__11, lang, "public:reset");
+        target6((CallSite) p12, this, "", 1095, obj6, 1095, 21, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-light\" />\n\t        </div>\n        </div>\n    ");
+      }));
+      requestRenewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) requestRenewIndex1).CreateTagHelper<FormTagHelper>();
+      requestRenewIndex1.__tagHelperExecutionContext.Add((ITagHelper) requestRenewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      requestRenewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) requestRenewIndex1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      requestRenewIndex1.__tagHelperExecutionContext.Add((ITagHelper) requestRenewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      requestRenewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_RequestRenew_Index.__tagHelperAttribute_1.Value;
+      requestRenewIndex1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_RequestRenew_Index.__tagHelperAttribute_1);
+      await requestRenewIndex1.__tagHelperRunner.RunAsync(requestRenewIndex1.__tagHelperExecutionContext);
+      if (!requestRenewIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await requestRenewIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) requestRenewIndex1).Write((object) requestRenewIndex1.__tagHelperExecutionContext.Output);
+      requestRenewIndex1.__tagHelperExecutionContext = requestRenewIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("\n</div>\n\n<div class=\"table-container\">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target7 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p14 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__14;
+      Views_RequestRenew_Index requestRenewIndex2 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__13.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__13, lang, "public:option");
+      target7((CallSite) p14, requestRenewIndex2, obj7);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target8 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p16 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__16;
+      Views_RequestRenew_Index requestRenewIndex3 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__15.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__15, lang, "add_time");
+      target8((CallSite) p16, requestRenewIndex3, obj8);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target9 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__18.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p18 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__18;
+      Views_RequestRenew_Index requestRenewIndex4 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__17.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__17, lang, "sub_account");
+      target9((CallSite) p18, requestRenewIndex4, obj9);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target10 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__20.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p20 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__20;
+      Views_RequestRenew_Index requestRenewIndex5 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj10 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__19.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__19, lang, "loan_type");
+      target10((CallSite) p20, requestRenewIndex5, obj10);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__22 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target11 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__22.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p22 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__22;
+      Views_RequestRenew_Index requestRenewIndex6 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__21 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj11 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__21.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__21, lang, "member_fk");
+      target11((CallSite) p22, requestRenewIndex6, obj11);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__24 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target12 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__24.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p24 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__24;
+      Views_RequestRenew_Index requestRenewIndex7 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__23 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj12 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__23.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__23, lang, "account");
+      target12((CallSite) p24, requestRenewIndex7, obj12);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__26 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target13 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__26.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p26 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__26;
+      Views_RequestRenew_Index requestRenewIndex8 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__25 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj13 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__25.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__25, lang, "member_name");
+      target13((CallSite) p26, requestRenewIndex8, obj13);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__28 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__28 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target14 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__28.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p28 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__28;
+      Views_RequestRenew_Index requestRenewIndex9 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__27 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj14 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__27.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__27, lang, "pk");
+      target14((CallSite) p28, requestRenewIndex9, obj14);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__30 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__30 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target15 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__30.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p30 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__30;
+      Views_RequestRenew_Index requestRenewIndex10 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__29 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj15 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__29.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__29, lang, "borrow_duration");
+      target15((CallSite) p30, requestRenewIndex10, obj15);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__32 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__32 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target16 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__32.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p32 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__32;
+      Views_RequestRenew_Index requestRenewIndex11 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__31 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__31 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj16 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__31.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__31, lang, "end_time");
+      target16((CallSite) p32, requestRenewIndex11, obj16);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__34 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__34 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target17 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__34.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p34 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__34;
+      Views_RequestRenew_Index requestRenewIndex12 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__33 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__33 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj17 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__33.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__33, lang, "new_end_time");
+      target17((CallSite) p34, requestRenewIndex12, obj17);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__36 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__36 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target18 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__36.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p36 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__36;
+      Views_RequestRenew_Index requestRenewIndex13 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__35 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__35 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj18 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__35.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__35, lang, "borrow_fee");
+      target18((CallSite) p36, requestRenewIndex13, obj18);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__38 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__38 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target19 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__38.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p38 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__38;
+      Views_RequestRenew_Index requestRenewIndex14 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__37 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__37 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj19 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__37.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__37, lang, "market");
+      target19((CallSite) p38, requestRenewIndex14, obj19);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__40 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__40 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target20 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__40.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p40 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__40;
+      Views_RequestRenew_Index requestRenewIndex15 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__39 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__39 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj20 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__39.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__39, lang, "margin");
+      target20((CallSite) p40, requestRenewIndex15, obj20);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__42 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__42 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target21 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__42.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p42 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__42;
+      Views_RequestRenew_Index requestRenewIndex16 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__41 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__41 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj21 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__41.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__41, lang, "balance");
+      target21((CallSite) p42, requestRenewIndex16, obj21);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__44 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__44 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target22 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__44.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p44 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__44;
+      Views_RequestRenew_Index requestRenewIndex17 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__43 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__43 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj22 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__43.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__43, lang, "warningline");
+      target22((CallSite) p44, requestRenewIndex17, obj22);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__46 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__46 = CallSite<Action<CallSite, Views_RequestRenew_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RequestRenew_Index, object> target23 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__46.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RequestRenew_Index, object>> p46 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__46;
+      Views_RequestRenew_Index requestRenewIndex18 = requestRenewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__45 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__45 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj23 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__45.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__45, lang, "breakline");
+      target23((CallSite) p46, requestRenewIndex18, obj23);
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("</th>\n\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (RequestRenewList requestRenewList in requestRenewIndex1.Model.list)
+      {
+        RequestRenewList item = requestRenewList;
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("                <tr>\n                    <td>\n\t\t\t\t\t\t");
+        Views_RequestRenew_Index requestRenewIndex19 = requestRenewIndex1;
+        IHtmlHelper<RequestRenewVm> html = requestRenewIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__48 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__48 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_RequestRenew_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target24 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__48.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p48 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__48;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__47 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__47 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RequestRenew_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj24 = Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__47.Target((CallSite) Views_RequestRenew_Index.\u003C\u003Eo__11.\u003C\u003Ep__47, lang, "public:review");
+        string str = target24((CallSite) p48, obj24);
+        var data1 = new{ pk = item.pk };
+        var data2 = new{ @class = "btn btn-secondary" };
+        IHtmlContent ihtmlContent = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html, str, "Review", (object) data1, (object) data2);
+        ((RazorPageBase) requestRenewIndex19).Write((object) ihtmlContent);
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("\n                    </td>\n\t\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write(item.add_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, string>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, string>>) (modelItem => item.sub_account)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, string>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, string>>) (modelItem => item.loan_type)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, int>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, int>>) (modelItem => item.member_fk)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, string>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, string>>) (modelItem => item.account)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, string>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, string>>) (modelItem => item.member_name)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, int>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, int>>) (modelItem => item.pk)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, int>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, int>>) (modelItem => item.borrow_duration)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write(item.end_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write(item.new_end_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, Decimal>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, Decimal>>) (modelItem => item.borrow_fee)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, string>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, string>>) (modelItem => item.market)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, Decimal>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, Decimal>>) (modelItem => item.margin)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, Decimal>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, Decimal>>) (modelItem => item.balance)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, Decimal>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, Decimal>>) (modelItem => item.warningline)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) requestRenewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RequestRenewVm, Decimal>(requestRenewIndex1.Html, (Expression<Func<RequestRenewVm, Decimal>>) (modelItem => item.breakline)));
+        ((RazorPageBase) requestRenewIndex1).WriteLiteral("</td>\n\n                </tr>\n");
+      }
+      ((RazorPageBase) requestRenewIndex1).WriteLiteral("        </tbody>\n    </table>\n</div>\n\n");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<RequestRenewVm> Html { get; private set; }
+  }
+}

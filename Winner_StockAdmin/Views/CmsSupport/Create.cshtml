@@ -1,0 +1,628 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_CmsSupport_Create
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using Models.Dto;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c5", "/Views/CmsSupport/Create.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/CmsSupport/Create.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_CmsSupport_Create : RazorPage<CmsSupportDto>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-select"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("asp-action", (object) "PostCreate", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_CmsSupport_Create cmsSupportCreate1 = this;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__0.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__0, ((RazorPageBase) cmsSupportCreate1).ViewBag);
+      ((RazorPageBase) cmsSupportCreate1).WriteLiteral("\n<h4>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_CmsSupport_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_CmsSupport_Create, object> target1 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__2.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_CmsSupport_Create, object>> p2 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__2;
+      Views_CmsSupport_Create cmsSupportCreate2 = cmsSupportCreate1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__1.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__1, lang, "public:title_create");
+      target1((CallSite) p2, cmsSupportCreate2, obj1);
+      ((RazorPageBase) cmsSupportCreate1).WriteLiteral("</h4>\n<hr />\n<div class=\"row\">\n    <div class=\"col-md-4\">\n        ");
+      cmsSupportCreate1.__tagHelperExecutionContext = cmsSupportCreate1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c56746", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_CmsSupport_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_CmsSupport_Create, object> target2 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__4.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_CmsSupport_Create, object>> p4 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__4;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__3.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__3, lang, "pk");
+        target2((CallSite) p4, this, obj2);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c57357", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, int>(this.ViewData, (Expression<Func<CmsSupportDto, int>>) (__model => __model.pk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_CmsSupport_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_CmsSupport_Create, object> target3 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_CmsSupport_Create, object>> p6 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__6;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__5.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__5, lang, "lang");
+        target3((CallSite) p6, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("select", (TagMode) 0, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c59394", (Func<Task>) (async () => ((RazorPageBase) this).WriteLiteral("\n                ")));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) this).CreateTagHelper<SelectTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.lang));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, (HtmlAttributeValueStyle) 0);
+        SelectTagHelper helpersSelectTagHelper = this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__8 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, Type, object, string, string, SelectList> target4 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, Type, object, string, string, SelectList>> p8 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__8;
+        Type type = typeof (SelectList);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "langDropdown", typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__7.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__7, ((RazorPageBase) this).ViewBag);
+        SelectList selectList = target4((CallSite) p8, type, obj4, "Value", "Text");
+        helpersSelectTagHelper.Items = (IEnumerable<SelectListItem>) selectList;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c511965", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.lang));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_CmsSupport_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_CmsSupport_Create, object> target5 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_CmsSupport_Create, object>> p10 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__9.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__9, lang, "svc_phone");
+        target5((CallSite) p10, this, obj5);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c514010", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.svc_phone));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c515963", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.svc_phone));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_CmsSupport_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_CmsSupport_Create, object> target6 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_CmsSupport_Create, object>> p12 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__12;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__11.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__11, lang, "svc_workday");
+        target6((CallSite) p12, this, obj6);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c518015", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.svc_workday));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c519970", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.svc_workday));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__14 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_CmsSupport_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_CmsSupport_Create, object> target7 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__14.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_CmsSupport_Create, object>> p14 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__14;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__13 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj7 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__13.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__13, lang, "svc_nonworkday");
+        target7((CallSite) p14, this, obj7);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c522027", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.svc_nonworkday));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c523985", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.svc_nonworkday));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__16 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_CmsSupport_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_CmsSupport_Create, object> target8 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__16.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_CmsSupport_Create, object>> p16 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__16;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__15 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj8 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__15.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__15, lang, "svc_email");
+        target8((CallSite) p16, this, obj8);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c526040", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.svc_email));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c527993", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.svc_email));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__18 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_CmsSupport_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_CmsSupport_Create, object> target9 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__18.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_CmsSupport_Create, object>> p18 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__18;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__17 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj9 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__17.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__17, lang, "svc_link");
+        target9((CallSite) p18, this, obj9);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c530042", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.svc_link));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c531994", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<CmsSupportDto, string>(this.ViewData, (Expression<Func<CmsSupportDto, string>>) (__model => __model.svc_link));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_CmsSupport_Create.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\n            <div class=\"form-group\">\n                <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1938, "\"", 1966, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__20 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_CmsSupport_Create, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_CmsSupport_Create, string, int, object, int, int, bool> target10 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__20.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_CmsSupport_Create, string, int, object, int, int, bool>> p20 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__20;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__19 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj10 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__19.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__19, lang, "public:save");
+        target10((CallSite) p20, this, "", 1946, obj10, 1946, 20, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n            </div>\n        ");
+      }));
+      cmsSupportCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) cmsSupportCreate1).CreateTagHelper<FormTagHelper>();
+      cmsSupportCreate1.__tagHelperExecutionContext.Add((ITagHelper) cmsSupportCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      cmsSupportCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) cmsSupportCreate1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      cmsSupportCreate1.__tagHelperExecutionContext.Add((ITagHelper) cmsSupportCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      cmsSupportCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_CmsSupport_Create.__tagHelperAttribute_3.Value;
+      cmsSupportCreate1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_CmsSupport_Create.__tagHelperAttribute_3);
+      await cmsSupportCreate1.__tagHelperRunner.RunAsync(cmsSupportCreate1.__tagHelperExecutionContext);
+      if (!cmsSupportCreate1.__tagHelperExecutionContext.Output.IsContentModified)
+        await cmsSupportCreate1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) cmsSupportCreate1).Write((object) cmsSupportCreate1.__tagHelperExecutionContext.Output);
+      cmsSupportCreate1.__tagHelperExecutionContext = cmsSupportCreate1.__tagHelperScopeManager.End();
+      ((RazorPageBase) cmsSupportCreate1).WriteLiteral("\n    </div>\n</div>\n\n<div>\n    ");
+      cmsSupportCreate1.__tagHelperExecutionContext = cmsSupportCreate1.__tagHelperScopeManager.Begin("a", (TagMode) 0, "f60a6583550cb332b4ae7e62ce6e480fb7613f22013e14283fcd43851ab259c535457", (Func<Task>) (async () =>
+      {
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__22 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_CmsSupport_Create, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_CmsSupport_Create, object> target11 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__22.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_CmsSupport_Create, object>> p22 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__22;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_CmsSupport_Create), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj11 = Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__21.Target((CallSite) Views_CmsSupport_Create.\u003C\u003Eo__17.\u003C\u003Ep__21, lang, "public:back_list");
+        target11((CallSite) p22, this, obj11);
+      }));
+      cmsSupportCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = ((RazorPageBase) cmsSupportCreate1).CreateTagHelper<AnchorTagHelper>();
+      cmsSupportCreate1.__tagHelperExecutionContext.Add((ITagHelper) cmsSupportCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      cmsSupportCreate1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) Views_CmsSupport_Create.__tagHelperAttribute_4.Value;
+      cmsSupportCreate1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_CmsSupport_Create.__tagHelperAttribute_4);
+      await cmsSupportCreate1.__tagHelperRunner.RunAsync(cmsSupportCreate1.__tagHelperExecutionContext);
+      if (!cmsSupportCreate1.__tagHelperExecutionContext.Output.IsContentModified)
+        await cmsSupportCreate1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) cmsSupportCreate1).Write((object) cmsSupportCreate1.__tagHelperExecutionContext.Output);
+      cmsSupportCreate1.__tagHelperExecutionContext = cmsSupportCreate1.__tagHelperScopeManager.End();
+      ((RazorPageBase) cmsSupportCreate1).WriteLiteral("\n</div>\n");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<CmsSupportDto> Html { get; private set; }
+  }
+}

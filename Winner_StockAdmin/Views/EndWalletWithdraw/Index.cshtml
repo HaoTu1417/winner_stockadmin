@@ -1,0 +1,1397 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_EndWalletWithdraw_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.Tool;
+using stockadmin.ViewModels.EndWalletWithdraw;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Web.Common;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a", "/Views/EndWalletWithdraw/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/EndWalletWithdraw/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_EndWalletWithdraw_Index : RazorPage<EndWalletWithdrawVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("value", (object) "", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-select"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("id", (object) new HtmlString("begin_verify_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("id", (object) new HtmlString("end_verify_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("id", (object) new HtmlString("begin_create_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("id", (object) new HtmlString("end_create_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("type", (object) "checkbox", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("class", (object) new HtmlString("form-check-input"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_10 = new TagHelperAttribute("id", (object) new HtmlString("searchForm"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_11 = new TagHelperAttribute("id", (object) new HtmlString("pageSize"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_12 = new TagHelperAttribute("class", (object) new HtmlString("form-select pull-right"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_13 = new TagHelperAttribute("onchange", (object) new HtmlString("redirect(this.value)"), (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_EndWalletWithdraw_Index walletWithdrawIndex1 = this;
+      EndWalletWithdrawFilter Filter = walletWithdrawIndex1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__0.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__0, ((RazorPageBase) walletWithdrawIndex1).ViewBag);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("\n<div class=\"card\">\n    ");
+      walletWithdrawIndex1.__tagHelperExecutionContext = walletWithdrawIndex1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a10003", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__2 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, object> target1 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__2.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p2 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__2;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__1 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj1 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__1.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__1, lang, "status");
+        target1((CallSite) p2, this, obj1);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("select", (TagMode) 0, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a10684", (Func<Task>) (async () =>
+        {
+          ((RazorPageBase) this).WriteLiteral("\n                    ");
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("option", (TagMode) 0, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a10995", (Func<Task>) (async () =>
+          {
+            // ISSUE: reference to a compiler-generated field
+            if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__4 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            Action<CallSite, Views_EndWalletWithdraw_Index, object> target = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__4.Target;
+            // ISSUE: reference to a compiler-generated field
+            CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p4 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__4;
+            // ISSUE: reference to a compiler-generated field
+            if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__3 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            // ISSUE: reference to a compiler-generated field
+            object obj = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__3.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__3, lang, "status");
+            target((CallSite) p4, this, obj);
+          }));
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = ((RazorPageBase) this).CreateTagHelper<OptionTagHelper>();
+          this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string) Views_EndWalletWithdraw_Index.__tagHelperAttribute_0.Value;
+          this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_0);
+          await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+          if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+            await this.__tagHelperExecutionContext.SetOutputContentAsync();
+          ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+          ((RazorPageBase) this).WriteLiteral("\n                ");
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) this).CreateTagHelper<SelectTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndWalletWithdrawVm, int?>(this.ViewData, (Expression<Func<EndWalletWithdrawVm, int?>>) (__model => Filter.status));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, (HtmlAttributeValueStyle) 0);
+        SelectTagHelper helpersSelectTagHelper = this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__6 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, Type, object, string, string, SelectList> target2 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, Type, object, string, string, SelectList>> p6 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__6;
+        Type type = typeof (SelectList);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "status_list", typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__5.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__5, ((RazorPageBase) this).ViewBag);
+        SelectList selectList = target2((CallSite) p6, type, obj2, "Value", "Text");
+        helpersSelectTagHelper.Items = (IEnumerable<SelectListItem>) selectList;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, object> target3 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p8 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__8;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__7.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__7, lang, "begin_verify_time");
+        target3((CallSite) p8, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a15176", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_2);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndWalletWithdrawVm, DateTime?>(this.ViewData, (Expression<Func<EndWalletWithdrawVm, DateTime?>>) (__model => Filter.begin_verify_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                <input type=\"button\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 979, "\"", 1015, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, string, int, object, int, int, bool> target4 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, string, int, object, int, int, bool>> p10 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__9.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__9, lang, "public:default_time");
+        target4((CallSite) p10, this, "", 987, obj4, 987, 28, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" onclick=\"ResetVerifyTime();\" />\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, object> target5 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p12 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__12;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__11.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__11, lang, "end_verify_time");
+        target5((CallSite) p12, this, obj5);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a17808", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_4);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndWalletWithdrawVm, DateTime?>(this.ViewData, (Expression<Func<EndWalletWithdrawVm, DateTime?>>) (__model => Filter.end_verify_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__14 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, object> target6 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__14.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p14 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__14;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__13 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__13.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__13, lang, "verify_admin_pk");
+        target6((CallSite) p14, this, obj6);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a19918", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndWalletWithdrawVm, int?>(this.ViewData, (Expression<Func<EndWalletWithdrawVm, int?>>) (__model => Filter.verify_admin_pk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__16 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, object> target7 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__16.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p16 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__16;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__15 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj7 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__15.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__15, lang, "begin_create_time");
+        target7((CallSite) p16, this, obj7);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a21943", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_5);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndWalletWithdrawVm, DateTime?>(this.ViewData, (Expression<Func<EndWalletWithdrawVm, DateTime?>>) (__model => Filter.begin_create_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                <input type=\"button\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1796, "\"", 1832, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__18 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, string, int, object, int, int, bool> target8 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__18.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, string, int, object, int, int, bool>> p18 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__18;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__17 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj8 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__17.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__17, lang, "public:default_time");
+        target8((CallSite) p18, this, "", 1804, obj8, 1804, 28, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" onclick=\"ResetCreateTime();\" />\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__20 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, object> target9 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__20.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p20 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__20;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__19 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj9 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__19.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__19, lang, "end_create_time");
+        target9((CallSite) p20, this, obj9);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a24578", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_6);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndWalletWithdrawVm, DateTime?>(this.ViewData, (Expression<Func<EndWalletWithdrawVm, DateTime?>>) (__model => Filter.end_create_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__22 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, object> target10 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__22.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p22 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__22;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj10 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__21.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__21, lang, "account");
+        target10((CallSite) p22, this, obj10);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a26680", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndWalletWithdrawVm, string>(this.ViewData, (Expression<Func<EndWalletWithdrawVm, string>>) (__model => Filter.account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__24 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, object> target11 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__24.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p24 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__24;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__23 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj11 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__23.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__23, lang, "nickname");
+        target11((CallSite) p24, this, obj11);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a28688", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndWalletWithdrawVm, string>(this.ViewData, (Expression<Func<EndWalletWithdrawVm, string>>) (__model => Filter.nickname));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"form-check-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__26 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, object> target12 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__26.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p26 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__26;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__25 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj12 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__25.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__25, lang, "public:filter_out_test_account");
+        target12((CallSite) p26, this, obj12);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                <div class=\"form-check\">\n                    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a30770", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string) Views_EndWalletWithdraw_Index.__tagHelperAttribute_7.Value;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_7);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndWalletWithdrawVm, bool>(this.ViewData, (Expression<Func<EndWalletWithdrawVm, bool>>) (__model => Filter.filter_out_test_account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_8);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                </div>\n            </div>\n\n        </div>\n        <div class=\"card-footer\">\n\t        <div class=\"form-group pull-right\">\n\t\t        <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 2991, "\"", 3021, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__28 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__28 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, string, int, object, int, int, bool> target13 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__28.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, string, int, object, int, int, bool>> p28 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__28;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__27 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj13 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__27.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__27, lang, "public:search");
+        target13((CallSite) p28, this, "", 2999, obj13, 2999, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n                <button type=\"reset\" onclick=\"Reset();\" class=\"btn btn-light\" />");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__30 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__30 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndWalletWithdraw_Index, object> target14 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__30.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p30 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__30;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__29 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj14 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__29.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__29, lang, "public:reset");
+        target14((CallSite) p30, this, obj14);
+        ((RazorPageBase) this).WriteLiteral("</button>\n                ");
+        IHtmlHelper<EndWalletWithdrawVm> html = this.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__32 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__32 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_EndWalletWithdraw_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target15 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__32.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p32 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__32;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__31 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__31 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj15 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__31.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__31, lang, "public:download");
+        string str = target15((CallSite) p32, obj15);
+        EndWalletWithdrawFilter walletWithdrawFilter = Filter;
+        var data = new{ @class = "btn btn-secondary" };
+        ((RazorPageBase) this).Write((object) HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html, str, "Download", (object) walletWithdrawFilter, (object) data));
+        ((RazorPageBase) this).WriteLiteral("\n\t        </div>\n        </div>\n    ");
+      }));
+      walletWithdrawIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) walletWithdrawIndex1).CreateTagHelper<FormTagHelper>();
+      walletWithdrawIndex1.__tagHelperExecutionContext.Add((ITagHelper) walletWithdrawIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      walletWithdrawIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) walletWithdrawIndex1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      walletWithdrawIndex1.__tagHelperExecutionContext.Add((ITagHelper) walletWithdrawIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      walletWithdrawIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_EndWalletWithdraw_Index.__tagHelperAttribute_9.Value;
+      walletWithdrawIndex1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_9);
+      walletWithdrawIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_10);
+      await walletWithdrawIndex1.__tagHelperRunner.RunAsync(walletWithdrawIndex1.__tagHelperExecutionContext);
+      if (!walletWithdrawIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await walletWithdrawIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) walletWithdrawIndex1).Write((object) walletWithdrawIndex1.__tagHelperExecutionContext.Output);
+      walletWithdrawIndex1.__tagHelperExecutionContext = walletWithdrawIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("\n</div>\n\n<div class=\"table-container\">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__34 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__34 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target16 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__34.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p34 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__34;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex2 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__33 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__33 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj16 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__33.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__33, lang, "status");
+      target16((CallSite) p34, walletWithdrawIndex2, obj16);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__36 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__36 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target17 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__36.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p36 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__36;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex3 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__35 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__35 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj17 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__35.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__35, lang, "order_no");
+      target17((CallSite) p36, walletWithdrawIndex3, obj17);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__38 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__38 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target18 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__38.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p38 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__38;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex4 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__37 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__37 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj18 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__37.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__37, lang, "account");
+      target18((CallSite) p38, walletWithdrawIndex4, obj18);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__40 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__40 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target19 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__40.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p40 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__40;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex5 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__39 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__39 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj19 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__39.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__39, lang, "nickname");
+      target19((CallSite) p40, walletWithdrawIndex5, obj19);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__42 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__42 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target20 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__42.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p42 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__42;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex6 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__41 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__41 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj20 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__41.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__41, lang, "currency");
+      target20((CallSite) p42, walletWithdrawIndex6, obj20);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__44 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__44 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target21 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__44.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p44 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__44;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex7 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__43 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__43 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj21 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__43.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__43, lang, "money");
+      target21((CallSite) p44, walletWithdrawIndex7, obj21);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__46 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__46 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target22 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__46.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p46 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__46;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex8 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__45 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__45 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj22 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__45.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__45, lang, "balance");
+      target22((CallSite) p46, walletWithdrawIndex8, obj22);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__48 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__48 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target23 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__48.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p48 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__48;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex9 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__47 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__47 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj23 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__47.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__47, lang, "card");
+      target23((CallSite) p48, walletWithdrawIndex9, obj23);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__50 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__50 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target24 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__50.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p50 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__50;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex10 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__49 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__49 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj24 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__49.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__49, lang, "bank");
+      target24((CallSite) p50, walletWithdrawIndex10, obj24);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__52 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__52 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target25 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__52.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p52 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__52;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex11 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__51 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__51 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj25 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__51.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__51, lang, "branch");
+      target25((CallSite) p52, walletWithdrawIndex11, obj25);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__54 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__54 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target26 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__54.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p54 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__54;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex12 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__53 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__53 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj26 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__53.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__53, lang, "bank_account");
+      target26((CallSite) p54, walletWithdrawIndex12, obj26);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__56 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__56 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target27 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__56.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p56 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__56;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex13 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__55 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__55 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj27 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__55.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__55, lang, "create_time");
+      target27((CallSite) p56, walletWithdrawIndex13, obj27);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__58 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__58 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target28 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__58.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p58 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__58;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex14 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__57 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__57 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj28 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__57.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__57, lang, "verify_time");
+      target28((CallSite) p58, walletWithdrawIndex14, obj28);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__60 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__60 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target29 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__60.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p60 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__60;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex15 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__59 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__59 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj29 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__59.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__59, lang, "verify_admin_pk");
+      target29((CallSite) p60, walletWithdrawIndex15, obj29);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__62 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__62 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target30 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__62.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p62 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__62;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex16 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__61 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__61 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj30 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__61.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__61, lang, "reject_result");
+      target30((CallSite) p62, walletWithdrawIndex16, obj30);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</th>\n\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (EndWalletWithdrawList walletWithdrawList in (IEnumerable<EndWalletWithdrawList>) walletWithdrawIndex1.Model.list)
+      {
+        EndWalletWithdrawList item = walletWithdrawList;
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("                <tr>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.status_string)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.order_no)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n");
+        if (item.is_test_account)
+        {
+          ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("                        <td style=\"color:tomato;\">");
+          ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.account)));
+          ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n");
+        }
+        else
+        {
+          ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("                        <td>");
+          ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.account)));
+          ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n");
+        }
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.nickname)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.currency)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, Decimal>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, Decimal>>) (modelItem => item.money)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.balance_str)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.card)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.bank)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.branch)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.bank_account)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write(item.create_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write(item.verify_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.admin_account)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndWalletWithdrawVm, string>(walletWithdrawIndex1.Html, (Expression<Func<EndWalletWithdrawVm, string>>) (modelItem => item.reject_result)));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n\n                </tr>\n");
+      }
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("        </tbody>\n        <tbody>\n            <tr>\n                <td>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__64 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__64 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target31 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__64.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p64 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__64;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex17 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__63 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__63 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj31 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__63.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__63, lang, "total");
+      target31((CallSite) p64, walletWithdrawIndex17, obj31);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td>");
+      ((RazorPageBase) walletWithdrawIndex1).Write((object) walletWithdrawIndex1.Model.summary.page_total_profit);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("</td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n            </tr>\n        </tbody>\n    </table>\n</div>\n\n<!-- 分頁處理 -->\n<div class=\"card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between\">\n\n");
+      if (walletWithdrawIndex1.Model != null)
+      {
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("        <nav aria-label=\"Page navigation\">\n            <ul class=\"pagination mb-0\">\n\n                ");
+        ((RazorPageBase) walletWithdrawIndex1).Write((object) ((IHtmlHelper) walletWithdrawIndex1.Html).PagedListPager((IPagedList) walletWithdrawIndex1.Model.list, (Func<int, string>) (page =>
+        {
+          IUrlHelper url = this.Url;
+          EndWalletWithdrawFilter filter = this.Model.filter;
+          Dictionary<string, object> dictionary1 = new Dictionary<string, object>();
+          dictionary1[nameof (page)] = (object) page;
+          Dictionary<string, object> dictionary2 = dictionary1;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__65 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__65 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "pageSize", typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj32 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__65.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__65, ((RazorPageBase) this).ViewBag);
+          dictionary2["pageSize"] = obj32;
+          Dictionary<string, object> args = dictionary1;
+          RouteValueDictionary routeValueDictionary = PublicTool.ToRouteValueDictionary<EndWalletWithdrawFilter>(filter, args);
+          return UrlHelperExtensions.Action(url, "Index", (object) routeValueDictionary);
+        }), new PagedListRenderOptions()
+        {
+          LiElementClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-item"
+          },
+          PageClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-link"
+          },
+          LinkToFirstPageFormat = "<<",
+          LinkToPreviousPageFormat = "<",
+          LinkToNextPageFormat = ">",
+          LinkToLastPageFormat = ">>",
+          MaximumPageNumbersToDisplay = new int?(8)
+        }));
+        ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("\n            </ul>\n        </nav>\n");
+      }
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("\n<div class=\"fw-normal small mt-5 mt-lg-0\">\n        ");
+      walletWithdrawIndex1.__tagHelperExecutionContext = walletWithdrawIndex1.__tagHelperScopeManager.Begin("select", (TagMode) 0, "bbaec3a9aefa7723a3ab73b1e01a6b50ba578e77dbf9ca5fc4295ff2a253ad4a48186", (Func<Task>) (async () => { }));
+      walletWithdrawIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) walletWithdrawIndex1).CreateTagHelper<SelectTagHelper>();
+      walletWithdrawIndex1.__tagHelperExecutionContext.Add((ITagHelper) walletWithdrawIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      SelectTagHelper helpersSelectTagHelper1 = walletWithdrawIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__67 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__67 = CallSite<Func<CallSite, object, IEnumerable<SelectListItem>>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof (IEnumerable<SelectListItem>), typeof (Views_EndWalletWithdraw_Index)));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, IEnumerable<SelectListItem>> target32 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__67.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, IEnumerable<SelectListItem>>> p67 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__67;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__66 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__66 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "pageSizeOption", typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj33 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__66.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__66, ((RazorPageBase) walletWithdrawIndex1).ViewBag);
+      IEnumerable<SelectListItem> selectListItems = target32((CallSite) p67, obj33);
+      helpersSelectTagHelper1.Items = selectListItems;
+      walletWithdrawIndex1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) walletWithdrawIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+      walletWithdrawIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_11);
+      walletWithdrawIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_12);
+      walletWithdrawIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndWalletWithdraw_Index.__tagHelperAttribute_13);
+      await walletWithdrawIndex1.__tagHelperRunner.RunAsync(walletWithdrawIndex1.__tagHelperExecutionContext);
+      if (!walletWithdrawIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await walletWithdrawIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) walletWithdrawIndex1).Write((object) walletWithdrawIndex1.__tagHelperExecutionContext.Output);
+      walletWithdrawIndex1.__tagHelperExecutionContext = walletWithdrawIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("\n    <div class=\"row\">\n        <div class=\"col\">\n            <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__69 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__69 = CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndWalletWithdraw_Index, object> target33 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__69.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndWalletWithdraw_Index, object>> p69 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__69;
+      Views_EndWalletWithdraw_Index walletWithdrawIndex18 = walletWithdrawIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__68 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__68 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndWalletWithdraw_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj34 = Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__68.Target((CallSite) Views_EndWalletWithdraw_Index.\u003C\u003Eo__25.\u003C\u003Ep__68, lang, "public:total_count");
+      target33((CallSite) p69, walletWithdrawIndex18, obj34);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral(":</label>\n            ");
+      ((RazorPageBase) walletWithdrawIndex1).Write((object) walletWithdrawIndex1.Model.list.TotalItemCount);
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("\n        </div>\n    </div>\n</div>\n</div>\n\n<script type=\"text/javascript\">\n    function ResetVerifyTime() {\n        let today = new Date().toISOString().split('T')[0];\n        $(\"#begin_verify_time\").val(`${today}T00:00`);\n        $(\"#end_verify_time\").val(`${today}T23:59`);\n    }\n    function ResetCreateTime() {\n        let today = new Date().toISOString().split('T')[0];\n        $(\"#begin_create_time\").val(`${today}T00:00`);\n        $(\"#end_create_time\").val(`${today}T23:59`);\n    }\n    function redirect(page) {\n        var url = '");
+      ((RazorPageBase) walletWithdrawIndex1).Write(UrlHelperExtensions.Action(walletWithdrawIndex1.Url, "Index", (object) PublicTool.ToRouteValueDictionary<EndWalletWithdrawFilter>(walletWithdrawIndex1.Model.filter, new Dictionary<string, object>()
+      {
+        ["page"] = (object) 1,
+        ["pageSize"] = (object) -1
+      })));
+      ((RazorPageBase) walletWithdrawIndex1).WriteLiteral("';\n        url = url.replace('-1', page).replaceAll('amp;', '');\n        window.location.href = url;\n    }\n</script>\n\n<script>$(document).ready(function () {\n        // Attach a submit event handler to the form\n        $('#searchForm').submit(function (event) {\n            var selectedPageSize = $('#pageSize').val();\n            var actionUrl = $(this).attr('action');\n\n            // Update the form action URL with the selected page size as a query parameter\n            $(this).attr('action', actionUrl + '?pageSize=' + selectedPageSize);\n\n            // Continue with the form submission\n            return true;\n        });\n    });\n        function Reset() {\n            window.location.href = \"/EndWalletWithdraw/Index\";\n        }\n    </script>");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<EndWalletWithdrawVm> Html { get; private set; }
+  }
+}

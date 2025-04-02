@@ -1,0 +1,651 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_Ipwhitelist_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.Tool;
+using stockadmin.ViewModels.Ipwhitelist;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Web.Common;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "cdcc8f7b3e75114ff4040167897991189e157cbb5cefce6b890e11c54ef6ff65", "/Views/Ipwhitelist/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/Ipwhitelist/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_Ipwhitelist_Index : RazorPage<IpwhitelistVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_Ipwhitelist_Index ipwhitelistIndex1 = this;
+      IpwhitelistFilter Filter = ipwhitelistIndex1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__0.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__0, ((RazorPageBase) ipwhitelistIndex1).ViewBag);
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("\n<div class=\"card\">\n    ");
+      ipwhitelistIndex1.__tagHelperExecutionContext = ipwhitelistIndex1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "cdcc8f7b3e75114ff4040167897991189e157cbb5cefce6b890e11c54ef6ff655534", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__2 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Ipwhitelist_Index, object> target1 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__2.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>> p2 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__2;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__1 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj1 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__1.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__1, lang, "ip");
+        target1((CallSite) p2, this, obj1);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "cdcc8f7b3e75114ff4040167897991189e157cbb5cefce6b890e11c54ef6ff656182", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<IpwhitelistVm, string>(this.ViewData, (Expression<Func<IpwhitelistVm, string>>) (__model => Filter.ip));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Ipwhitelist_Index, object> target2 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__4.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>> p4 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__4;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__3.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__3, lang, "remarks");
+        target2((CallSite) p4, this, obj2);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "cdcc8f7b3e75114ff4040167897991189e157cbb5cefce6b890e11c54ef6ff658143", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<IpwhitelistVm, string>(this.ViewData, (Expression<Func<IpwhitelistVm, string>>) (__model => Filter.remarks));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\n        </div>\n        <div class=\"card-footer\">\n            <div class=\"form-group pull-right\">\n                <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 731, "\"", 761, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_Ipwhitelist_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Ipwhitelist_Index, string, int, object, int, int, bool> target3 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Ipwhitelist_Index, string, int, object, int, int, bool>> p6 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__6;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__5.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__5, lang, "public:search");
+        target3((CallSite) p6, this, "", 739, obj3, 739, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n                <input type=\"reset\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 825, "\"", 854, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_Ipwhitelist_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Ipwhitelist_Index, string, int, object, int, int, bool> target4 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Ipwhitelist_Index, string, int, object, int, int, bool>> p8 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__8;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__7.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__7, lang, "public:reset");
+        target4((CallSite) p8, this, "", 833, obj4, 833, 21, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-light\" />\n            </div>\n        </div>\n    ");
+      }));
+      ipwhitelistIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) ipwhitelistIndex1).CreateTagHelper<FormTagHelper>();
+      ipwhitelistIndex1.__tagHelperExecutionContext.Add((ITagHelper) ipwhitelistIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      ipwhitelistIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) ipwhitelistIndex1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      ipwhitelistIndex1.__tagHelperExecutionContext.Add((ITagHelper) ipwhitelistIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      ipwhitelistIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_Ipwhitelist_Index.__tagHelperAttribute_1.Value;
+      ipwhitelistIndex1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Ipwhitelist_Index.__tagHelperAttribute_1);
+      await ipwhitelistIndex1.__tagHelperRunner.RunAsync(ipwhitelistIndex1.__tagHelperExecutionContext);
+      if (!ipwhitelistIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await ipwhitelistIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) ipwhitelistIndex1).Write((object) ipwhitelistIndex1.__tagHelperExecutionContext.Output);
+      ipwhitelistIndex1.__tagHelperExecutionContext = ipwhitelistIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("\n</div>\n");
+      Views_Ipwhitelist_Index ipwhitelistIndex2 = ipwhitelistIndex1;
+      IHtmlHelper<IpwhitelistVm> html1 = ipwhitelistIndex1.Html;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__10 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__10 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_Ipwhitelist_Index)));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, string> target5 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__10.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, string>> p10 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__10;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__9 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj5 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__9.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__9, lang, "public:append");
+      string str1 = target5((CallSite) p10, obj5);
+      var data1 = new{  };
+      var data2 = new{ @class = "btn btn-primary" };
+      IHtmlContent ihtmlContent1 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html1, str1, "Create", (object) data1, (object) data2);
+      ((RazorPageBase) ipwhitelistIndex2).Write((object) ihtmlContent1);
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("\n<div");
+      ((RazorPageBase) ipwhitelistIndex1).BeginWriteAttribute("class", " class=\"", 1040, "\"", 1048, 0);
+      ((RazorPageBase) ipwhitelistIndex1).EndWriteAttribute();
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral(">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__12 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Ipwhitelist_Index, object> target6 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__12.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>> p12 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__12;
+      Views_Ipwhitelist_Index ipwhitelistIndex3 = ipwhitelistIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__11 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj6 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__11.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__11, lang, "public:option");
+      target6((CallSite) p12, ipwhitelistIndex3, obj6);
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Ipwhitelist_Index, object> target7 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>> p14 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__14;
+      Views_Ipwhitelist_Index ipwhitelistIndex4 = ipwhitelistIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__13.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__13, lang, "ip");
+      target7((CallSite) p14, ipwhitelistIndex4, obj7);
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Ipwhitelist_Index, object> target8 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>> p16 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__16;
+      Views_Ipwhitelist_Index ipwhitelistIndex5 = ipwhitelistIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__15.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__15, lang, "remarks");
+      target8((CallSite) p16, ipwhitelistIndex5, obj8);
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Ipwhitelist_Index, object> target9 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__18.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>> p18 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__18;
+      Views_Ipwhitelist_Index ipwhitelistIndex6 = ipwhitelistIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__17.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__17, lang, "status");
+      target9((CallSite) p18, ipwhitelistIndex6, obj9);
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Ipwhitelist_Index, object> target10 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__20.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>> p20 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__20;
+      Views_Ipwhitelist_Index ipwhitelistIndex7 = ipwhitelistIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj10 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__19.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__19, lang, "create_time");
+      target10((CallSite) p20, ipwhitelistIndex7, obj10);
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__22 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Ipwhitelist_Index, object> target11 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__22.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>> p22 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__22;
+      Views_Ipwhitelist_Index ipwhitelistIndex8 = ipwhitelistIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__21 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj11 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__21.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__21, lang, "update_time");
+      target11((CallSite) p22, ipwhitelistIndex8, obj11);
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("</th>\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (IpwhitelistList ipwhitelistList in (IEnumerable<IpwhitelistList>) ipwhitelistIndex1.Model.list)
+      {
+        IpwhitelistList item = ipwhitelistList;
+        ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("                <tr>\n                    <td>\n                        ");
+        Views_Ipwhitelist_Index ipwhitelistIndex9 = ipwhitelistIndex1;
+        IHtmlHelper<IpwhitelistVm> html2 = ipwhitelistIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__24 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__24 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_Ipwhitelist_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target12 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__24.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p24 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__24;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__23 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj12 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__23.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__23, lang, "public:edit");
+        string str2 = target12((CallSite) p24, obj12);
+        var data3 = new{ ip = item.ip };
+        var data4 = new{ @class = "btn btn-primary" };
+        IHtmlContent ihtmlContent2 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html2, str2, "Edit", (object) data3, (object) data4);
+        ((RazorPageBase) ipwhitelistIndex9).Write((object) ihtmlContent2);
+        ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("\n");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__26 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__26 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_Ipwhitelist_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target13 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__26.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p26 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__26;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__25 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj13 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__25.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__25, lang, "public:confirm_delete");
+        string str3 = "return confirm('" + target13((CallSite) p26, obj13) + "')";
+        ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("                        ");
+        Views_Ipwhitelist_Index ipwhitelistIndex10 = ipwhitelistIndex1;
+        IHtmlHelper<IpwhitelistVm> html3 = ipwhitelistIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__28 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__28 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_Ipwhitelist_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target14 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__28.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p28 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__28;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__27 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj14 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__27.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__27, lang, "public:delete");
+        string str4 = target14((CallSite) p28, obj14);
+        var data5 = new{ ip = item.ip };
+        var data6 = new
+        {
+          @class = "btn btn-primary",
+          onclick = str3
+        };
+        IHtmlContent ihtmlContent3 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html3, str4, "Delete", (object) data5, (object) data6);
+        ((RazorPageBase) ipwhitelistIndex10).Write((object) ihtmlContent3);
+        ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("\n\n                    </td>\n\t\t\t\t<td>");
+        ((RazorPageBase) ipwhitelistIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<IpwhitelistVm, string>(ipwhitelistIndex1.Html, (Expression<Func<IpwhitelistVm, string>>) (modelItem => item.ip)));
+        ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) ipwhitelistIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<IpwhitelistVm, string>(ipwhitelistIndex1.Html, (Expression<Func<IpwhitelistVm, string>>) (modelItem => item.remarks)));
+        ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) ipwhitelistIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<IpwhitelistVm, string>(ipwhitelistIndex1.Html, (Expression<Func<IpwhitelistVm, string>>) (modelItem => item.status)));
+        ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("</td>\n                    <td>");
+        Views_Ipwhitelist_Index ipwhitelistIndex11 = ipwhitelistIndex1;
+        DateTime dateTime = item.create_time;
+        string str5 = dateTime.ToString("yyyy-MM-dd HH:mm:ss");
+        ((RazorPageBase) ipwhitelistIndex11).Write(str5);
+        ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("</td>\n                    <td>");
+        Views_Ipwhitelist_Index ipwhitelistIndex12 = ipwhitelistIndex1;
+        dateTime = item.update_time;
+        string str6 = dateTime.ToString("yyyy-MM-dd HH:mm:ss");
+        ((RazorPageBase) ipwhitelistIndex12).Write(str6);
+        ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("</td>\n                </tr>\n");
+      }
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("        </tbody>\n    </table>\n</div>\n\n<!-- 分頁處理 -->\n<div class=\"card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between\">\n\n");
+      if (ipwhitelistIndex1.Model != null)
+      {
+        ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("        <nav aria-label=\"Page navigation\">\n            <ul class=\"pagination mb-0\">\n\n                ");
+        ((RazorPageBase) ipwhitelistIndex1).Write((object) ((IHtmlHelper) ipwhitelistIndex1.Html).PagedListPager((IPagedList) ipwhitelistIndex1.Model.list, (Func<int, string>) (page => UrlHelperExtensions.Action(this.Url, "Index", (object) PublicTool.ToRouteValueDictionary<IpwhitelistFilter>(this.Model.filter, new Dictionary<string, object>()
+        {
+          [nameof (page)] = (object) page
+        }))), new PagedListRenderOptions()
+        {
+          LiElementClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-item"
+          },
+          PageClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-link"
+          },
+          LinkToFirstPageFormat = "<<",
+          LinkToPreviousPageFormat = "<",
+          LinkToNextPageFormat = ">",
+          LinkToLastPageFormat = ">>",
+          MaximumPageNumbersToDisplay = new int?(8)
+        }));
+        ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("\n            </ul>\n        </nav>\n");
+      }
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral("\n    <div class=\"fw-normal small mt-4 mt-lg-0\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__30 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__30 = CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Ipwhitelist_Index, object> target15 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__30.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Ipwhitelist_Index, object>> p30 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__30;
+      Views_Ipwhitelist_Index ipwhitelistIndex13 = ipwhitelistIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__29 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj15 = Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__29.Target((CallSite) Views_Ipwhitelist_Index.\u003C\u003Eo__11.\u003C\u003Ep__29, lang, "public:total_count");
+      target15((CallSite) p30, ipwhitelistIndex13, obj15);
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral(": ");
+      ((RazorPageBase) ipwhitelistIndex1).Write((object) ipwhitelistIndex1.Model.list.TotalItemCount);
+      ((RazorPageBase) ipwhitelistIndex1).WriteLiteral(" </div>\n</div>");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IpwhitelistVm> Html { get; private set; }
+  }
+}

@@ -1,0 +1,1589 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_EndTradeAccount_IndexUS
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.Tool;
+using stockadmin.ViewModels.EndTradeAccount;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Web.Common;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c", "/Views/EndTradeAccount/IndexUS.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/EndTradeAccount/IndexUS.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_EndTradeAccount_IndexUS : RazorPage<EndTradeAccountVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("value", (object) "", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("form-select"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("id", (object) new HtmlString("begin_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("id", (object) new HtmlString("end_time"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("type", (object) "checkbox", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("class", (object) new HtmlString("form-check-input"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("asp-action", (object) "IndexUS", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("id", (object) new HtmlString("searchForm"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_9 = new TagHelperAttribute("id", (object) new HtmlString("pageSize"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_10 = new TagHelperAttribute("class", (object) new HtmlString("form-select pull-right"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_11 = new TagHelperAttribute("onchange", (object) new HtmlString("redirect(this.value)"), (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs1 = this;
+      EndTradeAccountFilter Filter = tradeAccountIndexUs1.Model.filter;
+      Summary summary = tradeAccountIndexUs1.Model.summary;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__0.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__0, ((RazorPageBase) tradeAccountIndexUs1).ViewBag);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("\n<div class=\"card\">\n    <div class=\"card-header\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target1 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__2.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p2 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__2;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs2 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__1.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__1, lang, "summary");
+      target1((CallSite) p2, tradeAccountIndexUs2, obj1);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</div>\n    <div class=\"card-body\">\n        <div class=\"row\">\n            <div class=\"form-group col-md-4\">\n                <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__4 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target2 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__4.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p4 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__4;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs3 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__3.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__3, lang, "total_profit");
+      target2((CallSite) p4, tradeAccountIndexUs3, obj2);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</label>\n                ");
+      tradeAccountIndexUs1.__tagHelperExecutionContext = tradeAccountIndexUs1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c10014", (Func<Task>) (async () => { }));
+      tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) tradeAccountIndexUs1).CreateTagHelper<InputTagHelper>();
+      tradeAccountIndexUs1.__tagHelperExecutionContext.Add((ITagHelper) tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = tradeAccountIndexUs1.ModelExpressionProvider.CreateModelExpression<EndTradeAccountVm, Decimal>(tradeAccountIndexUs1.ViewData, (Expression<Func<EndTradeAccountVm, Decimal>>) (__model => summary.total_profit));
+      tradeAccountIndexUs1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      tradeAccountIndexUs1.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_0);
+      ((RazorPageBase) tradeAccountIndexUs1).BeginWriteTagHelperAttribute();
+      tradeAccountIndexUs1.__tagHelperStringValueBuffer = ((RazorPageBase) tradeAccountIndexUs1).EndWriteTagHelperAttribute();
+      tradeAccountIndexUs1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) tradeAccountIndexUs1.Html.Raw(tradeAccountIndexUs1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await tradeAccountIndexUs1.__tagHelperRunner.RunAsync(tradeAccountIndexUs1.__tagHelperExecutionContext);
+      if (!tradeAccountIndexUs1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeAccountIndexUs1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeAccountIndexUs1).Write((object) tradeAccountIndexUs1.__tagHelperExecutionContext.Output);
+      tradeAccountIndexUs1.__tagHelperExecutionContext = tradeAccountIndexUs1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("\n            </div>\n        </div>\n    </div>\n</div>\n\n<div class=\"card\">\n    ");
+      tradeAccountIndexUs1.__tagHelperExecutionContext = tradeAccountIndexUs1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c11972", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndTradeAccount_IndexUS, object> target7 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p6 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__6;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj7 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__5.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__5, lang, "market");
+        target7((CallSite) p6, this, obj7);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("select", (TagMode) 0, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c12653", (Func<Task>) (async () =>
+        {
+          ((RazorPageBase) this).WriteLiteral("\n                    ");
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("option", (TagMode) 0, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c12964", (Func<Task>) (async () =>
+          {
+            // ISSUE: reference to a compiler-generated field
+            if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__8 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            Action<CallSite, Views_EndTradeAccount_IndexUS, object> target4 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__8.Target;
+            // ISSUE: reference to a compiler-generated field
+            CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p8 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__8;
+            // ISSUE: reference to a compiler-generated field
+            if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__7 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            // ISSUE: reference to a compiler-generated field
+            object obj4 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__7.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__7, lang, "market");
+            target4((CallSite) p8, this, obj4);
+          }));
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = ((RazorPageBase) this).CreateTagHelper<OptionTagHelper>();
+          this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string) Views_EndTradeAccount_IndexUS.__tagHelperAttribute_1.Value;
+          this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_1);
+          await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+          if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+            await this.__tagHelperExecutionContext.SetOutputContentAsync();
+          ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+          ((RazorPageBase) this).WriteLiteral("\n                ");
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) this).CreateTagHelper<SelectTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndTradeAccountVm, string>(this.ViewData, (Expression<Func<EndTradeAccountVm, string>>) (__model => Filter.market));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, (HtmlAttributeValueStyle) 0);
+        SelectTagHelper helpersSelectTagHelper1 = this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__10 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, Type, object, string, string, SelectList> target8 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, Type, object, string, string, SelectList>> p10 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__10;
+        Type type1 = typeof (SelectList);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "market", typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj8 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__9.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__9, ((RazorPageBase) this).ViewBag);
+        SelectList selectList1 = target8((CallSite) p10, type1, obj8, "Value", "Text");
+        helpersSelectTagHelper1.Items = (IEnumerable<SelectListItem>) selectList1;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndTradeAccount_IndexUS, object> target9 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p12 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__12;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj9 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__11.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__11, lang, "account");
+        target9((CallSite) p12, this, obj9);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c17130", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndTradeAccountVm, string>(this.ViewData, (Expression<Func<EndTradeAccountVm, string>>) (__model => Filter.account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__14 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndTradeAccount_IndexUS, object> target10 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__14.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p14 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__14;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__13 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj10 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__13.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__13, lang, "member_name");
+        target10((CallSite) p14, this, obj10);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c19141", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndTradeAccountVm, string>(this.ViewData, (Expression<Func<EndTradeAccountVm, string>>) (__model => Filter.member_name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__16 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndTradeAccount_IndexUS, object> target11 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__16.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p16 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__16;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__15 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj11 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__15.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__15, lang, "sub_account");
+        target11((CallSite) p16, this, obj11);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c21156", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndTradeAccountVm, string>(this.ViewData, (Expression<Func<EndTradeAccountVm, string>>) (__model => Filter.sub_account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__18 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndTradeAccount_IndexUS, object> target12 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__18.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p18 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__18;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__17 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj12 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__17.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__17, lang, "loan_type");
+        target12((CallSite) p18, this, obj12);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("select", (TagMode) 0, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c23169", (Func<Task>) (async () =>
+        {
+          ((RazorPageBase) this).WriteLiteral("\n                    ");
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("option", (TagMode) 0, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c23480", (Func<Task>) (async () =>
+          {
+            // ISSUE: reference to a compiler-generated field
+            if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__20 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            Action<CallSite, Views_EndTradeAccount_IndexUS, object> target6 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__20.Target;
+            // ISSUE: reference to a compiler-generated field
+            CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p20 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__20;
+            // ISSUE: reference to a compiler-generated field
+            if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__19 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            // ISSUE: reference to a compiler-generated field
+            object obj6 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__19.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__19, lang, "loan_type");
+            target6((CallSite) p20, this, obj6);
+          }));
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = ((RazorPageBase) this).CreateTagHelper<OptionTagHelper>();
+          this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string) Views_EndTradeAccount_IndexUS.__tagHelperAttribute_1.Value;
+          this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_1);
+          await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+          if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+            await this.__tagHelperExecutionContext.SetOutputContentAsync();
+          ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+          ((RazorPageBase) this).WriteLiteral("\n                ");
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) this).CreateTagHelper<SelectTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndTradeAccountVm, string>(this.ViewData, (Expression<Func<EndTradeAccountVm, string>>) (__model => Filter.loan_type));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, (HtmlAttributeValueStyle) 0);
+        SelectTagHelper helpersSelectTagHelper2 = this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__22 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__22 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, Type, object, string, string, SelectList> target13 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__22.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, Type, object, string, string, SelectList>> p22 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__22;
+        Type type2 = typeof (SelectList);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "borrowType", typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj13 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__21.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__21, ((RazorPageBase) this).ViewBag);
+        SelectList selectList2 = target13((CallSite) p22, type2, obj13, "Value", "Text");
+        helpersSelectTagHelper2.Items = (IEnumerable<SelectListItem>) selectList2;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__24 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndTradeAccount_IndexUS, object> target14 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__24.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p24 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__24;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__23 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj14 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__23.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__23, lang, "StartCloseTome");
+        target14((CallSite) p24, this, obj14);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c27663", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndTradeAccountVm, DateTime?>(this.ViewData, (Expression<Func<EndTradeAccountVm, DateTime?>>) (__model => Filter.StartCloseTome));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                <input type=\"button\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 2394, "\"", 2430, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__26 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndTradeAccount_IndexUS, string, int, object, int, int, bool> target15 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__26.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, string, int, object, int, int, bool>> p26 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__26;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__25 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj15 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__25.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__25, lang, "public:default_time");
+        target15((CallSite) p26, this, "", 2402, obj15, 2402, 28, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" onclick=\"ResetTime();\" />\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__28 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__28 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndTradeAccount_IndexUS, object> target16 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__28.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p28 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__28;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__27 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj16 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__27.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__27, lang, "EndCloseTome");
+        target16((CallSite) p28, this, obj16);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c30286", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_4);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndTradeAccountVm, DateTime?>(this.ViewData, (Expression<Func<EndTradeAccountVm, DateTime?>>) (__model => Filter.EndCloseTome));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"form-check-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__30 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__30 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndTradeAccount_IndexUS, object> target17 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__30.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p30 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__30;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__29 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj17 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__29.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__29, lang, "public:filter_out_test_account");
+        target17((CallSite) p30, this, obj17);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                <div class=\"form-check\">\n                    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c32459", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.InputTypeName = (string) Views_EndTradeAccount_IndexUS.__tagHelperAttribute_5.Value;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_5);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<EndTradeAccountVm, bool>(this.ViewData, (Expression<Func<EndTradeAccountVm, bool>>) (__model => Filter.filter_out_test_account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_6);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                </div>\n            </div>\n\n        </div>\n        <div class=\"card-footer\">\n            <div class=\"form-group pull-right\">\n                <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 3183, "\"", 3213, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__32 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__32 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndTradeAccount_IndexUS, string, int, object, int, int, bool> target18 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__32.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, string, int, object, int, int, bool>> p32 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__32;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__31 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__31 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj18 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__31.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__31, lang, "public:search");
+        target18((CallSite) p32, this, "", 3191, obj18, 3191, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n                <button type=\"reset\" onclick=\"Reset();\" class=\"btn btn-light\" />");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__34 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__34 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_EndTradeAccount_IndexUS, object> target19 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__34.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p34 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__34;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__33 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__33 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj19 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__33.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__33, lang, "public:reset");
+        target19((CallSite) p34, this, obj19);
+        ((RazorPageBase) this).WriteLiteral("</button>\n                ");
+        IHtmlHelper<EndTradeAccountVm> html = this.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__36 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__36 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_EndTradeAccount_IndexUS)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target20 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__36.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p36 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__36;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__35 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__35 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj20 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__35.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__35, lang, "public:download");
+        string str = target20((CallSite) p36, obj20);
+        EndTradeAccountFilter tradeAccountFilter = Filter;
+        var data = new{ @class = "btn btn-secondary" };
+        ((RazorPageBase) this).Write((object) HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html, str, "DownloadUS", (object) tradeAccountFilter, (object) data));
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n        </div>\n    ");
+      }));
+      tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) tradeAccountIndexUs1).CreateTagHelper<FormTagHelper>();
+      tradeAccountIndexUs1.__tagHelperExecutionContext.Add((ITagHelper) tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) tradeAccountIndexUs1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      tradeAccountIndexUs1.__tagHelperExecutionContext.Add((ITagHelper) tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_EndTradeAccount_IndexUS.__tagHelperAttribute_7.Value;
+      tradeAccountIndexUs1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_7);
+      tradeAccountIndexUs1.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_8);
+      await tradeAccountIndexUs1.__tagHelperRunner.RunAsync(tradeAccountIndexUs1.__tagHelperExecutionContext);
+      if (!tradeAccountIndexUs1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeAccountIndexUs1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeAccountIndexUs1).Write((object) tradeAccountIndexUs1.__tagHelperExecutionContext.Output);
+      tradeAccountIndexUs1.__tagHelperExecutionContext = tradeAccountIndexUs1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("\n</div>\n\n<div class=\"table-container\">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__38 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__38 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target21 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__38.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p38 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__38;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs4 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__37 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__37 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj21 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__37.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__37, lang, "public:option");
+      target21((CallSite) p38, tradeAccountIndexUs4, obj21);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__40 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__40 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target22 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__40.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p40 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__40;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs5 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__39 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__39 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj22 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__39.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__39, lang, "market");
+      target22((CallSite) p40, tradeAccountIndexUs5, obj22);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__42 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__42 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target23 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__42.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p42 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__42;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs6 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__41 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__41 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj23 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__41.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__41, lang, "account");
+      target23((CallSite) p42, tradeAccountIndexUs6, obj23);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__44 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__44 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target24 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__44.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p44 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__44;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs7 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__43 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__43 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj24 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__43.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__43, lang, "member_name");
+      target24((CallSite) p44, tradeAccountIndexUs7, obj24);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__46 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__46 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target25 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__46.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p46 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__46;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs8 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__45 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__45 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj25 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__45.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__45, lang, "sub_account");
+      target25((CallSite) p46, tradeAccountIndexUs8, obj25);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__48 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__48 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target26 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__48.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p48 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__48;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs9 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__47 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__47 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj26 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__47.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__47, lang, "loan_type");
+      target26((CallSite) p48, tradeAccountIndexUs9, obj26);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__50 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__50 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target27 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__50.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p50 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__50;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs10 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__49 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__49 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj27 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__49.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__49, lang, "init_money");
+      target27((CallSite) p50, tradeAccountIndexUs10, obj27);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__52 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__52 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target28 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__52.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p52 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__52;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs11 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__51 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__51 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj28 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__51.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__51, lang, "margin");
+      target28((CallSite) p52, tradeAccountIndexUs11, obj28);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__54 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__54 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target29 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__54.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p54 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__54;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs12 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__53 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__53 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj29 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__53.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__53, lang, "account_profit");
+      target29((CallSite) p54, tradeAccountIndexUs12, obj29);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__56 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__56 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target30 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__56.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p56 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__56;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs13 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__55 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__55 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj30 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__55.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__55, lang, "transferrable_amount");
+      target30((CallSite) p56, tradeAccountIndexUs13, obj30);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__58 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__58 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target31 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__58.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p58 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__58;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs14 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__57 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__57 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj31 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__57.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__57, lang, "close_time");
+      target31((CallSite) p58, tradeAccountIndexUs14, obj31);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__60 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__60 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target32 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__60.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p60 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__60;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs15 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__59 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__59 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj32 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__59.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__59, lang, "begin_time");
+      target32((CallSite) p60, tradeAccountIndexUs15, obj32);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__62 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__62 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target33 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__62.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p62 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__62;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs16 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__61 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__61 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj33 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__61.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__61, lang, "end_time");
+      target33((CallSite) p62, tradeAccountIndexUs16, obj33);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__64 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__64 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target34 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__64.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p64 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__64;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs17 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__63 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__63 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj34 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__63.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__63, lang, "close_type");
+      target34((CallSite) p64, tradeAccountIndexUs17, obj34);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</th>\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (EndTradeAccountList tradeAccountList in (IEnumerable<EndTradeAccountList>) tradeAccountIndexUs1.Model.list)
+      {
+        EndTradeAccountList item = tradeAccountList;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__66 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__66 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string, object> target35 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__66.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string, object>> p66 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__66;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__65 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__65 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.ResultIndexed, "Lang", typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj35 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__65.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__65, ((RazorPageBase) tradeAccountIndexUs1).ViewBag);
+        string loanType = item.loan_type;
+        object obj36 = target35((CallSite) p66, obj35, loanType);
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("                <tr>\n                    <td>\n                        <div class=\"dropleft\">\n                            <button type=\"button\" class=\"btn icon btn-primary dropdown-toggle hide-arrow show\" data-bs-toggle=\"dropdown\" aria-expanded=\"true\">\n                                <i class=\"fa fa-bars\"></i>\n                            </button>\n                            <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\">\n                                ");
+        Views_EndTradeAccount_IndexUS tradeAccountIndexUs18 = tradeAccountIndexUs1;
+        IHtmlHelper<EndTradeAccountVm> html1 = tradeAccountIndexUs1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__68 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__68 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_EndTradeAccount_IndexUS)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target36 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__68.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p68 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__68;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__67 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__67 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj37 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__67.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__67, lang, "money_record");
+        string str1 = target36((CallSite) p68, obj37);
+        var data1 = new
+        {
+          subAccount = item.sub_account,
+          market = "US"
+        };
+        var data2 = new{ @class = "dropdown-item" };
+        IHtmlContent ihtmlContent1 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html1, str1, "IndexEndTradeAccountUS", "TradeMoneyRecord", (object) data1, (object) data2);
+        ((RazorPageBase) tradeAccountIndexUs18).Write((object) ihtmlContent1);
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("\n                                ");
+        Views_EndTradeAccount_IndexUS tradeAccountIndexUs19 = tradeAccountIndexUs1;
+        IHtmlHelper<EndTradeAccountVm> html2 = tradeAccountIndexUs1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__70 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__70 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_EndTradeAccount_IndexUS)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target37 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__70.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p70 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__70;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__69 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__69 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj38 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__69.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__69, lang, "money_record_cn");
+        string str2 = target37((CallSite) p70, obj38);
+        var data3 = new
+        {
+          subAccount = item.sub_account,
+          market = "US"
+        };
+        var data4 = new{ @class = "dropdown-item" };
+        IHtmlContent ihtmlContent2 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html2, str2, "IndexEndTradeAccountUSCN", "TradeMoneyRecord", (object) data3, (object) data4);
+        ((RazorPageBase) tradeAccountIndexUs19).Write((object) ihtmlContent2);
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("\n                                ");
+        Views_EndTradeAccount_IndexUS tradeAccountIndexUs20 = tradeAccountIndexUs1;
+        IHtmlHelper<EndTradeAccountVm> html3 = tradeAccountIndexUs1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__72 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__72 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_EndTradeAccount_IndexUS)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target38 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__72.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p72 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__72;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__71 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__71 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj39 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__71.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__71, lang, "total_deal");
+        string str3 = target38((CallSite) p72, obj39);
+        var data5 = new
+        {
+          subAccount = item.sub_account,
+          market = "US"
+        };
+        var data6 = new{ @class = "dropdown-item" };
+        IHtmlContent ihtmlContent3 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html3, str3, "IndexEndTradeAccountUS", "UserTradeDeal", (object) data5, (object) data6);
+        ((RazorPageBase) tradeAccountIndexUs20).Write((object) ihtmlContent3);
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("\n                            </div>\n                        </div>\n                    </td>\n                    <td>");
+        ((RazorPageBase) tradeAccountIndexUs1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndTradeAccountVm, string>(tradeAccountIndexUs1.Html, (Expression<Func<EndTradeAccountVm, string>>) (modelItem => item.market)));
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n");
+        if (item.is_test_account)
+        {
+          ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("                        <td style=\"color:tomato;\">");
+          ((RazorPageBase) tradeAccountIndexUs1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndTradeAccountVm, string>(tradeAccountIndexUs1.Html, (Expression<Func<EndTradeAccountVm, string>>) (modelItem => item.account)));
+          ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n");
+        }
+        else
+        {
+          ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("                        <td>");
+          ((RazorPageBase) tradeAccountIndexUs1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndTradeAccountVm, string>(tradeAccountIndexUs1.Html, (Expression<Func<EndTradeAccountVm, string>>) (modelItem => item.account)));
+          ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n");
+        }
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("                    <td>");
+        ((RazorPageBase) tradeAccountIndexUs1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndTradeAccountVm, string>(tradeAccountIndexUs1.Html, (Expression<Func<EndTradeAccountVm, string>>) (modelItem => item.member_name)));
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeAccountIndexUs1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndTradeAccountVm, string>(tradeAccountIndexUs1.Html, (Expression<Func<EndTradeAccountVm, string>>) (modelItem => item.sub_account)));
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n                    <td>");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__73 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__73 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__73.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__73, tradeAccountIndexUs1, obj36);
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeAccountIndexUs1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndTradeAccountVm, Decimal>(tradeAccountIndexUs1.Html, (Expression<Func<EndTradeAccountVm, Decimal>>) (modelItem => item.init_money)));
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeAccountIndexUs1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndTradeAccountVm, Decimal>(tradeAccountIndexUs1.Html, (Expression<Func<EndTradeAccountVm, Decimal>>) (modelItem => item.margin)));
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeAccountIndexUs1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndTradeAccountVm, Decimal>(tradeAccountIndexUs1.Html, (Expression<Func<EndTradeAccountVm, Decimal>>) (modelItem => item.total_profit)));
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeAccountIndexUs1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndTradeAccountVm, Decimal>(tradeAccountIndexUs1.Html, (Expression<Func<EndTradeAccountVm, Decimal>>) (modelItem => item.transferrable_amount)));
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n\n");
+        if (item.close_time.Date == DateTime.MinValue.Date)
+        {
+          ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("                        <td></td>\n");
+        }
+        else
+        {
+          ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("                        <td>");
+          ((RazorPageBase) tradeAccountIndexUs1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndTradeAccountVm, DateTime>(tradeAccountIndexUs1.Html, (Expression<Func<EndTradeAccountVm, DateTime>>) (modelItem => item.close_time)));
+          ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n");
+        }
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("                    <td>");
+        ((RazorPageBase) tradeAccountIndexUs1).Write(item.begin_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeAccountIndexUs1).Write(item.end_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) tradeAccountIndexUs1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<EndTradeAccountVm, string>(tradeAccountIndexUs1.Html, (Expression<Func<EndTradeAccountVm, string>>) (modelItem => item.close_type_str)));
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n                </tr>\n");
+      }
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("        </tbody>\n        <tbody>\n            <tr>\n                <td>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__75 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__75 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target39 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__75.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p75 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__75;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs21 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__74 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__74 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj40 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__74.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__74, lang, "total");
+      target39((CallSite) p75, tradeAccountIndexUs21, obj40);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td>");
+      ((RazorPageBase) tradeAccountIndexUs1).Write((object) tradeAccountIndexUs1.Model.summary.page_total_profit);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("</td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n            </tr>\n        </tbody>\n    </table>\n</div>\n\n<!-- 分頁處理 -->\n<div class=\"card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between\">\n\n");
+      if (tradeAccountIndexUs1.Model != null)
+      {
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("        <nav aria-label=\"Page navigation\">\n            <ul class=\"pagination mb-0\">\n\n                ");
+        ((RazorPageBase) tradeAccountIndexUs1).Write((object) ((IHtmlHelper) tradeAccountIndexUs1.Html).PagedListPager((IPagedList) tradeAccountIndexUs1.Model.list, (Func<int, string>) (page =>
+        {
+          IUrlHelper url = this.Url;
+          EndTradeAccountFilter filter = this.Model.filter;
+          Dictionary<string, object> dictionary1 = new Dictionary<string, object>();
+          dictionary1[nameof (page)] = (object) page;
+          Dictionary<string, object> dictionary2 = dictionary1;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__76 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__76 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "pageSize", typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj41 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__76.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__76, ((RazorPageBase) this).ViewBag);
+          dictionary2["pageSize"] = obj41;
+          Dictionary<string, object> args = dictionary1;
+          RouteValueDictionary routeValueDictionary = PublicTool.ToRouteValueDictionary<EndTradeAccountFilter>(filter, args);
+          return UrlHelperExtensions.Action(url, "IndexUS", (object) routeValueDictionary);
+        }), new PagedListRenderOptions()
+        {
+          LiElementClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-item"
+          },
+          PageClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-link"
+          },
+          LinkToFirstPageFormat = "<<",
+          LinkToPreviousPageFormat = "<",
+          LinkToNextPageFormat = ">",
+          LinkToLastPageFormat = ">>",
+          MaximumPageNumbersToDisplay = new int?(8)
+        }));
+        ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("\n            </ul>\n        </nav>\n");
+      }
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("\n    <div class=\"fw-normal small mt-5 mt-lg-0\">\n        ");
+      tradeAccountIndexUs1.__tagHelperExecutionContext = tradeAccountIndexUs1.__tagHelperScopeManager.Begin("select", (TagMode) 0, "72fa196d007c81a5ad1bae0b252625a800d196bea3ed34eee17d3dc3de09482c51722", (Func<Task>) (async () => { }));
+      tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) tradeAccountIndexUs1).CreateTagHelper<SelectTagHelper>();
+      tradeAccountIndexUs1.__tagHelperExecutionContext.Add((ITagHelper) tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      SelectTagHelper helpersSelectTagHelper = tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__78 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__78 = CallSite<Func<CallSite, object, IEnumerable<SelectListItem>>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof (IEnumerable<SelectListItem>), typeof (Views_EndTradeAccount_IndexUS)));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, IEnumerable<SelectListItem>> target40 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__78.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, IEnumerable<SelectListItem>>> p78 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__78;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__77 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__77 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "pageSizeOption", typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj42 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__77.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__77, ((RazorPageBase) tradeAccountIndexUs1).ViewBag);
+      IEnumerable<SelectListItem> selectListItems = target40((CallSite) p78, obj42);
+      helpersSelectTagHelper.Items = selectListItems;
+      tradeAccountIndexUs1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) tradeAccountIndexUs1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+      tradeAccountIndexUs1.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_9);
+      tradeAccountIndexUs1.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_10);
+      tradeAccountIndexUs1.__tagHelperExecutionContext.AddHtmlAttribute(Views_EndTradeAccount_IndexUS.__tagHelperAttribute_11);
+      await tradeAccountIndexUs1.__tagHelperRunner.RunAsync(tradeAccountIndexUs1.__tagHelperExecutionContext);
+      if (!tradeAccountIndexUs1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeAccountIndexUs1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeAccountIndexUs1).Write((object) tradeAccountIndexUs1.__tagHelperExecutionContext.Output);
+      tradeAccountIndexUs1.__tagHelperExecutionContext = tradeAccountIndexUs1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("\n        <div class=\"row\">\n            <div class=\"col\">\n                <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__80 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__80 = CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_EndTradeAccount_IndexUS, object> target41 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__80.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_EndTradeAccount_IndexUS, object>> p80 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__80;
+      Views_EndTradeAccount_IndexUS tradeAccountIndexUs22 = tradeAccountIndexUs1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__79 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__79 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_EndTradeAccount_IndexUS), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj43 = Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__79.Target((CallSite) Views_EndTradeAccount_IndexUS.\u003C\u003Eo__23.\u003C\u003Ep__79, lang, "public:total_count");
+      target41((CallSite) p80, tradeAccountIndexUs22, obj43);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral(":</label>\n                ");
+      ((RazorPageBase) tradeAccountIndexUs1).Write((object) tradeAccountIndexUs1.Model.list.TotalItemCount);
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("\n            </div>\n        </div>\n    </div>\n\n</div>\n\n<script type=\"text/javascript\">\n    function ResetTime() {\n        let today = new Date().toISOString().split('T')[0];\n        $(\"#begin_time\").val(`${today}T00:00`);\n        $(\"#end_time\").val(`${today}T23:59`);\n    }\n    function redirect(page) {\n        var url = '");
+      ((RazorPageBase) tradeAccountIndexUs1).Write(UrlHelperExtensions.Action(tradeAccountIndexUs1.Url, "IndexUS", (object) PublicTool.ToRouteValueDictionary<EndTradeAccountFilter>(tradeAccountIndexUs1.Model.filter, new Dictionary<string, object>()
+      {
+        ["page"] = (object) 1,
+        ["pageSize"] = (object) -1
+      })));
+      ((RazorPageBase) tradeAccountIndexUs1).WriteLiteral("';\n        url = url.replace('-1', page).replaceAll('amp;', '');\n        window.location.href = url;\n    }\n</script>\n\n<script>$(document).ready(function () {\n        // Attach a submit event handler to the form\n        $('#searchForm').submit(function (event) {\n            var selectedPageSize = $('#pageSize').val();\n            var actionUrl = $(this).attr('action');\n\n            // Update the form action URL with the selected page size as a query parameter\n            $(this).attr('action', actionUrl + '?pageSize=' + selectedPageSize);\n\n            // Continue with the form submission\n            return true;\n        });\n    });\n        function Reset() {\n            window.location.href = \"/EndTradeAccount/IndexUS\";\n        }\n    </script>");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<EndTradeAccountVm> Html { get; private set; }
+  }
+}

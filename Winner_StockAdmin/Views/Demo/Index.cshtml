@@ -1,0 +1,109 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_Demo_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using stockadmin.ViewModels.Demo;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Web.Common;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "939ba2c352ddce198d9f75149f97bf8444b1a88002081a1991280299d245c741", "/Views/Demo/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/Demo/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_Demo_Index : RazorPage<IPagedList<DemoMemberListVm>>
+  {
+    public virtual async 
+    #nullable disable
+    Task ExecuteAsync()
+    {
+      Views_Demo_Index viewsDemoIndex = this;
+      ((RazorPageBase) viewsDemoIndex).WriteLiteral("\n提醒: 程式碼務必要加上 try{} catch (AppException ex) {}\n<br />\n\n");
+      ((RazorPageBase) viewsDemoIndex).Write((object) HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) viewsDemoIndex.Html, "新增", "Add", (object) new
+      {
+      }, (object) new{ @class = "btn btn-primary" }));
+      ((RazorPageBase) viewsDemoIndex).WriteLiteral("\n\n<div class=\"table-responsive\">\n<table class=\"table\">\n    <thead>\n        <tr>\n            <th>\n                #\n            </th>\n            <th>\n                帳號\n            </th>\n            <th>\n                姓名\n            </th>\n            <th>管理</th>\n        </tr>\n    </thead>\n    <tbody>\n");
+      foreach (DemoMemberListVm demoMemberListVm in (IEnumerable<DemoMemberListVm>) viewsDemoIndex.Model)
+      {
+        DemoMemberListVm item = demoMemberListVm;
+        ((RazorPageBase) viewsDemoIndex).WriteLiteral("            <tr>\n                <td>\n                    ");
+        ((RazorPageBase) viewsDemoIndex).Write((object) HtmlHelperDisplayExtensions.DisplayFor<IPagedList<DemoMemberListVm>, int>(viewsDemoIndex.Html, (Expression<Func<IPagedList<DemoMemberListVm>, int>>) (modelItem => item.id)));
+        ((RazorPageBase) viewsDemoIndex).WriteLiteral("\n                </td>\n                <td>\n                    ");
+        ((RazorPageBase) viewsDemoIndex).Write((object) HtmlHelperDisplayExtensions.DisplayFor<IPagedList<DemoMemberListVm>, string>(viewsDemoIndex.Html, (Expression<Func<IPagedList<DemoMemberListVm>, string>>) (modelItem => item.account)));
+        ((RazorPageBase) viewsDemoIndex).WriteLiteral("\n                </td>\n                <td>\n                    ");
+        ((RazorPageBase) viewsDemoIndex).Write((object) HtmlHelperDisplayExtensions.DisplayFor<IPagedList<DemoMemberListVm>, string>(viewsDemoIndex.Html, (Expression<Func<IPagedList<DemoMemberListVm>, string>>) (modelItem => item.realName)));
+        ((RazorPageBase) viewsDemoIndex).WriteLiteral("\n                </td>\n                <td>\n");
+        if (Convert.ToBoolean(((ViewDataDictionary) viewsDemoIndex.ViewData)["btn1"]))
+          ((RazorPageBase) viewsDemoIndex).Write((object) HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) viewsDemoIndex.Html, "編輯畫面", "Edit", (object) new
+          {
+            id = item.id
+          }, (object) new{ @class = "btn btn-primary" }));
+        if (Convert.ToBoolean(((ViewDataDictionary) viewsDemoIndex.ViewData)["btn2"]))
+          ((RazorPageBase) viewsDemoIndex).Write((object) HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) viewsDemoIndex.Html, "權限控制範例", "Details", (object) new
+          {
+            id = item.id
+          }, (object) new{ @class = "btn btn-secondary" }));
+        ((RazorPageBase) viewsDemoIndex).WriteLiteral("                </td>\n            </tr>\n");
+      }
+      ((RazorPageBase) viewsDemoIndex).WriteLiteral("    </tbody>\n</table>\n</div>\n\n<!-- 分頁處理 (不需要調整, 直接複製貼上)-->\n<div class=\"card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between\">\n\n");
+      if (viewsDemoIndex.Model != null)
+      {
+        ((RazorPageBase) viewsDemoIndex).WriteLiteral("        <nav aria-label=\"Page navigation example\">\n            <ul class=\"pagination mb-0\">\n\n                ");
+        // ISSUE: reference to a compiler-generated method
+        ((RazorPageBase) viewsDemoIndex).Write((object) ((IHtmlHelper) viewsDemoIndex.Html).PagedListPager((IPagedList) viewsDemoIndex.Model, new Func<int, string>(viewsDemoIndex.\u003CExecuteAsync\u003Eb__0_0), new PagedListRenderOptions()
+        {
+          LiElementClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-item"
+          },
+          PageClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-link"
+          },
+          LinkToFirstPageFormat = "<<",
+          LinkToPreviousPageFormat = "<",
+          LinkToNextPageFormat = ">",
+          LinkToLastPageFormat = ">>",
+          MaximumPageNumbersToDisplay = new int?(8)
+        }));
+        ((RazorPageBase) viewsDemoIndex).WriteLiteral("\n            </ul>\n        </nav>\n");
+      }
+      ((RazorPageBase) viewsDemoIndex).WriteLiteral("\n    <div class=\"fw-normal small mt-4 mt-lg-0\">总笔数: ");
+      ((RazorPageBase) viewsDemoIndex).Write((object) viewsDemoIndex.Model.TotalItemCount);
+      ((RazorPageBase) viewsDemoIndex).WriteLiteral(" </div>\n</div>\n\n");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<IPagedList<DemoMemberListVm>> Html { get; private set; }
+  }
+}

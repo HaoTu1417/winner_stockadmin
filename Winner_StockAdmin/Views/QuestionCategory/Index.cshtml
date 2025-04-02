@@ -1,0 +1,455 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_QuestionCategory_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.ViewModels.QuestionCategory;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Web.Common;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "5c714b1c92a10d40e63368c9e7b86d584503ea564c29986a67001294d72352b6", "/Views/QuestionCategory/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/QuestionCategory/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_QuestionCategory_Index : RazorPage<QuestionCategoryVm>
+  {
+    public virtual async 
+    #nullable disable
+    Task ExecuteAsync()
+    {
+      Views_QuestionCategory_Index questionCategoryIndex1 = this;
+      QuestionCategoryFilter filter = questionCategoryIndex1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__0.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__0, ((RazorPageBase) questionCategoryIndex1).ViewBag);
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral("\n\n");
+      Views_QuestionCategory_Index questionCategoryIndex2 = questionCategoryIndex1;
+      IHtmlHelper<QuestionCategoryVm> html1 = questionCategoryIndex1.Html;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__2 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_QuestionCategory_Index)));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, string> target1 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__2.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, string>> p2 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__2;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__1.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__1, obj1, "public:append");
+      string str1 = target1((CallSite) p2, obj2);
+      var data1 = new{  };
+      var data2 = new{ @class = "btn btn-primary" };
+      IHtmlContent ihtmlContent1 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html1, str1, "Create", (object) data1, (object) data2);
+      ((RazorPageBase) questionCategoryIndex2).Write((object) ihtmlContent1);
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral("\n<div");
+      ((RazorPageBase) questionCategoryIndex1).BeginWriteAttribute("class", " class=\"", 291, "\"", 299, 0);
+      ((RazorPageBase) questionCategoryIndex1).EndWriteAttribute();
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral(">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__4 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_QuestionCategory_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_QuestionCategory_Index, object> target2 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__4.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_QuestionCategory_Index, object>> p4 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__4;
+      Views_QuestionCategory_Index questionCategoryIndex3 = questionCategoryIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj3 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__3.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__3, obj1, "public:option");
+      target2((CallSite) p4, questionCategoryIndex3, obj3);
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__6 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_QuestionCategory_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_QuestionCategory_Index, object> target3 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__6.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_QuestionCategory_Index, object>> p6 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__6;
+      Views_QuestionCategory_Index questionCategoryIndex4 = questionCategoryIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__5 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj4 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__5.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__5, obj1, "pk");
+      target3((CallSite) p6, questionCategoryIndex4, obj4);
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__8 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_QuestionCategory_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_QuestionCategory_Index, object> target4 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__8.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_QuestionCategory_Index, object>> p8 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__8;
+      Views_QuestionCategory_Index questionCategoryIndex5 = questionCategoryIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__7 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj5 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__7.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__7, obj1, "enable");
+      target4((CallSite) p8, questionCategoryIndex5, obj5);
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__10 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_QuestionCategory_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_QuestionCategory_Index, object> target5 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__10.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_QuestionCategory_Index, object>> p10 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__10;
+      Views_QuestionCategory_Index questionCategoryIndex6 = questionCategoryIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__9 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj6 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__9.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__9, obj1, "lang");
+      target5((CallSite) p10, questionCategoryIndex6, obj6);
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__12 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_QuestionCategory_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_QuestionCategory_Index, object> target6 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__12.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_QuestionCategory_Index, object>> p12 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__12;
+      Views_QuestionCategory_Index questionCategoryIndex7 = questionCategoryIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__11 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__11.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__11, obj1, "label");
+      target6((CallSite) p12, questionCategoryIndex7, obj7);
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_QuestionCategory_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_QuestionCategory_Index, object> target7 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_QuestionCategory_Index, object>> p14 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__14;
+      Views_QuestionCategory_Index questionCategoryIndex8 = questionCategoryIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__13.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__13, obj1, "icon");
+      target7((CallSite) p14, questionCategoryIndex8, obj8);
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_QuestionCategory_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_QuestionCategory_Index, object> target8 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_QuestionCategory_Index, object>> p16 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__16;
+      Views_QuestionCategory_Index questionCategoryIndex9 = questionCategoryIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__15.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__15, obj1, "sort");
+      target8((CallSite) p16, questionCategoryIndex9, obj9);
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</th>\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (QuestionCategoryList questionCategoryList in (IEnumerable<QuestionCategoryList>) questionCategoryIndex1.Model.list)
+      {
+        QuestionCategoryList item = questionCategoryList;
+        ((RazorPageBase) questionCategoryIndex1).WriteLiteral("                <tr>\n                    <td>\n                        <div class=\"dropleft\">\n                        <button type=\"button\" class=\"btn icon btn-primary dropdown-toggle hide-arrow show\" data-bs-toggle=\"dropdown\" aria-expanded=\"true\">\n                            <i class=\"fa fa-bars\"></i>\n                        </button>\n                        <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\">\n\t\t\t\t\t\t\t");
+        Views_QuestionCategory_Index questionCategoryIndex10 = questionCategoryIndex1;
+        IHtmlHelper<QuestionCategoryVm> html2 = questionCategoryIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__18 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__18 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_QuestionCategory_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target9 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__18.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p18 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__18;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__17 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj10 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__17.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__17, obj1, "public:edit");
+        string str2 = target9((CallSite) p18, obj10);
+        var data3 = new{ pk = item.pk };
+        var data4 = new{ @class = "dropdown-item" };
+        IHtmlContent ihtmlContent2 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html2, str2, "Edit", (object) data3, (object) data4);
+        ((RazorPageBase) questionCategoryIndex10).Write((object) ihtmlContent2);
+        ((RazorPageBase) questionCategoryIndex1).WriteLiteral("\n\t\t\t\t\t\t\t");
+        Views_QuestionCategory_Index questionCategoryIndex11 = questionCategoryIndex1;
+        IHtmlHelper<QuestionCategoryVm> html3 = questionCategoryIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__20 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__20 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_QuestionCategory_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target10 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__20.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p20 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__20;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__19 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj11 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__19.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__19, obj1, "public:delete");
+        string str3 = target10((CallSite) p20, obj11);
+        var data5 = new{ pk = item.pk };
+        var data6 = new
+        {
+          @class = "dropdown-item",
+          onclick = "return confirm('@lang[\"public:confirm_delete\"]');"
+        };
+        IHtmlContent ihtmlContent3 = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html3, str3, "Delete", (object) data5, (object) data6);
+        ((RazorPageBase) questionCategoryIndex11).Write((object) ihtmlContent3);
+        ((RazorPageBase) questionCategoryIndex1).WriteLiteral("\n\n                        </div>\n                    </div>\n                    </td>\n\t\t\t\t<td>");
+        ((RazorPageBase) questionCategoryIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<QuestionCategoryVm, int>(questionCategoryIndex1.Html, (Expression<Func<QuestionCategoryVm, int>>) (modelItem => item.pk)));
+        ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) questionCategoryIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<QuestionCategoryVm, bool>(questionCategoryIndex1.Html, (Expression<Func<QuestionCategoryVm, bool>>) (modelItem => item.enable)));
+        ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) questionCategoryIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<QuestionCategoryVm, string>(questionCategoryIndex1.Html, (Expression<Func<QuestionCategoryVm, string>>) (modelItem => item.lang)));
+        ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) questionCategoryIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<QuestionCategoryVm, string>(questionCategoryIndex1.Html, (Expression<Func<QuestionCategoryVm, string>>) (modelItem => item.label)));
+        ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) questionCategoryIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<QuestionCategoryVm, string>(questionCategoryIndex1.Html, (Expression<Func<QuestionCategoryVm, string>>) (modelItem => item.icon)));
+        ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) questionCategoryIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<QuestionCategoryVm, int>(questionCategoryIndex1.Html, (Expression<Func<QuestionCategoryVm, int>>) (modelItem => item.sort)));
+        ((RazorPageBase) questionCategoryIndex1).WriteLiteral("</td>\n                </tr>\n");
+      }
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral("        </tbody>\n    </table>\n</div>\n\n<!-- 分頁處理 -->\n<div class=\"card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between\">\n\n");
+      if (questionCategoryIndex1.Model != null)
+      {
+        ((RazorPageBase) questionCategoryIndex1).WriteLiteral("        <nav aria-label=\"Page navigation\">\n            <ul class=\"pagination mb-0\">\n\n                ");
+        // ISSUE: reference to a compiler-generated method
+        ((RazorPageBase) questionCategoryIndex1).Write((object) ((IHtmlHelper) questionCategoryIndex1.Html).PagedListPager((IPagedList) questionCategoryIndex1.Model.list, new Func<int, string>(questionCategoryIndex1.\u003CExecuteAsync\u003Eb__0_0), new PagedListRenderOptions()
+        {
+          LiElementClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-item"
+          },
+          PageClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-link"
+          },
+          LinkToFirstPageFormat = "<<",
+          LinkToPreviousPageFormat = "<",
+          LinkToNextPageFormat = ">",
+          LinkToLastPageFormat = ">>",
+          MaximumPageNumbersToDisplay = new int?(8)
+        }));
+        ((RazorPageBase) questionCategoryIndex1).WriteLiteral("\n            </ul>\n        </nav>\n");
+      }
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral("\n    <div class=\"fw-normal small mt-4 mt-lg-0\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__22 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_QuestionCategory_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_QuestionCategory_Index, object> target11 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__22.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_QuestionCategory_Index, object>> p22 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__22;
+      Views_QuestionCategory_Index questionCategoryIndex12 = questionCategoryIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__21 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_QuestionCategory_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj12 = Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__21.Target((CallSite) Views_QuestionCategory_Index.\u003C\u003Eo__0.\u003C\u003Ep__21, obj1, "public:total_count");
+      target11((CallSite) p22, questionCategoryIndex12, obj12);
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral(": ");
+      ((RazorPageBase) questionCategoryIndex1).Write((object) questionCategoryIndex1.Model.list.TotalItemCount);
+      ((RazorPageBase) questionCategoryIndex1).WriteLiteral(" </div>\n</div>");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<QuestionCategoryVm> Html { get; private set; }
+  }
+}

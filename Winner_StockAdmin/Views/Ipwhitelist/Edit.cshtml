@@ -1,0 +1,607 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_Ipwhitelist_Edit
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using Models.Dto;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d", "/Views/Ipwhitelist/Edit.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/Ipwhitelist/Edit.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_Ipwhitelist_Edit : RazorPage<AdminIpwhitelistDto>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("control-label"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("asp-action", (object) "PostEdit", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("id", (object) new HtmlString("form1"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_Ipwhitelist_Edit viewsIpwhitelistEdit = this;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__0.Target((CallSite) Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__0, ((RazorPageBase) viewsIpwhitelistEdit).ViewBag);
+      ((RazorPageBase) viewsIpwhitelistEdit).WriteLiteral("\n");
+      viewsIpwhitelistEdit.__tagHelperExecutionContext = viewsIpwhitelistEdit.__tagHelperScopeManager.Begin("form", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d6765", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n    <div class=\"row\">\n        <div class=\"col-md-4\">\n            <div class=\"form-group\">\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("label", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d7160", (Func<Task>) (async () =>
+        {
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__2 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, Views_Ipwhitelist_Edit, object> target = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__2.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>> p2 = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__2;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__1 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__1.Target((CallSite) Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__1, lang, "ip");
+          target((CallSite) p2, this, obj);
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = ((RazorPageBase) this).CreateTagHelper<LabelTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, string>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, string>>) (__model => __model.ip));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d9007", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, string>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, string>>) (__model => __model.ip));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_1);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d10959", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, string>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, string>>) (__model => __model.ip));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("label", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d12725", (Func<Task>) (async () =>
+        {
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__4 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, Views_Ipwhitelist_Edit, object> target = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__4.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>> p4 = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__4;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__3 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__3.Target((CallSite) Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__3, lang, "account");
+          target((CallSite) p4, this, obj);
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = ((RazorPageBase) this).CreateTagHelper<LabelTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, string>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, string>>) (__model => __model.account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d14583", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, string>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, string>>) (__model => __model.account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_1);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d16541", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, string>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, string>>) (__model => __model.ip));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("label", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d18307", (Func<Task>) (async () =>
+        {
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__6 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, Views_Ipwhitelist_Edit, object> target = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__6.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>> p6 = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__6;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__5 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__5.Target((CallSite) Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__5, lang, "remarks");
+          target((CallSite) p6, this, obj);
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = ((RazorPageBase) this).CreateTagHelper<LabelTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, string>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, string>>) (__model => __model.remarks));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d20165", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, string>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, string>>) (__model => __model.remarks));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d22123", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, string>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, string>>) (__model => __model.remarks));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("label", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d23894", (Func<Task>) (async () =>
+        {
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__8 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, Views_Ipwhitelist_Edit, object> target = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__8.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>> p8 = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__8;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__7 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__7.Target((CallSite) Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__7, lang, "status");
+          target((CallSite) p8, this, obj);
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = ((RazorPageBase) this).CreateTagHelper<LabelTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, int>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, int>>) (__model => __model.status));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d25750", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, int>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, int>>) (__model => __model.status));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d27707", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, int>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, int>>) (__model => __model.status));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("label", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d29477", (Func<Task>) (async () =>
+        {
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__10 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, Views_Ipwhitelist_Edit, object> target = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__10.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>> p10 = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__10;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__9 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__9.Target((CallSite) Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__9, lang, "create_time");
+          target((CallSite) p10, this, obj);
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = ((RazorPageBase) this).CreateTagHelper<LabelTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, DateTime>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, DateTime>>) (__model => __model.create_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d31343", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, DateTime>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, DateTime>>) (__model => __model.create_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_1);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d33305", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, DateTime>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, DateTime>>) (__model => __model.create_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("label", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d35080", (Func<Task>) (async () =>
+        {
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__12 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, Views_Ipwhitelist_Edit, object> target = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__12.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>> p12 = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__12;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__11 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__11.Target((CallSite) Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__11, lang, "update_time");
+          target((CallSite) p12, this, obj);
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = ((RazorPageBase) this).CreateTagHelper<LabelTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, DateTime>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, DateTime>>) (__model => __model.update_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d36946", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, DateTime>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, DateTime>>) (__model => __model.update_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_1);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d38908", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminIpwhitelistDto, DateTime>(this.ViewData, (Expression<Func<AdminIpwhitelistDto, DateTime>>) (__model => __model.update_time));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 2029, "\"", 2057, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__14 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_Ipwhitelist_Edit, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Ipwhitelist_Edit, string, int, object, int, int, bool> target1 = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__14.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Ipwhitelist_Edit, string, int, object, int, int, bool>> p14 = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__14;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__13 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj1 = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__13.Target((CallSite) Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__13, lang, "public:save");
+        target1((CallSite) p14, this, "", 2037, obj1, 2037, 20, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n        </div>\n    </div>\n");
+      }));
+      viewsIpwhitelistEdit.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) viewsIpwhitelistEdit).CreateTagHelper<FormTagHelper>();
+      viewsIpwhitelistEdit.__tagHelperExecutionContext.Add((ITagHelper) viewsIpwhitelistEdit.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      viewsIpwhitelistEdit.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) viewsIpwhitelistEdit).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      viewsIpwhitelistEdit.__tagHelperExecutionContext.Add((ITagHelper) viewsIpwhitelistEdit.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      viewsIpwhitelistEdit.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_Ipwhitelist_Edit.__tagHelperAttribute_3.Value;
+      viewsIpwhitelistEdit.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_3);
+      viewsIpwhitelistEdit.__tagHelperExecutionContext.AddHtmlAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_4);
+      await viewsIpwhitelistEdit.__tagHelperRunner.RunAsync(viewsIpwhitelistEdit.__tagHelperExecutionContext);
+      if (!viewsIpwhitelistEdit.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsIpwhitelistEdit.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsIpwhitelistEdit).Write((object) viewsIpwhitelistEdit.__tagHelperExecutionContext.Output);
+      viewsIpwhitelistEdit.__tagHelperExecutionContext = viewsIpwhitelistEdit.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsIpwhitelistEdit).WriteLiteral("\n\n<div>\n    ");
+      viewsIpwhitelistEdit.__tagHelperExecutionContext = viewsIpwhitelistEdit.__tagHelperScopeManager.Begin("a", (TagMode) 0, "3ee6ed9a2548586df5318360794558810a2deb354573e42b0bb6df7f7edf686d42447", (Func<Task>) (async () =>
+      {
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__16 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Ipwhitelist_Edit, object> target = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__16.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Ipwhitelist_Edit, object>> p16 = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__16;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__15 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Ipwhitelist_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj = Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__15.Target((CallSite) Views_Ipwhitelist_Edit.\u003C\u003Eo__18.\u003C\u003Ep__15, lang, "public:back_list");
+        target((CallSite) p16, this, obj);
+      }));
+      viewsIpwhitelistEdit.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = ((RazorPageBase) viewsIpwhitelistEdit).CreateTagHelper<AnchorTagHelper>();
+      viewsIpwhitelistEdit.__tagHelperExecutionContext.Add((ITagHelper) viewsIpwhitelistEdit.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      viewsIpwhitelistEdit.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) Views_Ipwhitelist_Edit.__tagHelperAttribute_5.Value;
+      viewsIpwhitelistEdit.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Ipwhitelist_Edit.__tagHelperAttribute_5);
+      await viewsIpwhitelistEdit.__tagHelperRunner.RunAsync(viewsIpwhitelistEdit.__tagHelperExecutionContext);
+      if (!viewsIpwhitelistEdit.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsIpwhitelistEdit.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsIpwhitelistEdit).Write((object) viewsIpwhitelistEdit.__tagHelperExecutionContext.Output);
+      viewsIpwhitelistEdit.__tagHelperExecutionContext = viewsIpwhitelistEdit.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsIpwhitelistEdit).WriteLiteral("\n</div>");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<AdminIpwhitelistDto> Html { get; private set; }
+  }
+}

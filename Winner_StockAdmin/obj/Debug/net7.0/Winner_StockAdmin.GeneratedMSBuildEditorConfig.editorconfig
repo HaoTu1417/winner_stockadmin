@@ -9,39 +9,859 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Winner_StockAdmin
 build_property.RootNamespace = Winner_StockAdmin
-build_property.ProjectDir = /Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/
+build_property.ProjectDir = G:\OtherProject\winner_stockadmin\Winner_StockAdmin\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = /Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin
+build_property.MSBuildProjectDirectory = G:\OtherProject\winner_stockadmin\Winner_StockAdmin
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Addfinancing/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkZmluYW5jaW5nXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Addfinancing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkZmluYW5jaW5nXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Addfinancing/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkZmluYW5jaW5nXFJldmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminBank/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5CYW5rXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminBank/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5CYW5rXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminBank/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5CYW5rXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-9q75b1rz7g
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminConfig/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db25maWdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminConfig/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db25maWdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminConfig/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db25maWdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminLogin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2dpblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminLog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Mb2dcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminRole/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Sb2xlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminRole/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Sb2xlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminRole/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Sb2xlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminUser/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vc2VyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminUser/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vc2VyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AdminUser/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Vc2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Advertise/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Advertise/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Advertise/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AppFile/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwRmlsZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AppFile/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwRmlsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AppFile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwRmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AppLogo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwTG9nb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AppLogo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwTG9nb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/AppLogo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwTG9nb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Banner/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFubmVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Banner/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFubmVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Banner/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFubmVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/BatchUpdateStock/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF0Y2hVcGRhdGVTdG9ja1xpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/BorrowAddmoney/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9ycm93QWRkbW9uZXlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/BorrowAddmoney/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9ycm93QWRkbW9uZXlcUmV2aWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/BorrowFee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9ycm93RmVlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/BorrowPlan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9ycm93UGxhblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/BorrowPlan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9ycm93UGxhblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Bulletin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVsbGV0aW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Bulletin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVsbGV0aW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Bulletin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVsbGV0aW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/ClosedTradeAccount/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xvc2VkVHJhZGVBY2NvdW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/CmsPopinfo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ21zUG9waW5mb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/CmsPopinfo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ21zUG9waW5mb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/CmsPopinfo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ21zUG9waW5mb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/CmsSupport/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ21zU3VwcG9ydFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/CmsSupport/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ21zU3VwcG9ydFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/CmsSupport/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ21zU3VwcG9ydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/DailyFinanceReport/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFpbHlGaW5hbmNlUmVwb3J0XGluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Demo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Demo/SearchIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xTZWFyY2hJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Document/Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcQ29weS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Document/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Document/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Document/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/EmailVerificationCode/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxWZXJpZmljYXRpb25Db2RlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/EndTradeAccount/IndexUS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kVHJhZGVBY2NvdW50XEluZGV4VVMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/EndTradeAccount/IndexVN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kVHJhZGVBY2NvdW50XEluZGV4Vk4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/EndWalletWithdraw/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kV2FsbGV0V2l0aGRyYXdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/EndWalletWithdraw/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kV2FsbGV0V2l0aGRyYXdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/ExchangeRate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjaGFuZ2VSYXRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisAddfinancing/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzQWRkZmluYW5jaW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisAddfinancing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzQWRkZmluYW5jaW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisAddmoney/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzQWRkbW9uZXlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisAddmoney/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzQWRkbW9uZXlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisBorrow/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzQm9ycm93XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisBorrow/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzQm9ycm93XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisRequestRenew/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzUmVxdWVzdFJlbmV3XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisRequestRenew/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzUmVxdWVzdFJlbmV3XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisRequestRenew/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzUmVxdWVzdFJlbmV3XFJldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisTradeMoneyCheck/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzVHJhZGVNb25leUNoZWNrXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisTradeMoneyCheck/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzVHJhZGVNb25leUNoZWNrXFJldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisWalletCouponRecord/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzV2FsbGV0Q291cG9uUmVjb3JkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisWalletCouponRecord/IndexCN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzV2FsbGV0Q291cG9uUmVjb3JkXEluZGV4Q04uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/HisWalletRecharge/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzV2FsbGV0UmVjaGFyZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Ipwhitelist/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXB3aGl0ZWxpc3RcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Ipwhitelist/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXB3aGl0ZWxpc3RcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Ipwhitelist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXB3aGl0ZWxpc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Login/ChangePasswd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ2hhbmdlUGFzc3dkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Login/Mfa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTWZhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Login/UnAuthorized.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cVW5BdXRob3JpemVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Marquee/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFycXVlZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Marquee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFycXVlZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Marquee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFycXVlZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Marquee/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFycXVlZVxSZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MemberBank/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyQmFua1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MemberBank/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyQmFua1xSZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MemberTask/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyVGFza1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MemberTask/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyVGFza1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MemberTask/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyVGFza1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Member/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Member/EditInviter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEVkaXRJbnZpdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Member/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Member/PromotionIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFByb21vdGlvbkluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Menu/MainMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxNYWluTWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MessageRecord/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVJlY29yZFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MessageRecord/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVJlY29yZFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MessageRecord/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVJlY29yZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MessageTemplate/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVRlbXBsYXRlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MessageTemplate/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVRlbXBsYXRlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MessageTemplate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVRlbXBsYXRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MultiLangLang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGlMYW5nTGFuZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MultiLangLang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGlMYW5nTGFuZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MutilangSubject/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXV0aWxhbmdTdWJqZWN0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MutilangSubject/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXV0aWxhbmdTdWJqZWN0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/MutilangSubject/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXV0aWxhbmdTdWJqZWN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Mutilang/MultilangIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXV0aWxhbmdcTXVsdGlsYW5nSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Mutilang/MultilangTranslate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXV0aWxhbmdcTXVsdGlsYW5nVHJhbnNsYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Mutilang/MultilangTranslateEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXV0aWxhbmdcTXVsdGlsYW5nVHJhbnNsYXRlRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Promotion/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvbW90aW9uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Promotion/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvbW90aW9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Promotion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvbW90aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/QuestionCategory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25DYXRlZ29yeVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/QuestionCategory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25DYXRlZ29yeVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/QuestionCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25DYXRlZ29yeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Question/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Question/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Question/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RecommendConfig/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21tZW5kQ29uZmlnXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RecommendRegister/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21tZW5kUmVnaXN0ZXJcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RecommendRegister/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21tZW5kUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RecommendReward/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21tZW5kUmV3YXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RecommendSummary/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjb21tZW5kU3VtbWFyeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RequestRenew/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFJlbmV3XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RequestRenew/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFJlbmV3XFJldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RequestStop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFN0b3BcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RequestStop/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFN0b3BcUmV2aWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/ReviewBorrow/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3Qm9ycm93XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/ReviewBorrow/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3Qm9ycm93XFJldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/ReviewMember/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3TWVtYmVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/ReviewMember/IndexFail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3TWVtYmVyXEluZGV4RmFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/ReviewMember/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3TWVtYmVyXFJldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RewardDetail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV3YXJkRGV0YWlsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RichboxBook/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmljaGJveEJvb2tcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RichboxBook/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmljaGJveEJvb2tcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RichboxConfig/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmljaGJveENvbmZpZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/RichboxDailyReport/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmljaGJveERhaWx5UmVwb3J0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StatBalance/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdEJhbGFuY2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StatTradeAccount/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdFRyYWRlQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StatWalletRecordDetail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdFdhbGxldFJlY29yZERldGFpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StatWalletRecordDetail/IndexCN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdFdhbGxldFJlY29yZERldGFpbFxJbmRleENOLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockHoliday/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tIb2xpZGF5XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockHoliday/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tIb2xpZGF5XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockHoliday/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tIb2xpZGF5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockOptionPosition/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tPcHRpb25Qb3NpdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockOptionRecord/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tPcHRpb25SZWNvcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockOptionSellingReview/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tPcHRpb25TZWxsaW5nUmV2aWV3XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockOptionSellingReview/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tPcHRpb25TZWxsaW5nUmV2aWV3XFJldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockOption/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tPcHRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockOption/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tPcHRpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockOption/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tPcHRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockUs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tVc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockUs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tVc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockVn/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tWblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/StockVn/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tWblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/SysCountry/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzQ291bnRyeVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/SysCountry/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzQ291bnRyeVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/SysCountry/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzQ291bnRyeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/SysMarket/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzTWFya2V0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/SysMarket/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzTWFya2V0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/SysMarket/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3lzTWFya2V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeCancel/IndexUS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVDYW5jZWxcSW5kZXhVUy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeCancel/IndexVN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVDYW5jZWxcSW5kZXhWTi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeMoneyCheck/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVNb25leUNoZWNrXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeMoneyCheck/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVNb25leUNoZWNrXFJldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeMoneyRecord/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVNb25leVJlY29yZFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeMoneyRecord/IndexCN_US.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVNb25leVJlY29yZFxJbmRleENOX1VTLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeMoneyRecord/IndexCN_VN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVNb25leVJlY29yZFxJbmRleENOX1ZOLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeMoneyRecord/IndexUS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVNb25leVJlY29yZFxJbmRleFVTLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeMoneyRecord/IndexVN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVNb25leVJlY29yZFxJbmRleFZOLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradePosition/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVQb3NpdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeTemplate/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVUZW1wbGF0ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeTemplate/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVUZW1wbGF0ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradeTemplate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVUZW1wbGF0ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradingAccount/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGluZ0FjY291bnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradingAccount/IndexUS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGluZ0FjY291bnRcSW5kZXhVUy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/TradingAccount/IndexVN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGluZ0FjY291bnRcSW5kZXhWTi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/UserTradeDeal/IndexUS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclRyYWRlRGVhbFxJbmRleFVTLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/UserTradeDeal/IndexVN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclRyYWRlRGVhbFxJbmRleFZOLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/UserTradeOrder/IndexUS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclRyYWRlT3JkZXJcSW5kZXhVUy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/UserTradeOrder/IndexVN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclRyYWRlT3JkZXJcSW5kZXhWTi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/UserTradePosition/IndexUS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclRyYWRlUG9zaXRpb25cSW5kZXhVUy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/UserTradePosition/IndexVN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclRyYWRlUG9zaXRpb25cSW5kZXhWTi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletCouponRecord/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0Q291cG9uUmVjb3JkXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletCouponRecord/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0Q291cG9uUmVjb3JkXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletCouponRecord/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0Q291cG9uUmVjb3JkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletPayment/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0UGF5bWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletPayment/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0UGF5bWVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletPayment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0UGF5bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletPayment/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0UGF5bWVudFxSZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletRecharge/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0UmVjaGFyZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletRecharge/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0UmVjaGFyZ2VcUmV2aWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletRecord/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0UmVjb3JkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletRecord/IndexCN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0UmVjb3JkXEluZGV4Q04uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletTemplate/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0VGVtcGxhdGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletTemplate/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0VGVtcGxhdGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletTemplate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0VGVtcGxhdGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletWithdraw/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0V2l0aGRyYXdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WalletWithdraw/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0V2l0aGRyYXdcUmV2aWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Wallet/ChangeException.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0XENoYW5nZUV4Y2VwdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Wallet/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Wallet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WarningMessage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FybmluZ01lc3NhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WarningMessage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FybmluZ01lc3NhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WithdrawCurrency/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2l0aGRyYXdDdXJyZW5jeVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WithdrawCurrency/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2l0aGRyYXdDdXJyZW5jeVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/WithdrawCurrency/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2l0aGRyYXdDdXJyZW5jeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/OtherProject/winner_stockadmin/Winner_StockAdmin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-o5lh4b9bjv

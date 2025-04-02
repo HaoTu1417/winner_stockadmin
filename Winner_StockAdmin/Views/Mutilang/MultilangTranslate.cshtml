@@ -1,0 +1,539 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_Mutilang_MultilangTranslate
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.ViewModels.MultiLang;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Web.Common;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "26a00525d5b1e1acfa32d721289b8686f0ca1b8a04caea9e31232853185b5ea0", "/Views/Mutilang/MultilangTranslate.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/Mutilang/MultilangTranslate.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_Mutilang_MultilangTranslate : RazorPage<MultiLangCacheSearchVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("name", (object) "key", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("value", (object) "", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("form-select"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("asp-action", (object) "MultilangIndex", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("asp-action", (object) "MultilangTranslate", (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_Mutilang_MultilangTranslate multilangTranslate1 = this;
+      MultiLangCacheSearchFilter Filter = multilangTranslate1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__0.Target((CallSite) Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__0, ((RazorPageBase) multilangTranslate1).ViewBag);
+      ((RazorPageBase) multilangTranslate1).WriteLiteral("\n<div class=\"card\">\n    ");
+      multilangTranslate1.__tagHelperExecutionContext = multilangTranslate1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "26a00525d5b1e1acfa32d721289b8686f0ca1b8a04caea9e31232853185b5ea06972", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__2 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Mutilang_MultilangTranslate, object> target1 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__2.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>> p2 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__2;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__1 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj1 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__1.Target((CallSite) Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__1, lang, "public:lang");
+        target1((CallSite) p2, this, obj1);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                <div class=\"col-auto\" hidden>\n                    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "26a00525d5b1e1acfa32d721289b8686f0ca1b8a04caea9e31232853185b5ea07716", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<MultiLangCacheSearchVm, string>(this.ViewData, (Expression<Func<MultiLangCacheSearchVm, string>>) (__model => Filter.key));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.Name = (string) Views_Mutilang_MultilangTranslate.__tagHelperAttribute_0.Value;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Mutilang_MultilangTranslate.__tagHelperAttribute_0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Mutilang_MultilangTranslate.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                </div>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("select", (TagMode) 0, "26a00525d5b1e1acfa32d721289b8686f0ca1b8a04caea9e31232853185b5ea09587", (Func<Task>) (async () =>
+        {
+          ((RazorPageBase) this).WriteLiteral("\n                    ");
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("option", (TagMode) 0, "26a00525d5b1e1acfa32d721289b8686f0ca1b8a04caea9e31232853185b5ea09897", (Func<Task>) (async () =>
+          {
+            // ISSUE: reference to a compiler-generated field
+            if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__4 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            Action<CallSite, Views_Mutilang_MultilangTranslate, object> target = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__4.Target;
+            // ISSUE: reference to a compiler-generated field
+            CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>> p4 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__4;
+            // ISSUE: reference to a compiler-generated field
+            if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__3 == null)
+            {
+              // ISSUE: reference to a compiler-generated field
+              Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+              {
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+                CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+              }));
+            }
+            // ISSUE: reference to a compiler-generated field
+            // ISSUE: reference to a compiler-generated field
+            object obj = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__3.Target((CallSite) Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__3, lang, "lang");
+            target((CallSite) p4, this, obj);
+          }));
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = ((RazorPageBase) this).CreateTagHelper<OptionTagHelper>();
+          this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+          this.__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string) Views_Mutilang_MultilangTranslate.__tagHelperAttribute_2.Value;
+          this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Mutilang_MultilangTranslate.__tagHelperAttribute_2);
+          await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+          if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+            await this.__tagHelperExecutionContext.SetOutputContentAsync();
+          ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+          this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+          ((RazorPageBase) this).WriteLiteral("\n                ");
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) this).CreateTagHelper<SelectTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<MultiLangCacheSearchVm, string>(this.ViewData, (Expression<Func<MultiLangCacheSearchVm, string>>) (__model => Filter.lang));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, (HtmlAttributeValueStyle) 0);
+        SelectTagHelper helpersSelectTagHelper = this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__6 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, Type, object, string, string, SelectList> target2 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, Type, object, string, string, SelectList>> p6 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__6;
+        Type type = typeof (SelectList);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "langDropdown", typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__5.Target((CallSite) Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__5, ((RazorPageBase) this).ViewBag);
+        SelectList selectList = target2((CallSite) p6, type, obj2, "Value", "Text");
+        helpersSelectTagHelper.Items = (IEnumerable<SelectListItem>) selectList;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_Mutilang_MultilangTranslate.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n        </div>\n\n        <div class=\"card-footer\">\n            <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 893, "\"", 923, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_Mutilang_MultilangTranslate, string, int, object, int, int, bool> target3 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, string, int, object, int, int, bool>> p8 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__8;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__7.Target((CallSite) Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__7, lang, "public:search");
+        target3((CallSite) p8, this, "", 901, obj3, 901, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary pull-right\" />\n            ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("a", (TagMode) 0, "26a00525d5b1e1acfa32d721289b8686f0ca1b8a04caea9e31232853185b5ea014282", (Func<Task>) (async () =>
+        {
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__10 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          Action<CallSite, Views_Mutilang_MultilangTranslate, object> target4 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__10.Target;
+          // ISSUE: reference to a compiler-generated field
+          CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>> p10 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__10;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__9 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj4 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__9.Target((CallSite) Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__9, lang, "public:back_list");
+          target4((CallSite) p10, this, obj4);
+        }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = ((RazorPageBase) this).CreateTagHelper<AnchorTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) Views_Mutilang_MultilangTranslate.__tagHelperAttribute_4.Value;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Mutilang_MultilangTranslate.__tagHelperAttribute_4);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n        </div>\n    ");
+      }));
+      multilangTranslate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) multilangTranslate1).CreateTagHelper<FormTagHelper>();
+      multilangTranslate1.__tagHelperExecutionContext.Add((ITagHelper) multilangTranslate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      multilangTranslate1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) multilangTranslate1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      multilangTranslate1.__tagHelperExecutionContext.Add((ITagHelper) multilangTranslate1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      multilangTranslate1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_Mutilang_MultilangTranslate.__tagHelperAttribute_5.Value;
+      multilangTranslate1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_Mutilang_MultilangTranslate.__tagHelperAttribute_5);
+      await multilangTranslate1.__tagHelperRunner.RunAsync(multilangTranslate1.__tagHelperExecutionContext);
+      if (!multilangTranslate1.__tagHelperExecutionContext.Output.IsContentModified)
+        await multilangTranslate1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) multilangTranslate1).Write((object) multilangTranslate1.__tagHelperExecutionContext.Output);
+      multilangTranslate1.__tagHelperExecutionContext = multilangTranslate1.__tagHelperScopeManager.End();
+      ((RazorPageBase) multilangTranslate1).WriteLiteral("\n</div>\n\n\n<div");
+      ((RazorPageBase) multilangTranslate1).BeginWriteAttribute("class", " class=\"", 1076, "\"", 1084, 0);
+      ((RazorPageBase) multilangTranslate1).EndWriteAttribute();
+      ((RazorPageBase) multilangTranslate1).WriteLiteral(">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__12 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Mutilang_MultilangTranslate, object> target5 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__12.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>> p12 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__12;
+      Views_Mutilang_MultilangTranslate multilangTranslate2 = multilangTranslate1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__11 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj5 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__11.Target((CallSite) Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__11, lang, "public:lang");
+      target5((CallSite) p12, multilangTranslate2, obj5);
+      ((RazorPageBase) multilangTranslate1).WriteLiteral("</th>\n                <th>Key</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Mutilang_MultilangTranslate, object> target6 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>> p14 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__14;
+      Views_Mutilang_MultilangTranslate multilangTranslate3 = multilangTranslate1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj6 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__13.Target((CallSite) Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__13, lang, "description");
+      target6((CallSite) p14, multilangTranslate3, obj6);
+      ((RazorPageBase) multilangTranslate1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Mutilang_MultilangTranslate, object> target7 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>> p16 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__16;
+      Views_Mutilang_MultilangTranslate multilangTranslate4 = multilangTranslate1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__15.Target((CallSite) Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__15, lang, "translation");
+      target7((CallSite) p16, multilangTranslate4, obj7);
+      ((RazorPageBase) multilangTranslate1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_Mutilang_MultilangTranslate, object> target8 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__18.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_Mutilang_MultilangTranslate, object>> p18 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__18;
+      Views_Mutilang_MultilangTranslate multilangTranslate5 = multilangTranslate1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__17.Target((CallSite) Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__17, lang, "translate");
+      target8((CallSite) p18, multilangTranslate5, obj8);
+      ((RazorPageBase) multilangTranslate1).WriteLiteral("</th>\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (MultiLangCacheSearchList langCacheSearchList in (IEnumerable<MultiLangCacheSearchList>) multilangTranslate1.Model.list)
+      {
+        MultiLangCacheSearchList item = langCacheSearchList;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__21 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof (string), typeof (Views_Mutilang_MultilangTranslate)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target9 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__21.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p21 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__21;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__20 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__20 = CallSite<Func<CallSite, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "ToString", (IEnumerable<Type>) null, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, object> target10 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__20.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, object>> p20 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__20;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__19 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_Mutilang_MultilangTranslate), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj9 = Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__19.Target((CallSite) Views_Mutilang_MultilangTranslate.\u003C\u003Eo__18.\u003C\u003Ep__19, lang, "translate");
+        object obj10 = target10((CallSite) p20, obj9);
+        string str = target9((CallSite) p21, obj10);
+        ((RazorPageBase) multilangTranslate1).WriteLiteral("                <tr>\n                    <td>");
+        ((RazorPageBase) multilangTranslate1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<MultiLangCacheSearchVm, string>(multilangTranslate1.Html, (Expression<Func<MultiLangCacheSearchVm, string>>) (modelItem => item.lang)));
+        ((RazorPageBase) multilangTranslate1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) multilangTranslate1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<MultiLangCacheSearchVm, string>(multilangTranslate1.Html, (Expression<Func<MultiLangCacheSearchVm, string>>) (modelItem => item.key)));
+        ((RazorPageBase) multilangTranslate1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) multilangTranslate1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<MultiLangCacheSearchVm, string>(multilangTranslate1.Html, (Expression<Func<MultiLangCacheSearchVm, string>>) (modelItem => item.description)));
+        ((RazorPageBase) multilangTranslate1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) multilangTranslate1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<MultiLangCacheSearchVm, string>(multilangTranslate1.Html, (Expression<Func<MultiLangCacheSearchVm, string>>) (modelItem => item.translation)));
+        ((RazorPageBase) multilangTranslate1).WriteLiteral("</td>\n                    <td>\n                        ");
+        ((RazorPageBase) multilangTranslate1).Write((object) HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) multilangTranslate1.Html, str, "MultilangTranslateEdit", (object) new
+        {
+          key = Filter.key,
+          lang = item.lang,
+          valKey = item.key
+        }, (object) new{ @class = "btn btn-primary" }));
+        ((RazorPageBase) multilangTranslate1).WriteLiteral("\n                    </td>\n                </tr>\n");
+      }
+      ((RazorPageBase) multilangTranslate1).WriteLiteral("        </tbody>\n    </table>\n</div>\n\n                    <!-- 分頁處理)-->\n<div class=\"card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between\">\n\n");
+      if (multilangTranslate1.Model != null)
+      {
+        ((RazorPageBase) multilangTranslate1).WriteLiteral("            <nav aria-label=\"Page navigation\">\n                <ul class=\"pagination mb-0\">\n\n                ");
+        ((RazorPageBase) multilangTranslate1).Write((object) ((IHtmlHelper) multilangTranslate1.Html).PagedListPager((IPagedList) multilangTranslate1.Model.list, (Func<int, string>) (page => UrlHelperExtensions.Action(this.Url, "MultilangTranslate", (object) new
+        {
+          key = Filter.key,
+          filter = this.Model.filter,
+          page = page
+        })), new PagedListRenderOptions()
+        {
+          LiElementClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-item"
+          },
+          PageClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-link"
+          },
+          LinkToFirstPageFormat = "<<",
+          LinkToPreviousPageFormat = "<",
+          LinkToNextPageFormat = ">",
+          LinkToLastPageFormat = ">>",
+          MaximumPageNumbersToDisplay = new int?(8)
+        }));
+        ((RazorPageBase) multilangTranslate1).WriteLiteral("\n                </ul>\n            </nav>\n");
+      }
+      ((RazorPageBase) multilangTranslate1).WriteLiteral("\n    <div class=\"fw-normal small mt-4 mt-lg-0\">总笔数: ");
+      ((RazorPageBase) multilangTranslate1).Write((object) multilangTranslate1.Model.list.TotalItemCount);
+      ((RazorPageBase) multilangTranslate1).WriteLiteral(" </div>\n</div>");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<MultiLangCacheSearchVm> Html { get; private set; }
+  }
+}

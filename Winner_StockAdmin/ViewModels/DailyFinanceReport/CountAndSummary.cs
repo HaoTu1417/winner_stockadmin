@@ -1,0 +1,26 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: stockadmin.ViewModels.DailyFinanceReport.CountAndSummary
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using System;
+
+#nullable disable
+namespace stockadmin.ViewModels.DailyFinanceReport
+{
+  public class CountAndSummary
+  {
+    public int count { get; set; }
+
+    public Decimal total_recharge { get; set; }
+
+    public Decimal total_withdraw { get; set; }
+
+    public Decimal total_profit_loss { get; set; }
+
+    public int total_member { get; set; }
+
+    public Decimal total_management_fee { get; set; }
+  }
+}

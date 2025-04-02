@@ -1,0 +1,729 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_TradeMoneyCheck_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.Tool;
+using stockadmin.ViewModels.TradeMoneyCheck;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Web.Common;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "1769f12afceef560606784fa1483cb7c8e743f7b432a3f2e714a9009ff06a21b", "/Views/TradeMoneyCheck/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/TradeMoneyCheck/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_TradeMoneyCheck_Index : RazorPage<TradeMoneyCheckVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_TradeMoneyCheck_Index tradeMoneyCheckIndex1 = this;
+      TradeMoneyCheckFilter Filter = tradeMoneyCheckIndex1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__0.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__0, ((RazorPageBase) tradeMoneyCheckIndex1).ViewBag);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("\n<div class=\"card\">\n    ");
+      tradeMoneyCheckIndex1.__tagHelperExecutionContext = tradeMoneyCheckIndex1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "1769f12afceef560606784fa1483cb7c8e743f7b432a3f2e714a9009ff06a21b5586", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__2 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_TradeMoneyCheck_Index, object> target1 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__2.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p2 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__2;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__1 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj1 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__1.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__1, lang, "account");
+        target1((CallSite) p2, this, obj1);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "1769f12afceef560606784fa1483cb7c8e743f7b432a3f2e714a9009ff06a21b6243", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<TradeMoneyCheckVm, string>(this.ViewData, (Expression<Func<TradeMoneyCheckVm, string>>) (__model => Filter.account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyCheck_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_TradeMoneyCheck_Index, object> target2 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__4.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p4 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__4;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__3.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__3, lang, "member_name");
+        target2((CallSite) p4, this, obj2);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "1769f12afceef560606784fa1483cb7c8e743f7b432a3f2e714a9009ff06a21b8221", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<TradeMoneyCheckVm, string>(this.ViewData, (Expression<Func<TradeMoneyCheckVm, string>>) (__model => Filter.member_name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyCheck_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_TradeMoneyCheck_Index, object> target3 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p6 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__6;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__5.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__5, lang, "sn");
+        target3((CallSite) p6, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "1769f12afceef560606784fa1483cb7c8e743f7b432a3f2e714a9009ff06a21b10194", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<TradeMoneyCheckVm, string>(this.ViewData, (Expression<Func<TradeMoneyCheckVm, string>>) (__model => Filter.sn));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyCheck_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_TradeMoneyCheck_Index, object> target4 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p8 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__8;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__7.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__7, lang, "sub_account");
+        target4((CallSite) p8, this, obj4);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "1769f12afceef560606784fa1483cb7c8e743f7b432a3f2e714a9009ff06a21b12168", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<TradeMoneyCheckVm, string>(this.ViewData, (Expression<Func<TradeMoneyCheckVm, string>>) (__model => Filter.sub_account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_TradeMoneyCheck_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\n        </div>\n        <div class=\"card-footer\">\n\t        <div class=\"form-group pull-right\">\n\t\t        <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1060, "\"", 1090, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_TradeMoneyCheck_Index, string, int, object, int, int, bool> target5 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, string, int, object, int, int, bool>> p10 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__9.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__9, lang, "public:search");
+        target5((CallSite) p10, this, "", 1068, obj5, 1068, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n\t\t        <input type=\"reset\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1148, "\"", 1177, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_TradeMoneyCheck_Index, string, int, object, int, int, bool> target6 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, string, int, object, int, int, bool>> p12 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__12;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__11.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__11, lang, "public:reset");
+        target6((CallSite) p12, this, "", 1156, obj6, 1156, 21, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-light\" />\n\t        </div>\n        </div>\n    ");
+      }));
+      tradeMoneyCheckIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) tradeMoneyCheckIndex1).CreateTagHelper<FormTagHelper>();
+      tradeMoneyCheckIndex1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyCheckIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      tradeMoneyCheckIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) tradeMoneyCheckIndex1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      tradeMoneyCheckIndex1.__tagHelperExecutionContext.Add((ITagHelper) tradeMoneyCheckIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      tradeMoneyCheckIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_TradeMoneyCheck_Index.__tagHelperAttribute_1.Value;
+      tradeMoneyCheckIndex1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_TradeMoneyCheck_Index.__tagHelperAttribute_1);
+      await tradeMoneyCheckIndex1.__tagHelperRunner.RunAsync(tradeMoneyCheckIndex1.__tagHelperExecutionContext);
+      if (!tradeMoneyCheckIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await tradeMoneyCheckIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) tradeMoneyCheckIndex1).Write((object) tradeMoneyCheckIndex1.__tagHelperExecutionContext.Output);
+      tradeMoneyCheckIndex1.__tagHelperExecutionContext = tradeMoneyCheckIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("\n</div>\n\n<div class=\"table-container\">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyCheck_Index, object> target7 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p14 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__14;
+      Views_TradeMoneyCheck_Index tradeMoneyCheckIndex2 = tradeMoneyCheckIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__13.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__13, lang, "public:option");
+      target7((CallSite) p14, tradeMoneyCheckIndex2, obj7);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</th>\t\t\t\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyCheck_Index, object> target8 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p16 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__16;
+      Views_TradeMoneyCheck_Index tradeMoneyCheckIndex3 = tradeMoneyCheckIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__15.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__15, lang, "account");
+      target8((CallSite) p16, tradeMoneyCheckIndex3, obj8);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyCheck_Index, object> target9 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__18.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p18 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__18;
+      Views_TradeMoneyCheck_Index tradeMoneyCheckIndex4 = tradeMoneyCheckIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__17.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__17, lang, "member_name");
+      target9((CallSite) p18, tradeMoneyCheckIndex4, obj9);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyCheck_Index, object> target10 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__20.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p20 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__20;
+      Views_TradeMoneyCheck_Index tradeMoneyCheckIndex5 = tradeMoneyCheckIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj10 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__19.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__19, lang, "sn");
+      target10((CallSite) p20, tradeMoneyCheckIndex5, obj10);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__22 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyCheck_Index, object> target11 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__22.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p22 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__22;
+      Views_TradeMoneyCheck_Index tradeMoneyCheckIndex6 = tradeMoneyCheckIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__21 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj11 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__21.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__21, lang, "sub_account");
+      target11((CallSite) p22, tradeMoneyCheckIndex6, obj11);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__24 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyCheck_Index, object> target12 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__24.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p24 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__24;
+      Views_TradeMoneyCheck_Index tradeMoneyCheckIndex7 = tradeMoneyCheckIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__23 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj12 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__23.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__23, lang, "currency");
+      target12((CallSite) p24, tradeMoneyCheckIndex7, obj12);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__26 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyCheck_Index, object> target13 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__26.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p26 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__26;
+      Views_TradeMoneyCheck_Index tradeMoneyCheckIndex8 = tradeMoneyCheckIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__25 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj13 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__25.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__25, lang, "frozen");
+      target13((CallSite) p26, tradeMoneyCheckIndex8, obj13);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__28 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__28 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyCheck_Index, object> target14 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__28.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p28 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__28;
+      Views_TradeMoneyCheck_Index tradeMoneyCheckIndex9 = tradeMoneyCheckIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__27 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj14 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__27.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__27, lang, "balance");
+      target14((CallSite) p28, tradeMoneyCheckIndex9, obj14);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__30 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__30 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyCheck_Index, object> target15 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__30.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p30 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__30;
+      Views_TradeMoneyCheck_Index tradeMoneyCheckIndex10 = tradeMoneyCheckIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__29 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj15 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__29.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__29, lang, "loan_type");
+      target15((CallSite) p30, tradeMoneyCheckIndex10, obj15);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</th>\n\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (TradeMoneyCheckList tradeMoneyCheckList in (IEnumerable<TradeMoneyCheckList>) tradeMoneyCheckIndex1.Model.list)
+      {
+        TradeMoneyCheckList item = tradeMoneyCheckList;
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("                <tr>\n                    <td>\n                        <div class=\"dropleft\">\n                        <button type=\"button\" class=\"btn icon btn-primary dropdown-toggle hide-arrow show\" data-bs-toggle=\"dropdown\" aria-expanded=\"true\">\n                            <i class=\"fa fa-bars\"></i>\n                        </button>\n                        <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\">\n\t\t\t\t\t\t\t");
+        Views_TradeMoneyCheck_Index tradeMoneyCheckIndex11 = tradeMoneyCheckIndex1;
+        IHtmlHelper<TradeMoneyCheckVm> html = tradeMoneyCheckIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__32 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__32 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_TradeMoneyCheck_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target16 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__32.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p32 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__32;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__31 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__31 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj16 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__31.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__31, lang, "public:review");
+        string str = target16((CallSite) p32, obj16);
+        var data1 = new{ pk = item.pk };
+        var data2 = new{ @class = "dropdown-item" };
+        IHtmlContent ihtmlContent = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html, str, "Review", (object) data1, (object) data2);
+        ((RazorPageBase) tradeMoneyCheckIndex11).Write((object) ihtmlContent);
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("\n\n                        </div>\n                    </div>\n                    </td>\n\t\t\t\t<td>");
+        ((RazorPageBase) tradeMoneyCheckIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<TradeMoneyCheckVm, string>(tradeMoneyCheckIndex1.Html, (Expression<Func<TradeMoneyCheckVm, string>>) (modelItem => item.account)));
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) tradeMoneyCheckIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<TradeMoneyCheckVm, string>(tradeMoneyCheckIndex1.Html, (Expression<Func<TradeMoneyCheckVm, string>>) (modelItem => item.member_name)));
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) tradeMoneyCheckIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<TradeMoneyCheckVm, string>(tradeMoneyCheckIndex1.Html, (Expression<Func<TradeMoneyCheckVm, string>>) (modelItem => item.sn)));
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) tradeMoneyCheckIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<TradeMoneyCheckVm, string>(tradeMoneyCheckIndex1.Html, (Expression<Func<TradeMoneyCheckVm, string>>) (modelItem => item.sub_account)));
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) tradeMoneyCheckIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<TradeMoneyCheckVm, string>(tradeMoneyCheckIndex1.Html, (Expression<Func<TradeMoneyCheckVm, string>>) (modelItem => item.currency)));
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) tradeMoneyCheckIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<TradeMoneyCheckVm, Decimal>(tradeMoneyCheckIndex1.Html, (Expression<Func<TradeMoneyCheckVm, Decimal>>) (modelItem => item.frozen)));
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) tradeMoneyCheckIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<TradeMoneyCheckVm, Decimal>(tradeMoneyCheckIndex1.Html, (Expression<Func<TradeMoneyCheckVm, Decimal>>) (modelItem => item.balance)));
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) tradeMoneyCheckIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<TradeMoneyCheckVm, string>(tradeMoneyCheckIndex1.Html, (Expression<Func<TradeMoneyCheckVm, string>>) (modelItem => item.loan_type)));
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("</td>\n\n                </tr>\n");
+      }
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("        </tbody>\n    </table>\n</div>\n\n<!-- 分頁處理 -->\n<div class=\"card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between\">\n\n");
+      if (tradeMoneyCheckIndex1.Model != null)
+      {
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("        <nav aria-label=\"Page navigation\">\n            <ul class=\"pagination mb-0\">\n\n                ");
+        ((RazorPageBase) tradeMoneyCheckIndex1).Write((object) ((IHtmlHelper) tradeMoneyCheckIndex1.Html).PagedListPager((IPagedList) tradeMoneyCheckIndex1.Model.list, (Func<int, string>) (page => UrlHelperExtensions.Action(this.Url, "Index", (object) PublicTool.ToRouteValueDictionary<TradeMoneyCheckFilter>(this.Model.filter, new Dictionary<string, object>()
+        {
+          [nameof (page)] = (object) page
+        }))), new PagedListRenderOptions()
+        {
+          LiElementClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-item"
+          },
+          PageClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-link"
+          },
+          LinkToFirstPageFormat = "<<",
+          LinkToPreviousPageFormat = "<",
+          LinkToNextPageFormat = ">",
+          LinkToLastPageFormat = ">>",
+          MaximumPageNumbersToDisplay = new int?(8)
+        }));
+        ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("\n            </ul>\n        </nav>\n");
+      }
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral("\n    <div class=\"fw-normal small mt-4 mt-lg-0\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__34 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__34 = CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_TradeMoneyCheck_Index, object> target17 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__34.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_TradeMoneyCheck_Index, object>> p34 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__34;
+      Views_TradeMoneyCheck_Index tradeMoneyCheckIndex12 = tradeMoneyCheckIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__33 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__33 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_TradeMoneyCheck_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj17 = Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__33.Target((CallSite) Views_TradeMoneyCheck_Index.\u003C\u003Eo__11.\u003C\u003Ep__33, lang, "public:total_count");
+      target17((CallSite) p34, tradeMoneyCheckIndex12, obj17);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral(": ");
+      ((RazorPageBase) tradeMoneyCheckIndex1).Write((object) tradeMoneyCheckIndex1.Model.list.TotalItemCount);
+      ((RazorPageBase) tradeMoneyCheckIndex1).WriteLiteral(" </div>\n</div>");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<TradeMoneyCheckVm> Html { get; private set; }
+  }
+}

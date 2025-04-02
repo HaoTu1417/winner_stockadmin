@@ -1,0 +1,810 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_StockOptionSellingReview_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.Tool;
+using stockadmin.ViewModels.StockOptionRecord;
+using stockadmin.ViewModels.StockOptionSellingReview;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Web.Common;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "8d2216e0a2e596eae7d97f599be686c0246ccfe2a5596618a0895dad49f9d9ef", "/Views/StockOptionSellingReview/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/StockOptionSellingReview/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_StockOptionSellingReview_Index : RazorPage<StockOptionSellingReviewVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("id", (object) new HtmlString("searchForm"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("id", (object) new HtmlString("pageSize"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("class", (object) new HtmlString("form-select pull-right"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("onchange", (object) new HtmlString("redirect(this.value)"), (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_StockOptionSellingReview_Index sellingReviewIndex1 = this;
+      StockOptionSellingReviewFilter Filter = sellingReviewIndex1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__0.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__0, ((RazorPageBase) sellingReviewIndex1).ViewBag);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("\n<div class=\"card\">\n    ");
+      sellingReviewIndex1.__tagHelperExecutionContext = sellingReviewIndex1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "8d2216e0a2e596eae7d97f599be686c0246ccfe2a5596618a0895dad49f9d9ef7076", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__2 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_StockOptionSellingReview_Index, object> target1 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__2.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p2 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__2;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__1 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj1 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__1.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__1, lang, "account");
+        target1((CallSite) p2, this, obj1);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "8d2216e0a2e596eae7d97f599be686c0246ccfe2a5596618a0895dad49f9d9ef7764", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<StockOptionSellingReviewVm, string>(this.ViewData, (Expression<Func<StockOptionSellingReviewVm, string>>) (__model => Filter.account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_StockOptionSellingReview_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_StockOptionSellingReview_Index, object> target2 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__4.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p4 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__4;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__3.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__3, lang, "member_name");
+        target2((CallSite) p4, this, obj2);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "8d2216e0a2e596eae7d97f599be686c0246ccfe2a5596618a0895dad49f9d9ef9788", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<StockOptionSellingReviewVm, string>(this.ViewData, (Expression<Func<StockOptionSellingReviewVm, string>>) (__model => Filter.member_name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_StockOptionSellingReview_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_StockOptionSellingReview_Index, object> target3 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p6 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__6;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__5.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__5, lang, "stock_code");
+        target3((CallSite) p6, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "8d2216e0a2e596eae7d97f599be686c0246ccfe2a5596618a0895dad49f9d9ef11815", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<StockOptionSellingReviewVm, string>(this.ViewData, (Expression<Func<StockOptionSellingReviewVm, string>>) (__model => Filter.stock_code));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_StockOptionSellingReview_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_StockOptionSellingReview_Index, object> target4 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p8 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__8;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__7.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__7, lang, "stock_name");
+        target4((CallSite) p8, this, obj4);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "8d2216e0a2e596eae7d97f599be686c0246ccfe2a5596618a0895dad49f9d9ef13842", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<StockOptionSellingReviewVm, string>(this.ViewData, (Expression<Func<StockOptionSellingReviewVm, string>>) (__model => Filter.stock_name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_StockOptionSellingReview_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n\n        </div>\n        <div class=\"card-footer\">\n            <div class=\"form-group pull-right\">\n                <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1254, "\"", 1284, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_StockOptionSellingReview_Index, string, int, object, int, int, bool> target5 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, string, int, object, int, int, bool>> p10 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__9.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__9, lang, "public:search");
+        target5((CallSite) p10, this, "", 1262, obj5, 1262, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n                <input type=\"reset\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1348, "\"", 1377, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_StockOptionSellingReview_Index, string, int, object, int, int, bool> target6 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, string, int, object, int, int, bool>> p12 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__12;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__11.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__11, lang, "public:reset");
+        target6((CallSite) p12, this, "", 1356, obj6, 1356, 21, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-light\" />\n            </div>\n        </div>\n    ");
+      }));
+      sellingReviewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) sellingReviewIndex1).CreateTagHelper<FormTagHelper>();
+      sellingReviewIndex1.__tagHelperExecutionContext.Add((ITagHelper) sellingReviewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      sellingReviewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) sellingReviewIndex1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      sellingReviewIndex1.__tagHelperExecutionContext.Add((ITagHelper) sellingReviewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      sellingReviewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_StockOptionSellingReview_Index.__tagHelperAttribute_1.Value;
+      sellingReviewIndex1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_StockOptionSellingReview_Index.__tagHelperAttribute_1);
+      sellingReviewIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_StockOptionSellingReview_Index.__tagHelperAttribute_2);
+      await sellingReviewIndex1.__tagHelperRunner.RunAsync(sellingReviewIndex1.__tagHelperExecutionContext);
+      if (!sellingReviewIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await sellingReviewIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) sellingReviewIndex1).Write((object) sellingReviewIndex1.__tagHelperExecutionContext.Output);
+      sellingReviewIndex1.__tagHelperExecutionContext = sellingReviewIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("\n</div>\n\n<div class=\"card\">\n    <div class=\"card-body row\">\n        <div class=\"col-auto\">\n            ");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_StockOptionSellingReview_Index, object> target7 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p14 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__14;
+      Views_StockOptionSellingReview_Index sellingReviewIndex2 = sellingReviewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__13.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__13, lang, "note");
+      target7((CallSite) p14, sellingReviewIndex2, obj7);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("\n        </div>\n    </div>\n</div>\n<div class=\"table-container\">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_StockOptionSellingReview_Index, object> target8 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p16 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__16;
+      Views_StockOptionSellingReview_Index sellingReviewIndex3 = sellingReviewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__15.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__15, lang, "public:option");
+      target8((CallSite) p16, sellingReviewIndex3, obj8);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_StockOptionSellingReview_Index, object> target9 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__18.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p18 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__18;
+      Views_StockOptionSellingReview_Index sellingReviewIndex4 = sellingReviewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__17.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__17, lang, "account");
+      target9((CallSite) p18, sellingReviewIndex4, obj9);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_StockOptionSellingReview_Index, object> target10 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__20.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p20 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__20;
+      Views_StockOptionSellingReview_Index sellingReviewIndex5 = sellingReviewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj10 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__19.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__19, lang, "member_name");
+      target10((CallSite) p20, sellingReviewIndex5, obj10);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__22 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_StockOptionSellingReview_Index, object> target11 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__22.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p22 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__22;
+      Views_StockOptionSellingReview_Index sellingReviewIndex6 = sellingReviewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__21 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj11 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__21.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__21, lang, "stock_code");
+      target11((CallSite) p22, sellingReviewIndex6, obj11);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__24 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_StockOptionSellingReview_Index, object> target12 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__24.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p24 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__24;
+      Views_StockOptionSellingReview_Index sellingReviewIndex7 = sellingReviewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__23 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj12 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__23.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__23, lang, "stock_name");
+      target12((CallSite) p24, sellingReviewIndex7, obj12);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__26 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_StockOptionSellingReview_Index, object> target13 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__26.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p26 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__26;
+      Views_StockOptionSellingReview_Index sellingReviewIndex8 = sellingReviewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__25 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj13 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__25.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__25, lang, "quantity");
+      target13((CallSite) p26, sellingReviewIndex8, obj13);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__28 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__28 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_StockOptionSellingReview_Index, object> target14 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__28.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p28 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__28;
+      Views_StockOptionSellingReview_Index sellingReviewIndex9 = sellingReviewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__27 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj14 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__27.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__27, lang, "last_price");
+      target14((CallSite) p28, sellingReviewIndex9, obj14);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__30 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__30 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_StockOptionSellingReview_Index, object> target15 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__30.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p30 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__30;
+      Views_StockOptionSellingReview_Index sellingReviewIndex10 = sellingReviewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__29 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj15 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__29.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__29, lang, "total_cost");
+      target15((CallSite) p30, sellingReviewIndex10, obj15);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</th>\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (StockOptionRecordList optionRecordList in (IEnumerable<StockOptionRecordList>) sellingReviewIndex1.Model.list)
+      {
+        StockOptionRecordList item = optionRecordList;
+        ((RazorPageBase) sellingReviewIndex1).WriteLiteral("                <tr>\n                    <td>\n                        ");
+        Views_StockOptionSellingReview_Index sellingReviewIndex11 = sellingReviewIndex1;
+        IHtmlHelper<StockOptionSellingReviewVm> html = sellingReviewIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__32 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__32 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_StockOptionSellingReview_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target16 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__32.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p32 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__32;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__31 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__31 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj16 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__31.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__31, lang, "public:review");
+        string str = target16((CallSite) p32, obj16);
+        var data1 = new{ pk = item.pk };
+        var data2 = new{ @class = "btn btn-secondary" };
+        IHtmlContent ihtmlContent = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html, str, "Review", (object) data1, (object) data2);
+        ((RazorPageBase) sellingReviewIndex11).Write((object) ihtmlContent);
+        ((RazorPageBase) sellingReviewIndex1).WriteLiteral("\n                    </td>\n");
+        if (item.is_test_account)
+        {
+          ((RazorPageBase) sellingReviewIndex1).WriteLiteral("                        <td style=\"color:tomato;\">");
+          ((RazorPageBase) sellingReviewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<StockOptionSellingReviewVm, string>(sellingReviewIndex1.Html, (Expression<Func<StockOptionSellingReviewVm, string>>) (modelItem => item.account)));
+          ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</td>\n");
+        }
+        else
+        {
+          ((RazorPageBase) sellingReviewIndex1).WriteLiteral("                        <td>");
+          ((RazorPageBase) sellingReviewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<StockOptionSellingReviewVm, string>(sellingReviewIndex1.Html, (Expression<Func<StockOptionSellingReviewVm, string>>) (modelItem => item.account)));
+          ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</td>\n");
+        }
+        ((RazorPageBase) sellingReviewIndex1).WriteLiteral("                    <td>");
+        ((RazorPageBase) sellingReviewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<StockOptionSellingReviewVm, string>(sellingReviewIndex1.Html, (Expression<Func<StockOptionSellingReviewVm, string>>) (modelItem => item.real_name)));
+        ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) sellingReviewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<StockOptionSellingReviewVm, string>(sellingReviewIndex1.Html, (Expression<Func<StockOptionSellingReviewVm, string>>) (modelItem => item.stock_code)));
+        ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) sellingReviewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<StockOptionSellingReviewVm, string>(sellingReviewIndex1.Html, (Expression<Func<StockOptionSellingReviewVm, string>>) (modelItem => item.stock_name)));
+        ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) sellingReviewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<StockOptionSellingReviewVm, int>(sellingReviewIndex1.Html, (Expression<Func<StockOptionSellingReviewVm, int>>) (modelItem => item.quantity)));
+        ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) sellingReviewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<StockOptionSellingReviewVm, Decimal>(sellingReviewIndex1.Html, (Expression<Func<StockOptionSellingReviewVm, Decimal>>) (modelItem => item.price)));
+        ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) sellingReviewIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<StockOptionSellingReviewVm, Decimal>(sellingReviewIndex1.Html, (Expression<Func<StockOptionSellingReviewVm, Decimal>>) (modelItem => item.total)));
+        ((RazorPageBase) sellingReviewIndex1).WriteLiteral("</td>\n                </tr>\n");
+      }
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("        </tbody>\n    </table>\n</div>\n\n<!-- 分頁處理 -->\n<div class=\"card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between\">\n\n");
+      if (sellingReviewIndex1.Model != null)
+      {
+        ((RazorPageBase) sellingReviewIndex1).WriteLiteral("        <nav aria-label=\"Page navigation\">\n            <ul class=\"pagination mb-0\">\n\n                ");
+        ((RazorPageBase) sellingReviewIndex1).Write((object) ((IHtmlHelper) sellingReviewIndex1.Html).PagedListPager((IPagedList) sellingReviewIndex1.Model.list, (Func<int, string>) (page =>
+        {
+          IUrlHelper url = this.Url;
+          StockOptionSellingReviewFilter filter = this.Model.filter;
+          Dictionary<string, object> dictionary1 = new Dictionary<string, object>();
+          dictionary1[nameof (page)] = (object) page;
+          Dictionary<string, object> dictionary2 = dictionary1;
+          // ISSUE: reference to a compiler-generated field
+          if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__33 == null)
+          {
+            // ISSUE: reference to a compiler-generated field
+            Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__33 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "pageSize", typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+            {
+              CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+            }));
+          }
+          // ISSUE: reference to a compiler-generated field
+          // ISSUE: reference to a compiler-generated field
+          object obj17 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__33.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__33, ((RazorPageBase) this).ViewBag);
+          dictionary2["pageSize"] = obj17;
+          Dictionary<string, object> args = dictionary1;
+          RouteValueDictionary routeValueDictionary = PublicTool.ToRouteValueDictionary<StockOptionSellingReviewFilter>(filter, args);
+          return UrlHelperExtensions.Action(url, "Index", (object) routeValueDictionary);
+        }), new PagedListRenderOptions()
+        {
+          LiElementClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-item"
+          },
+          PageClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-link"
+          },
+          LinkToFirstPageFormat = "<<",
+          LinkToPreviousPageFormat = "<",
+          LinkToNextPageFormat = ">",
+          LinkToLastPageFormat = ">>",
+          MaximumPageNumbersToDisplay = new int?(8)
+        }));
+        ((RazorPageBase) sellingReviewIndex1).WriteLiteral("\n            </ul>\n        </nav>\n");
+      }
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("\n    <div class=\"fw-normal small mt-5 mt-lg-0\">\n        ");
+      sellingReviewIndex1.__tagHelperExecutionContext = sellingReviewIndex1.__tagHelperScopeManager.Begin("select", (TagMode) 0, "8d2216e0a2e596eae7d97f599be686c0246ccfe2a5596618a0895dad49f9d9ef26500", (Func<Task>) (async () => { }));
+      sellingReviewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) sellingReviewIndex1).CreateTagHelper<SelectTagHelper>();
+      sellingReviewIndex1.__tagHelperExecutionContext.Add((ITagHelper) sellingReviewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+      SelectTagHelper helpersSelectTagHelper = sellingReviewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__35 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__35 = CallSite<Func<CallSite, object, IEnumerable<SelectListItem>>>.Create(Binder.Convert(CSharpBinderFlags.None, typeof (IEnumerable<SelectListItem>), typeof (Views_StockOptionSellingReview_Index)));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, object, IEnumerable<SelectListItem>> target17 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__35.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, object, IEnumerable<SelectListItem>>> p35 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__35;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__34 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__34 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "pageSizeOption", typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj18 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__34.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__34, ((RazorPageBase) sellingReviewIndex1).ViewBag);
+      IEnumerable<SelectListItem> selectListItems = target17((CallSite) p35, obj18);
+      helpersSelectTagHelper.Items = selectListItems;
+      sellingReviewIndex1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) sellingReviewIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+      sellingReviewIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_StockOptionSellingReview_Index.__tagHelperAttribute_3);
+      sellingReviewIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_StockOptionSellingReview_Index.__tagHelperAttribute_4);
+      sellingReviewIndex1.__tagHelperExecutionContext.AddHtmlAttribute(Views_StockOptionSellingReview_Index.__tagHelperAttribute_5);
+      await sellingReviewIndex1.__tagHelperRunner.RunAsync(sellingReviewIndex1.__tagHelperExecutionContext);
+      if (!sellingReviewIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await sellingReviewIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) sellingReviewIndex1).Write((object) sellingReviewIndex1.__tagHelperExecutionContext.Output);
+      sellingReviewIndex1.__tagHelperExecutionContext = sellingReviewIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("\n        <div class=\"row\">\n            <div class=\"col\">\n                <label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__37 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__37 = CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_StockOptionSellingReview_Index, object> target18 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__37.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_StockOptionSellingReview_Index, object>> p37 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__37;
+      Views_StockOptionSellingReview_Index sellingReviewIndex12 = sellingReviewIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__36 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__36 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_StockOptionSellingReview_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj19 = Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__36.Target((CallSite) Views_StockOptionSellingReview_Index.\u003C\u003Eo__16.\u003C\u003Ep__36, lang, "public:total_count");
+      target18((CallSite) p37, sellingReviewIndex12, obj19);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral(":</label>\n                ");
+      ((RazorPageBase) sellingReviewIndex1).Write((object) sellingReviewIndex1.Model.list.TotalItemCount);
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("\n            </div>\n        </div>\n    </div>\n</div>\n\n<script>$(document).ready(function () {\n        // Attach a submit event handler to the form\n        $('#searchForm').submit(function (event) {\n            var selectedPageSize = $('#pageSize').val();\n            var actionUrl = $(this).attr('action');\n\n            // Update the form action URL with the selected page size as a query parameter\n            $(this).attr('action', actionUrl + '?pageSize=' + selectedPageSize);\n\n            // Continue with the form submission\n            return true;\n        });\n    });\n    function redirect(page) {\n        var url = '");
+      ((RazorPageBase) sellingReviewIndex1).Write(UrlHelperExtensions.Action(sellingReviewIndex1.Url, "Index", (object) PublicTool.ToRouteValueDictionary<StockOptionSellingReviewFilter>(sellingReviewIndex1.Model.filter, new Dictionary<string, object>()
+      {
+        ["page"] = (object) 1,
+        ["pageSize"] = (object) -1
+      })));
+      ((RazorPageBase) sellingReviewIndex1).WriteLiteral("';\n        url = url.replace('-1', page).replaceAll('amp;', '');\n        window.location.href = url;\n    }\n    </script>\n");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<StockOptionSellingReviewVm> Html { get; private set; }
+  }
+}

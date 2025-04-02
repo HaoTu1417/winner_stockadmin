@@ -1,0 +1,932 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_HisAddfinancing_Edit
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.ViewModels.HisAddfinancing;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f0", "/Views/HisAddfinancing/Edit.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/HisAddfinancing/Edit.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_HisAddfinancing_Edit : RazorPage<HisAddfinancingEditVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_HisAddfinancing_Edit addfinancingEdit1 = this;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__0.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__0, ((RazorPageBase) addfinancingEdit1).ViewBag);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n<h4>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target1 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__2.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p2 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__2;
+      Views_HisAddfinancing_Edit addfinancingEdit2 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__1.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__1, lang, "public:detail");
+      target1((CallSite) p2, addfinancingEdit2, obj1);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</h4>\n<hr />\n<div class=\"row\">\n    <div class=\"col-md-4\">\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__4 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target2 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__4.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p4 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__4;
+      Views_HisAddfinancing_Edit addfinancingEdit3 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__3 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj2 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__3.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__3, lang, "status");
+      target2((CallSite) p4, addfinancingEdit3, obj2);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f05615", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, int>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, int>>) (__model => __model.status));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f07798", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, int>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, int>>) (__model => __model.status));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__6 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target3 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__6.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p6 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__6;
+      Views_HisAddfinancing_Edit addfinancingEdit4 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__5 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj3 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__5.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__5, lang, "account");
+      target3((CallSite) p6, addfinancingEdit4, obj3);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f09768", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, string>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, string>>) (__model => __model.account));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f011952", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, string>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, string>>) (__model => __model.account));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__8 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target4 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__8.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p8 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__8;
+      Views_HisAddfinancing_Edit addfinancingEdit5 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__7 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj4 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__7.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__7, lang, "member_name");
+      target4((CallSite) p8, addfinancingEdit5, obj4);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f013928", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, string>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, string>>) (__model => __model.member_name));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f016117", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, string>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, string>>) (__model => __model.member_name));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__10 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target5 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__10.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p10 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__10;
+      Views_HisAddfinancing_Edit addfinancingEdit6 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__9 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj5 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__9.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__9, lang, "sub_account");
+      target5((CallSite) p10, addfinancingEdit6, obj5);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f018097", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, string>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, string>>) (__model => __model.sub_account));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f020286", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, string>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, string>>) (__model => __model.sub_account));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__12 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target6 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__12.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p12 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__12;
+      Views_HisAddfinancing_Edit addfinancingEdit7 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__11 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj6 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__11.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__11, lang, "market");
+      target6((CallSite) p12, addfinancingEdit7, obj6);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f022261", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, string>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, string>>) (__model => __model.market));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f024445", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, string>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, string>>) (__model => __model.market));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target7 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p14 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__14;
+      Views_HisAddfinancing_Edit addfinancingEdit8 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__13.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__13, lang, "loan_type");
+      target7((CallSite) p14, addfinancingEdit8, obj7);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f026418", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, string>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, string>>) (__model => __model.loan_type));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f028605", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, string>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, string>>) (__model => __model.loan_type));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target8 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p16 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__16;
+      Views_HisAddfinancing_Edit addfinancingEdit9 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__15.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__15, lang, "pk");
+      target8((CallSite) p16, addfinancingEdit9, obj8);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f030574", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, int>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, int>>) (__model => __model.pk));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f032754", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, int>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, int>>) (__model => __model.pk));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target9 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__18.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p18 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__18;
+      Views_HisAddfinancing_Edit addfinancingEdit10 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__17.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__17, lang, "money");
+      target9((CallSite) p18, addfinancingEdit10, obj9);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f034719", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, Decimal>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, Decimal>>) (__model => __model.money));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f036902", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, Decimal>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, Decimal>>) (__model => __model.money));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target10 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__20.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p20 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__20;
+      Views_HisAddfinancing_Edit addfinancingEdit11 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj10 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__19.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__19, lang, "borrow_interest");
+      target10((CallSite) p20, addfinancingEdit11, obj10);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f038880", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, Decimal>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, Decimal>>) (__model => __model.borrow_interest));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f041073", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, Decimal>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, Decimal>>) (__model => __model.borrow_interest));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__22 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target11 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__22.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p22 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__22;
+      Views_HisAddfinancing_Edit addfinancingEdit12 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__21 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj11 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__21.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__21, lang, "exchange");
+      target11((CallSite) p22, addfinancingEdit12, obj11);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f043054", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, Decimal>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, Decimal>>) (__model => __model.exchange));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f045240", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, Decimal>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, Decimal>>) (__model => __model.exchange));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__24 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target12 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__24.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p24 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__24;
+      Views_HisAddfinancing_Edit addfinancingEdit13 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__23 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj12 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__23.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__23, lang, "freeze");
+      target12((CallSite) p24, addfinancingEdit13, obj12);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f047212", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, Decimal>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, Decimal>>) (__model => __model.freeze));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f049396", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, Decimal>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, Decimal>>) (__model => __model.freeze));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__26 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target13 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__26.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p26 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__26;
+      Views_HisAddfinancing_Edit addfinancingEdit14 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__25 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj13 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__25.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__25, lang, "add_time");
+      target13((CallSite) p26, addfinancingEdit14, obj13);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f051368", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, DateTime>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, DateTime>>) (__model => __model.add_time));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f053554", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, DateTime>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, DateTime>>) (__model => __model.add_time));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label class=\"control-label\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__28 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__28 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target14 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__28.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p28 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__28;
+      Views_HisAddfinancing_Edit addfinancingEdit15 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__27 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj14 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__27.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__27, lang, "verify_time");
+      target14((CallSite) p28, addfinancingEdit15, obj14);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</label>\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("input", (TagMode) 1, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f055531", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<InputTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, DateTime>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, DateTime>>) (__model => __model.verify_time));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_0);
+      ((RazorPageBase) addfinancingEdit1).BeginWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperStringValueBuffer = ((RazorPageBase) addfinancingEdit1).EndWriteTagHelperAttribute();
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) addfinancingEdit1.Html.Raw(addfinancingEdit1.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t\t");
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.Begin("span", (TagMode) 0, "c7ec7e802da5c34de33f0b8fdf71b08e36b753b645fc191445fe50eb0c5c30f057720", (Func<Task>) (async () => { }));
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) addfinancingEdit1).CreateTagHelper<ValidationMessageTagHelper>();
+      addfinancingEdit1.__tagHelperExecutionContext.Add((ITagHelper) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+      addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = addfinancingEdit1.ModelExpressionProvider.CreateModelExpression<HisAddfinancingEditVm, DateTime>(addfinancingEdit1.ViewData, (Expression<Func<HisAddfinancingEditVm, DateTime>>) (__model => __model.verify_time));
+      addfinancingEdit1.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) addfinancingEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+      addfinancingEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_HisAddfinancing_Edit.__tagHelperAttribute_1);
+      await addfinancingEdit1.__tagHelperRunner.RunAsync(addfinancingEdit1.__tagHelperExecutionContext);
+      if (!addfinancingEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await addfinancingEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) addfinancingEdit1).Write((object) addfinancingEdit1.__tagHelperExecutionContext.Output);
+      addfinancingEdit1.__tagHelperExecutionContext = addfinancingEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("\n\t\t\t</div>\n    </div>\n</div>\n\n<div>\n\t<a href=\"javascript:history.back()\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__30 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__30 = CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_HisAddfinancing_Edit, object> target15 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__30.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_HisAddfinancing_Edit, object>> p30 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__30;
+      Views_HisAddfinancing_Edit addfinancingEdit16 = addfinancingEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__29 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_HisAddfinancing_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj15 = Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__29.Target((CallSite) Views_HisAddfinancing_Edit.\u003C\u003Eo__10.\u003C\u003Ep__29, lang, "public:back_list");
+      target15((CallSite) p30, addfinancingEdit16, obj15);
+      ((RazorPageBase) addfinancingEdit1).WriteLiteral("</a>\n</div>\n\n");
+      lang = (object) null;
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<HisAddfinancingEditVm> Html { get; private set; }
+  }
+}

@@ -1,0 +1,48 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: stockadmin.ViewModels.MultiLang.MultiLangLanghList
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+#nullable enable
+namespace stockadmin.ViewModels.MultiLang
+{
+  public class MultiLangLanghList
+  {
+    public string lang { get; set; }
+
+    public string title { get; set; }
+
+    public sbyte enable { get; set; }
+
+    public string enableTxt
+    {
+      get
+      {
+        sbyte enable = this.enable;
+        string enableTxt;
+        switch (enable)
+        {
+          case 0:
+            enableTxt = "禁用";
+            break;
+          case 1:
+            enableTxt = "启用";
+            break;
+          default:
+            \u003CPrivateImplementationDetails\u003E.ThrowSwitchExpressionException((object) enable);
+            break;
+        }
+        return enableTxt;
+      }
+    }
+
+    public bool admin_default { get; set; }
+
+    public string adminDefaultTxt => this.admin_default ? "预设" : "禁用";
+
+    public bool app_default { get; set; }
+
+    public string appDefaultTxt => this.app_default ? "预设" : "禁用";
+  }
+}

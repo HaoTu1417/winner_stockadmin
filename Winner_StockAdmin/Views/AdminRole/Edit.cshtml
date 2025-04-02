@@ -1,0 +1,658 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_AdminRole_Edit
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using Models.Dto;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf6", "/Views/AdminRole/Edit.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/AdminRole/Edit.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_AdminRole_Edit : RazorPage<AdminRoleDto>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("name", (object) "_ValidationScriptsPartial", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("class", (object) new HtmlString("control-label"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_2 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_3 = new TagHelperAttribute("class", (object) new HtmlString("text-danger"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_4 = new TagHelperAttribute("class", (object) new HtmlString("form-select"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_5 = new TagHelperAttribute("class", (object) new HtmlString("form-check-input"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_6 = new TagHelperAttribute("asp-action", (object) "PostEdit", (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_7 = new TagHelperAttribute("id", (object) new HtmlString("form1"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_8 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private PartialTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private LabelTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+    private ValidationMessageTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper;
+    private SelectTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+    private AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_AdminRole_Edit viewsAdminRoleEdit1 = this;
+      string errorMessage = ((IDictionary<string, object>) ((RazorPageBase) viewsAdminRoleEdit1).TempData)["ErrorMessage"] as string;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__0.Target((CallSite) Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__0, ((RazorPageBase) viewsAdminRoleEdit1).ViewBag);
+      viewsAdminRoleEdit1.__tagHelperExecutionContext = viewsAdminRoleEdit1.__tagHelperScopeManager.Begin("partial", (TagMode) 1, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf68057", (Func<Task>) (async () => { }));
+      viewsAdminRoleEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = ((RazorPageBase) viewsAdminRoleEdit1).CreateTagHelper<PartialTagHelper>();
+      viewsAdminRoleEdit1.__tagHelperExecutionContext.Add((ITagHelper) viewsAdminRoleEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper);
+      viewsAdminRoleEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Name = (string) Views_AdminRole_Edit.__tagHelperAttribute_0.Value;
+      viewsAdminRoleEdit1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_AdminRole_Edit.__tagHelperAttribute_0);
+      await viewsAdminRoleEdit1.__tagHelperRunner.RunAsync(viewsAdminRoleEdit1.__tagHelperExecutionContext);
+      if (!viewsAdminRoleEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsAdminRoleEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsAdminRoleEdit1).Write((object) viewsAdminRoleEdit1.__tagHelperExecutionContext.Output);
+      viewsAdminRoleEdit1.__tagHelperExecutionContext = viewsAdminRoleEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsAdminRoleEdit1).WriteLiteral("\n<h4>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__2 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_AdminRole_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_AdminRole_Edit, object> target1 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__2.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_AdminRole_Edit, object>> p2 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__2;
+      Views_AdminRole_Edit viewsAdminRoleEdit2 = viewsAdminRoleEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__1 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj1 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__1.Target((CallSite) Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__1, lang, "public:edit");
+      target1((CallSite) p2, viewsAdminRoleEdit2, obj1);
+      ((RazorPageBase) viewsAdminRoleEdit1).WriteLiteral("</h4>\n<hr />\n");
+      if (!string.IsNullOrEmpty(errorMessage))
+      {
+        ((RazorPageBase) viewsAdminRoleEdit1).WriteLiteral("    <div class=\"alert alert-danger\" role=\"alert\">\n        ");
+        ((RazorPageBase) viewsAdminRoleEdit1).Write(errorMessage);
+        ((RazorPageBase) viewsAdminRoleEdit1).WriteLiteral("\n    </div>\n");
+      }
+      viewsAdminRoleEdit1.__tagHelperExecutionContext = viewsAdminRoleEdit1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf610116", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n    <div class=\"row\">\n        <div class=\"col-md-4\">\n            <div class=\"form-group\">\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("label", (TagMode) 0, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf610512", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper = ((RazorPageBase) this).CreateTagHelper<LabelTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, int>(this.ViewData, (Expression<Func<AdminRoleDto, int>>) (__model => __model.pk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_1);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf612146", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, int>(this.ViewData, (Expression<Func<AdminRoleDto, int>>) (__model => __model.pk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_2);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("readonly", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf614097", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, int>(this.ViewData, (Expression<Func<AdminRoleDto, int>>) (__model => __model.pk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_AdminRole_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminRole_Edit, object> target2 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__4.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminRole_Edit, object>> p4 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__4;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__3.Target((CallSite) Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__3, lang, "name");
+        target2((CallSite) p4, this, obj2);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf616157", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, string>(this.ViewData, (Expression<Func<AdminRoleDto, string>>) (__model => __model.name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf618110", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, string>(this.ViewData, (Expression<Func<AdminRoleDto, string>>) (__model => __model.name));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_AdminRole_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminRole_Edit, object> target3 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminRole_Edit, object>> p6 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__6;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__5.Target((CallSite) Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__5, lang, "description");
+        target3((CallSite) p6, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf620179", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        ((RazorPageBase) this).BeginWriteTagHelperAttribute();
+        this.__tagHelperStringValueBuffer = ((RazorPageBase) this).EndWriteTagHelperAttribute();
+        this.__tagHelperExecutionContext.AddHtmlAttribute("required", (object) this.Html.Raw(this.__tagHelperStringValueBuffer), (HtmlAttributeValueStyle) 3);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, string>(this.ViewData, (Expression<Func<AdminRoleDto, string>>) (__model => __model.description));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf622139", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, string>(this.ViewData, (Expression<Func<AdminRoleDto, string>>) (__model => __model.description));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_AdminRole_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminRole_Edit, object> target4 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminRole_Edit, object>> p8 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__8;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__7.Target((CallSite) Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__7, lang, "role");
+        target4((CallSite) p8, this, obj4);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf624208", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, int>(this.ViewData, (Expression<Func<AdminRoleDto, int>>) (__model => __model.model));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf625839", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, int>(this.ViewData, (Expression<Func<AdminRoleDto, int>>) (__model => __model.model));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_AdminRole_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminRole_Edit, object> target5 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminRole_Edit, object>> p10 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__9.Target((CallSite) Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__9, lang, "default_view");
+        target5((CallSite) p10, this, obj5);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("select", (TagMode) 0, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf627910", (Func<Task>) (async () => ((RazorPageBase) this).WriteLiteral("\n                ")));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper = ((RazorPageBase) this).CreateTagHelper<SelectTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, int>(this.ViewData, (Expression<Func<AdminRoleDto, int>>) (__model => __model.admin_module_fk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For, (HtmlAttributeValueStyle) 0);
+        SelectTagHelper helpersSelectTagHelper = this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__12 = CallSite<Func<CallSite, Type, object, string, string, SelectList>>.Create(Binder.InvokeConstructor(CSharpBinderFlags.None, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[4]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.IsStaticType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, Type, object, string, string, SelectList> target6 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, Type, object, string, string, SelectList>> p12 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__12;
+        Type type = typeof (SelectList);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "admin_module_list", typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__11.Target((CallSite) Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__11, ((RazorPageBase) this).ViewBag);
+        SelectList selectList = target6((CallSite) p12, type, obj6, "pk", "title");
+        helpersSelectTagHelper.Items = (IEnumerable<SelectListItem>) selectList;
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-items", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.Items, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_4);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf630451", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, int>(this.ViewData, (Expression<Func<AdminRoleDto, int>>) (__model => __model.admin_module_fk));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__14 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_AdminRole_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminRole_Edit, object> target7 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__14.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminRole_Edit, object>> p14 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__14;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__13 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj7 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__13.Target((CallSite) Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__13, lang, "sort");
+        target7((CallSite) p14, this, obj7);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf632524", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, int>(this.ViewData, (Expression<Func<AdminRoleDto, int>>) (__model => __model.sort));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_2);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("span", (TagMode) 0, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf634154", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper = ((RazorPageBase) this).CreateTagHelper<ValidationMessageTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, int>(this.ViewData, (Expression<Func<AdminRoleDto, int>>) (__model => __model.sort));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-validation-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_3);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"form-group form-check\">\n                <label class=\"form-check-label\">\n                    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf635987", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_5);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, bool>(this.ViewData, (Expression<Func<AdminRoleDto, bool>>) (__model => __model.status));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral(" ");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__16 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_AdminRole_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminRole_Edit, object> target8 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__16.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminRole_Edit, object>> p16 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__16;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__15 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj8 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__15.Target((CallSite) Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__15, lang, "status");
+        target8((CallSite) p16, this, obj8);
+        ((RazorPageBase) this).WriteLiteral("\n                </label>\n            </div>\n            <div class=\"form-group form-check\">\n                <label class=\"form-check-label\">\n                    ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf638014", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_5);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<AdminRoleDto, bool>(this.ViewData, (Expression<Func<AdminRoleDto, bool>>) (__model => __model.lock_delete));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral(" ");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__18 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_AdminRole_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_AdminRole_Edit, object> target9 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__18.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_AdminRole_Edit, object>> p18 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__18;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__17 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj9 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__17.Target((CallSite) Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__17, lang, "lock_delete");
+        target9((CallSite) p18, this, obj9);
+        ((RazorPageBase) this).WriteLiteral("\n                </label>\n            </div>\n        </div>\n        <div class=\"col-md-1\"></div>\n        <div class=\"col-md-6\">\n            <div class=\"card\">\n                <div class=\"card-body\">\n                    <div id=\"menuTree\"></div>\n                    <input id=\"tree\" name=\"tree\"  hidden/>\n                </div>\n            </div>\n        </div>\n        <div class=\"form-group\">\n            <input type=\"button\" value=\"Save\" class=\"btn btn-primary\" onclick=\"validationFunction();\" />\n        </div>\n    </div>\n");
+      }));
+      viewsAdminRoleEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) viewsAdminRoleEdit1).CreateTagHelper<FormTagHelper>();
+      viewsAdminRoleEdit1.__tagHelperExecutionContext.Add((ITagHelper) viewsAdminRoleEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      viewsAdminRoleEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) viewsAdminRoleEdit1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      viewsAdminRoleEdit1.__tagHelperExecutionContext.Add((ITagHelper) viewsAdminRoleEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      viewsAdminRoleEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_AdminRole_Edit.__tagHelperAttribute_6.Value;
+      viewsAdminRoleEdit1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_AdminRole_Edit.__tagHelperAttribute_6);
+      viewsAdminRoleEdit1.__tagHelperExecutionContext.AddHtmlAttribute(Views_AdminRole_Edit.__tagHelperAttribute_7);
+      await viewsAdminRoleEdit1.__tagHelperRunner.RunAsync(viewsAdminRoleEdit1.__tagHelperExecutionContext);
+      if (!viewsAdminRoleEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsAdminRoleEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsAdminRoleEdit1).Write((object) viewsAdminRoleEdit1.__tagHelperExecutionContext.Output);
+      viewsAdminRoleEdit1.__tagHelperExecutionContext = viewsAdminRoleEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsAdminRoleEdit1).WriteLiteral("\n\n<div>\n    ");
+      viewsAdminRoleEdit1.__tagHelperExecutionContext = viewsAdminRoleEdit1.__tagHelperScopeManager.Begin("a", (TagMode) 0, "f9738a6df6b3bbcb7da3eab3f9333104de33032d7ea9470a34444df4a7cc2cf641697", (Func<Task>) (async () => ((RazorPageBase) this).WriteLiteral("Back")));
+      viewsAdminRoleEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper = ((RazorPageBase) viewsAdminRoleEdit1).CreateTagHelper<AnchorTagHelper>();
+      viewsAdminRoleEdit1.__tagHelperExecutionContext.Add((ITagHelper) viewsAdminRoleEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper);
+      viewsAdminRoleEdit1.__Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper.Action = (string) Views_AdminRole_Edit.__tagHelperAttribute_8.Value;
+      viewsAdminRoleEdit1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_AdminRole_Edit.__tagHelperAttribute_8);
+      await viewsAdminRoleEdit1.__tagHelperRunner.RunAsync(viewsAdminRoleEdit1.__tagHelperExecutionContext);
+      if (!viewsAdminRoleEdit1.__tagHelperExecutionContext.Output.IsContentModified)
+        await viewsAdminRoleEdit1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) viewsAdminRoleEdit1).Write((object) viewsAdminRoleEdit1.__tagHelperExecutionContext.Output);
+      viewsAdminRoleEdit1.__tagHelperExecutionContext = viewsAdminRoleEdit1.__tagHelperScopeManager.End();
+      ((RazorPageBase) viewsAdminRoleEdit1).WriteLiteral("\n</div>\n\n<!-- jsTree -->\n<link rel=\"stylesheet\"");
+      ((RazorPageBase) viewsAdminRoleEdit1).BeginWriteAttribute("href", " href=\"", 3211, "\"", 3280, 1);
+      ((RazorPageBase) viewsAdminRoleEdit1).WriteAttributeValue("", 3218, (object) viewsAdminRoleEdit1.Url.Content("~/lib/jstree/dist/themes/default/style.min.css"), 3218, 62, false);
+      ((RazorPageBase) viewsAdminRoleEdit1).EndWriteAttribute();
+      ((RazorPageBase) viewsAdminRoleEdit1).WriteLiteral(">\n<script");
+      ((RazorPageBase) viewsAdminRoleEdit1).BeginWriteAttribute("src", " src=\"", 3290, "\"", 3339, 1);
+      ((RazorPageBase) viewsAdminRoleEdit1).WriteAttributeValue("", 3296, (object) viewsAdminRoleEdit1.Url.Content("~/lib/jstree/dist/jstree.js"), 3296, 43, false);
+      ((RazorPageBase) viewsAdminRoleEdit1).EndWriteAttribute();
+      ((RazorPageBase) viewsAdminRoleEdit1).WriteLiteral("></script>\n\n<script>\n    $('#menuTree').ready(function () {\n        $('#menuTree').jstree({\n            'plugins': [\"checkbox\"],\n            'core': {\n                'data': ");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__21 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__21 = CallSite<Action<CallSite, Views_AdminRole_Edit, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_AdminRole_Edit, object> target10 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__21.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_AdminRole_Edit, object>> p21 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__21;
+      Views_AdminRole_Edit viewsAdminRoleEdit3 = viewsAdminRoleEdit1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__20 = CallSite<Func<CallSite, IHtmlHelper<AdminRoleDto>, object, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.None, "Raw", (IEnumerable<Type>) null, typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Func<CallSite, IHtmlHelper<AdminRoleDto>, object, object> target11 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__20.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Func<CallSite, IHtmlHelper<AdminRoleDto>, object, object>> p20 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__20;
+      IHtmlHelper<AdminRoleDto> html = viewsAdminRoleEdit1.Html;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "tree", typeof (Views_AdminRole_Edit), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj10 = Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__19.Target((CallSite) Views_AdminRole_Edit.\u003C\u003Eo__23.\u003C\u003Ep__19, ((RazorPageBase) viewsAdminRoleEdit1).ViewBag);
+      object obj11 = target11((CallSite) p20, html, obj10);
+      target10((CallSite) p21, viewsAdminRoleEdit3, obj11);
+      ((RazorPageBase) viewsAdminRoleEdit1).WriteLiteral(",\n            },\n        });\n    });\n\n    function validationFunction(event) {\n\n        let json = $(\"#menuTree\").jstree(\"get_selected\");\n        let json1 = $(\"#menuTree\").jstree(\"get_undetermined\");\n\n        for (let i in json1)\n        {\n            if (json1[i] > 0) json.push(json1[i]);\n        }\n\n        $(\"#tree\").val(JSON.stringify(json));\n        $(\"#form1\").submit();\n    }\n\n</script>\n\n\n");
+      errorMessage = (string) null;
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<AdminRoleDto> Html { get; private set; }
+  }
+}

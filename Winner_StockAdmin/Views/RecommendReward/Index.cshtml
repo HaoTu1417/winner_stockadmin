@@ -1,0 +1,793 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: AspNetCoreGeneratedDocument.Views_RecommendReward_Index
+// Assembly: stockadmin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: B21E37CA-2ACE-4FF0-82F8-CD0EB9EBDE3F
+// Assembly location: C:\Users\Administrator\Desktop\stockadmin\stockadmin\stockadmin.dll
+
+using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.Hosting;
+using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.CSharp.RuntimeBinder;
+using stockadmin.Tool;
+using stockadmin.ViewModels.RecommendReward;
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
+using X.PagedList;
+using X.PagedList.Mvc.Core;
+using X.PagedList.Web.Common;
+
+#nullable enable
+namespace AspNetCoreGeneratedDocument
+{
+  [RazorSourceChecksum("Sha256", "25c3ea43b83f4fd75fa7f31f10eb191102e01be7d382a2dbfa05da6f2eaf6d03", "/Views/RecommendReward/Index.cshtml")]
+  [RazorSourceChecksum("Sha256", "c8c2f33cba7ac9139945780650693bb09fbebb1e836a6af83f6d8f3f9c6a0879", "/Views/_ViewImports.cshtml")]
+  [RazorCompiledItemMetadata("Identifier", "/Views/RecommendReward/Index.cshtml")]
+  [CreateNewOnMetadataUpdate]
+  internal sealed class Views_RecommendReward_Index : RazorPage<RecommendRewardVm>
+  {
+    private static readonly 
+    #nullable disable
+    TagHelperAttribute __tagHelperAttribute_0 = new TagHelperAttribute("class", (object) new HtmlString("form-control"), (HtmlAttributeValueStyle) 0);
+    private static readonly TagHelperAttribute __tagHelperAttribute_1 = new TagHelperAttribute("asp-action", (object) "Index", (HtmlAttributeValueStyle) 0);
+    private TagHelperExecutionContext __tagHelperExecutionContext;
+    private TagHelperRunner __tagHelperRunner = new TagHelperRunner();
+    private string __tagHelperStringValueBuffer;
+    private TagHelperScopeManager __backed__tagHelperScopeManager;
+    private FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+    private RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+    private InputTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper;
+
+    private TagHelperScopeManager __tagHelperScopeManager
+    {
+      get
+      {
+        if (this.__backed__tagHelperScopeManager == null)
+          this.__backed__tagHelperScopeManager = new TagHelperScopeManager(new Action<HtmlEncoder>(((RazorPageBase) this).StartTagHelperWritingScope), new Func<TagHelperContent>(((RazorPageBase) this).EndTagHelperWritingScope));
+        return this.__backed__tagHelperScopeManager;
+      }
+    }
+
+    public virtual async Task ExecuteAsync()
+    {
+      Views_RecommendReward_Index recommendRewardIndex1 = this;
+      RecommendRewardFilter Filter = recommendRewardIndex1.Model.filter;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__0 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__0 = CallSite<Func<CallSite, object, object>>.Create(Binder.GetMember(CSharpBinderFlags.None, "Lang", typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[1]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object lang = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__0.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__0, ((RazorPageBase) recommendRewardIndex1).ViewBag);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("\n<div class=\"card\">\n    ");
+      recommendRewardIndex1.__tagHelperExecutionContext = recommendRewardIndex1.__tagHelperScopeManager.Begin("form", (TagMode) 0, "25c3ea43b83f4fd75fa7f31f10eb191102e01be7d382a2dbfa05da6f2eaf6d035586", (Func<Task>) (async () =>
+      {
+        ((RazorPageBase) this).WriteLiteral("\n        <div class=\"card-body row\">\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__2 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__2 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RecommendReward_Index, object> target1 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__2.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p2 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__2;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__1 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__1 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj1 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__1.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__1, lang, "year");
+        target1((CallSite) p2, this, obj1);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "25c3ea43b83f4fd75fa7f31f10eb191102e01be7d382a2dbfa05da6f2eaf6d036262", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<RecommendRewardVm, string>(this.ViewData, (Expression<Func<RecommendRewardVm, string>>) (__model => Filter.year));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendReward_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n            <div class=\"col-auto\">\n                <label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__4 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__4 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RecommendReward_Index, object> target2 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__4.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p4 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__4;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__3 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__3 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj2 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__3.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__3, lang, "month");
+        target2((CallSite) p4, this, obj2);
+        ((RazorPageBase) this).WriteLiteral("</label>\n                ");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "25c3ea43b83f4fd75fa7f31f10eb191102e01be7d382a2dbfa05da6f2eaf6d038259", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<RecommendRewardVm, string>(this.ViewData, (Expression<Func<RecommendRewardVm, string>>) (__model => Filter.month));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendReward_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n            </div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__6 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__6 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RecommendReward_Index, object> target3 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__6.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p6 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__6;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__5 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__5 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj3 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__5.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__5, lang, "account");
+        target3((CallSite) p6, this, obj3);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "25c3ea43b83f4fd75fa7f31f10eb191102e01be7d382a2dbfa05da6f2eaf6d0310237", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<RecommendRewardVm, string>(this.ViewData, (Expression<Func<RecommendRewardVm, string>>) (__model => Filter.account));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendReward_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n\t\t\t<div class=\"col-auto\">\n\t\t\t\t<label class=\"control-label\">");
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__8 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__8 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RecommendReward_Index, object> target4 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__8.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p8 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__8;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__7 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__7 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj4 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__7.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__7, lang, "nickname");
+        target4((CallSite) p8, this, obj4);
+        ((RazorPageBase) this).WriteLiteral("</label>\n\t\t\t\t");
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.Begin("input", (TagMode) 1, "25c3ea43b83f4fd75fa7f31f10eb191102e01be7d382a2dbfa05da6f2eaf6d0312213", (Func<Task>) (async () => { }));
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = ((RazorPageBase) this).CreateTagHelper<InputTagHelper>();
+        this.__tagHelperExecutionContext.Add((ITagHelper) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper);
+        this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = this.ModelExpressionProvider.CreateModelExpression<RecommendRewardVm, string>(this.ViewData, (Expression<Func<RecommendRewardVm, string>>) (__model => Filter.nickname));
+        this.__tagHelperExecutionContext.AddTagHelperAttribute("asp-for", (object) this.__Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For, (HtmlAttributeValueStyle) 0);
+        this.__tagHelperExecutionContext.AddHtmlAttribute(Views_RecommendReward_Index.__tagHelperAttribute_0);
+        await this.__tagHelperRunner.RunAsync(this.__tagHelperExecutionContext);
+        if (!this.__tagHelperExecutionContext.Output.IsContentModified)
+          await this.__tagHelperExecutionContext.SetOutputContentAsync();
+        ((RazorPageBase) this).Write((object) this.__tagHelperExecutionContext.Output);
+        this.__tagHelperExecutionContext = this.__tagHelperScopeManager.End();
+        ((RazorPageBase) this).WriteLiteral("\n\t\t\t</div>\n        </div>\n        <div class=\"card-footer\">\n            <div class=\"form-group pull-right\">\n                <input type=\"submit\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1138, "\"", 1168, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__10 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__10 = CallSite<Action<CallSite, Views_RecommendReward_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RecommendReward_Index, string, int, object, int, int, bool> target5 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__10.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RecommendReward_Index, string, int, object, int, int, bool>> p10 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__10;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__9 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__9 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj5 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__9.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__9, lang, "public:search");
+        target5((CallSite) p10, this, "", 1146, obj5, 1146, 22, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-primary\" />\n                <input type=\"reset\"");
+        ((RazorPageBase) this).BeginWriteAttribute("value", " value=\"", 1232, "\"", 1261, 1);
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__12 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__12 = CallSite<Action<CallSite, Views_RecommendReward_Index, string, int, object, int, int, bool>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "WriteAttributeValue", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[7]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Action<CallSite, Views_RecommendReward_Index, string, int, object, int, int, bool> target6 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__12.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Action<CallSite, Views_RecommendReward_Index, string, int, object, int, int, bool>> p12 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__12;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__11 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__11 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj6 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__11.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__11, lang, "public:reset");
+        target6((CallSite) p12, this, "", 1240, obj6, 1240, 21, false);
+        ((RazorPageBase) this).EndWriteAttribute();
+        ((RazorPageBase) this).WriteLiteral(" class=\"btn btn-light\" />\n            </div>\n        </div>\n    ");
+      }));
+      recommendRewardIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = ((RazorPageBase) recommendRewardIndex1).CreateTagHelper<FormTagHelper>();
+      recommendRewardIndex1.__tagHelperExecutionContext.Add((ITagHelper) recommendRewardIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+      recommendRewardIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = ((RazorPageBase) recommendRewardIndex1).CreateTagHelper<RenderAtEndOfFormTagHelper>();
+      recommendRewardIndex1.__tagHelperExecutionContext.Add((ITagHelper) recommendRewardIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+      recommendRewardIndex1.__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Action = (string) Views_RecommendReward_Index.__tagHelperAttribute_1.Value;
+      recommendRewardIndex1.__tagHelperExecutionContext.AddTagHelperAttribute(Views_RecommendReward_Index.__tagHelperAttribute_1);
+      await recommendRewardIndex1.__tagHelperRunner.RunAsync(recommendRewardIndex1.__tagHelperExecutionContext);
+      if (!recommendRewardIndex1.__tagHelperExecutionContext.Output.IsContentModified)
+        await recommendRewardIndex1.__tagHelperExecutionContext.SetOutputContentAsync();
+      ((RazorPageBase) recommendRewardIndex1).Write((object) recommendRewardIndex1.__tagHelperExecutionContext.Output);
+      recommendRewardIndex1.__tagHelperExecutionContext = recommendRewardIndex1.__tagHelperScopeManager.End();
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("\n</div>\n\n<div class=\"table-container\">\n    <table class=\"table\">\n        <thead>\n            <tr>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__14 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__14 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target7 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__14.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p14 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__14;
+      Views_RecommendReward_Index recommendRewardIndex2 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__13 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__13 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj7 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__13.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__13, lang, "public:option");
+      target7((CallSite) p14, recommendRewardIndex2, obj7);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__16 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__16 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target8 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__16.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p16 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__16;
+      Views_RecommendReward_Index recommendRewardIndex3 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__15 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__15 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj8 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__15.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__15, lang, "year");
+      target8((CallSite) p16, recommendRewardIndex3, obj8);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</th>\n                <th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__18 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__18 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target9 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__18.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p18 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__18;
+      Views_RecommendReward_Index recommendRewardIndex4 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__17 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__17 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj9 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__17.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__17, lang, "month");
+      target9((CallSite) p18, recommendRewardIndex4, obj9);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__20 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__20 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target10 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__20.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p20 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__20;
+      Views_RecommendReward_Index recommendRewardIndex5 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__19 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__19 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj10 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__19.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__19, lang, "account");
+      target10((CallSite) p20, recommendRewardIndex5, obj10);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__22 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__22 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target11 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__22.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p22 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__22;
+      Views_RecommendReward_Index recommendRewardIndex6 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__21 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__21 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj11 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__21.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__21, lang, "nickname");
+      target11((CallSite) p22, recommendRewardIndex6, obj11);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__24 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__24 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target12 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__24.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p24 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__24;
+      Views_RecommendReward_Index recommendRewardIndex7 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__23 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__23 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj12 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__23.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__23, lang, "currency");
+      target12((CallSite) p24, recommendRewardIndex7, obj12);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__26 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__26 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target13 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__26.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p26 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__26;
+      Views_RecommendReward_Index recommendRewardIndex8 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__25 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__25 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj13 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__25.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__25, lang, "total_reward");
+      target13((CallSite) p26, recommendRewardIndex8, obj13);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__28 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__28 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target14 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__28.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p28 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__28;
+      Views_RecommendReward_Index recommendRewardIndex9 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__27 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__27 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj14 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__27.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__27, lang, "state");
+      target14((CallSite) p28, recommendRewardIndex9, obj14);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__30 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__30 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target15 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__30.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p30 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__30;
+      Views_RecommendReward_Index recommendRewardIndex10 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__29 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__29 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj15 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__29.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__29, lang, "withdraw");
+      target15((CallSite) p30, recommendRewardIndex10, obj15);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__32 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__32 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target16 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__32.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p32 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__32;
+      Views_RecommendReward_Index recommendRewardIndex11 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__31 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__31 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj16 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__31.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__31, lang, "paydate");
+      target16((CallSite) p32, recommendRewardIndex11, obj16);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</th>\n\t\t\t\t<th>");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__34 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__34 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target17 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__34.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p34 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__34;
+      Views_RecommendReward_Index recommendRewardIndex12 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__33 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__33 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj17 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__33.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__33, lang, "create_time");
+      target17((CallSite) p34, recommendRewardIndex12, obj17);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</th>\n            </tr>\n        </thead>\n        <tbody>\n");
+      foreach (RecommendRewardList recommendRewardList in (IEnumerable<RecommendRewardList>) recommendRewardIndex1.Model.list)
+      {
+        RecommendRewardList item = recommendRewardList;
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("                <tr>\n                    <td>\n                        <div class=\"dropleft\">\n                        <button type=\"button\" class=\"btn icon btn-primary dropdown-toggle hide-arrow show\" data-bs-toggle=\"dropdown\" aria-expanded=\"true\">\n                            <i class=\"fa fa-bars\"></i>\n                        </button>\n                        <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\">\n                                ");
+        Views_RecommendReward_Index recommendRewardIndex13 = recommendRewardIndex1;
+        IHtmlHelper<RecommendRewardVm> html = recommendRewardIndex1.Html;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__36 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__36 = CallSite<Func<CallSite, object, string>>.Create(Binder.Convert(CSharpBinderFlags.ConvertExplicit, typeof (string), typeof (Views_RecommendReward_Index)));
+        }
+        // ISSUE: reference to a compiler-generated field
+        Func<CallSite, object, string> target18 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__36.Target;
+        // ISSUE: reference to a compiler-generated field
+        CallSite<Func<CallSite, object, string>> p36 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__36;
+        // ISSUE: reference to a compiler-generated field
+        if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__35 == null)
+        {
+          // ISSUE: reference to a compiler-generated field
+          Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__35 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+          {
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+            CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+          }));
+        }
+        // ISSUE: reference to a compiler-generated field
+        // ISSUE: reference to a compiler-generated field
+        object obj18 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__35.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__35, lang, "public:detail");
+        string str = target18((CallSite) p36, obj18);
+        var data1 = new{ id = item.pk };
+        var data2 = new{ @class = "dropdown-item" };
+        IHtmlContent ihtmlContent = HtmlHelperLinkExtensions.ActionLink((IHtmlHelper) html, str, "Index", "RewardDetail", (object) data1, (object) data2);
+        ((RazorPageBase) recommendRewardIndex13).Write((object) ihtmlContent);
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("\n                             </div>\n                    </div>\n                    </td>\n                    <td>");
+        ((RazorPageBase) recommendRewardIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RecommendRewardVm, string>(recommendRewardIndex1.Html, (Expression<Func<RecommendRewardVm, string>>) (modelItem => item.year)));
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) recommendRewardIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RecommendRewardVm, string>(recommendRewardIndex1.Html, (Expression<Func<RecommendRewardVm, string>>) (modelItem => item.month)));
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) recommendRewardIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RecommendRewardVm, string>(recommendRewardIndex1.Html, (Expression<Func<RecommendRewardVm, string>>) (modelItem => item.account)));
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) recommendRewardIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RecommendRewardVm, string>(recommendRewardIndex1.Html, (Expression<Func<RecommendRewardVm, string>>) (modelItem => item.nickname)));
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) recommendRewardIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RecommendRewardVm, string>(recommendRewardIndex1.Html, (Expression<Func<RecommendRewardVm, string>>) (modelItem => item.currency)));
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) recommendRewardIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RecommendRewardVm, Decimal>(recommendRewardIndex1.Html, (Expression<Func<RecommendRewardVm, Decimal>>) (modelItem => item.total_reward)));
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) recommendRewardIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RecommendRewardVm, string>(recommendRewardIndex1.Html, (Expression<Func<RecommendRewardVm, string>>) (modelItem => item.stateText)));
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) recommendRewardIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RecommendRewardVm, DateTime?>(recommendRewardIndex1.Html, (Expression<Func<RecommendRewardVm, DateTime?>>) (modelItem => item.withdraw)));
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</td>\n\t\t\t\t<td>");
+        ((RazorPageBase) recommendRewardIndex1).Write((object) HtmlHelperDisplayExtensions.DisplayFor<RecommendRewardVm, DateTime?>(recommendRewardIndex1.Html, (Expression<Func<RecommendRewardVm, DateTime?>>) (modelItem => item.paydate)));
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</td>\n                    <td>");
+        ((RazorPageBase) recommendRewardIndex1).Write(item.create_time.ToString("yyyy-MM-dd HH:mm:ss"));
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("</td>\n\n                </tr>\n");
+      }
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("        </tbody>\n    </table>\n</div>\n\n<!-- 分頁處理 -->\n<div class=\"card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between\">\n\n");
+      if (recommendRewardIndex1.Model != null)
+      {
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("        <nav aria-label=\"Page navigation\">\n            <ul class=\"pagination mb-0\">\n\n                ");
+        ((RazorPageBase) recommendRewardIndex1).Write((object) ((IHtmlHelper) recommendRewardIndex1.Html).PagedListPager((IPagedList) recommendRewardIndex1.Model.list, (Func<int, string>) (page => UrlHelperExtensions.Action(this.Url, "Index", (object) PublicTool.ToRouteValueDictionary<RecommendRewardFilter>(this.Model.filter, new Dictionary<string, object>()
+        {
+          [nameof (page)] = (object) page
+        }))), new PagedListRenderOptions()
+        {
+          LiElementClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-item"
+          },
+          PageClasses = (IEnumerable<string>) new string[1]
+          {
+            "page-link"
+          },
+          LinkToFirstPageFormat = "<<",
+          LinkToPreviousPageFormat = "<",
+          LinkToNextPageFormat = ">",
+          LinkToLastPageFormat = ">>",
+          MaximumPageNumbersToDisplay = new int?(8)
+        }));
+        ((RazorPageBase) recommendRewardIndex1).WriteLiteral("\n            </ul>\n        </nav>\n");
+      }
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral("\n    <div class=\"fw-normal small mt-4 mt-lg-0\">");
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__38 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__38 = CallSite<Action<CallSite, Views_RecommendReward_Index, object>>.Create(Binder.InvokeMember(CSharpBinderFlags.InvokeSimpleName | CSharpBinderFlags.ResultDiscarded, "Write", (IEnumerable<Type>) null, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      Action<CallSite, Views_RecommendReward_Index, object> target19 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__38.Target;
+      // ISSUE: reference to a compiler-generated field
+      CallSite<Action<CallSite, Views_RecommendReward_Index, object>> p38 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__38;
+      Views_RecommendReward_Index recommendRewardIndex14 = recommendRewardIndex1;
+      // ISSUE: reference to a compiler-generated field
+      if (Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__37 == null)
+      {
+        // ISSUE: reference to a compiler-generated field
+        Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__37 = CallSite<Func<CallSite, object, string, object>>.Create(Binder.GetIndex(CSharpBinderFlags.None, typeof (Views_RecommendReward_Index), (IEnumerable<CSharpArgumentInfo>) new CSharpArgumentInfo[2]
+        {
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.None, (string) null),
+          CSharpArgumentInfo.Create(CSharpArgumentInfoFlags.UseCompileTimeType | CSharpArgumentInfoFlags.Constant, (string) null)
+        }));
+      }
+      // ISSUE: reference to a compiler-generated field
+      // ISSUE: reference to a compiler-generated field
+      object obj19 = Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__37.Target((CallSite) Views_RecommendReward_Index.\u003C\u003Eo__11.\u003C\u003Ep__37, lang, "public:total_count");
+      target19((CallSite) p38, recommendRewardIndex14, obj19);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral(": ");
+      ((RazorPageBase) recommendRewardIndex1).Write((object) recommendRewardIndex1.Model.list.TotalItemCount);
+      ((RazorPageBase) recommendRewardIndex1).WriteLiteral(" </div>\n</div>");
+    }
+
+    [RazorInject]
+    public 
+    #nullable enable
+    IModelExpressionProvider ModelExpressionProvider { get; private set; }
+
+    [RazorInject]
+    public IUrlHelper Url { get; private set; }
+
+    [RazorInject]
+    public IViewComponentHelper Component { get; private set; }
+
+    [RazorInject]
+    public IJsonHelper Json { get; private set; }
+
+    [RazorInject]
+    public IHtmlHelper<RecommendRewardVm> Html { get; private set; }
+  }
+}
