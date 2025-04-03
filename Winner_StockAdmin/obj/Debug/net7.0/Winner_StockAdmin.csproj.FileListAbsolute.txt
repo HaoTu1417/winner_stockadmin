@@ -368,3 +368,4 @@
 /Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/obj/Debug/net7.0/Winner_StockAdmin.pdb
 /Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/obj/Debug/net7.0/Winner_StockAdmin.genruntimeconfig.cache
 /Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/obj/Debug/net7.0/ref/Winner_StockAdmin.dll
+/Users/tunghaotu/Documents/Projects/Winner Finance Service/Winner_StockAdmin/Winner_StockAdmin/obj/Debug/net7.0/Winner_StockAdmin.sourcelink.json

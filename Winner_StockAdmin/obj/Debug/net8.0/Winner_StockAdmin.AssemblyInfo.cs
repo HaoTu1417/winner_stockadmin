@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Winner_StockAdmin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3361c6f303c144182f767251c5da6d414586cace")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df04302f9c2d7bc05c1869c36bce5ef106e68210")]
 [assembly: System.Reflection.AssemblyProductAttribute("Winner_StockAdmin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Winner_StockAdmin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

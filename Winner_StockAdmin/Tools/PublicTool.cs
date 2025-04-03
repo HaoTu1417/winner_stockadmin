@@ -166,11 +166,13 @@ namespace stockadmin.Tool
       T obj,
       Dictionary<string, object>? args = null)
     {
-      IEnumerable<\u003C\u003Ef__AnonymousType96<string, object>> datas = ((IEnumerable<PropertyInfo>) obj.GetType().GetProperties()).Where<PropertyInfo>((Func<PropertyInfo, bool>) (p => p.GetValue((object) (T) obj, (object[]) null) != null)).Select(p => new
+      var datas = ((IEnumerable<PropertyInfo>) obj.GetType().GetProperties()).Where<PropertyInfo>((Func<PropertyInfo, bool>) (p => p.GetValue((object) (T) obj, (object[]) null) != null)).Select(p => new
       {
         Name = p.Name,
         Value = p.GetValue((object) (T) obj, (object[]) null)
       });
+     
+
       RouteValueDictionary routeValueDictionary = new RouteValueDictionary();
       foreach (var data in datas)
         routeValueDictionary.Add(data.Name, data.Value);
